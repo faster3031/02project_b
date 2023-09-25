@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/mobile_web_icon.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- 네이버 서치 어드바이저 -->
+    <meta name="naver-site-verification" content="07782bcfa006cff898addd308409fe3efe0e2fe2" />
+    <!-- 구글 콘솔 -->
+    <meta name="google-site-verification" content="8EY1-xng-olDAtUrVMi8koj8eQTRo6k0doX-1hXjgkg" />
+    <!-- 선호 URL 및 로봇 메타 태그 -->
+    <link rel="canonical" href="https://sod-eight.vercel.app/">
+    <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
+    <title>별의 온도</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/header.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/donaiton.js"></script>
+    <script src="js/campaign.js"></script>
+    <script src="js/fandom.js"></script>
+    <script src="js/goods.js"></script>
+    <script src="js/artist.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/footer.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 스크롤 버튼 -->
+      <div class="top-button">
+      <a href="#" class="top-btn" id="top-btn">
+        <img src="images/top-btn.png" alt="top-btn" id="top-btn-img" />
+      </a>
+      </div>
+      <!-- 헤더 -->
+      <header class="header">
+        <div class="inner">
+          <a href="index.html" alt="메인 로고" class="logo">
+            <img src="images/logo_02.png" alt="logo" />
+          </a>
+          <!-- 메뉴 -->
+          <nav class="nav">
+            <ul>
+              <li><a href="infopage.html" alt="기부">기부</a></li>
+              <li><a href="#" alt="캠페인">캠페인</a></li>
+              <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
+              <li><a href="#" alt="후기">후기</a></li>
+              <li><a href="review.html" alt="게시판">게시판</a></li>
+            </ul>
+          </nav>
+          <!-- 로그인  -->
+          <div class="login">
+            <div id="login-section">
+              <button id="login-button">로그인</button>
+            </div>
+            <div id="dashboard-section" style="display: none">
+              <div id="username-display"></div>
+              <button id="logout-button">로그아웃</button>
+            </div>
+            <!-- 로그인 끝 -->
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+        </div>
+      </header>
+            <!-- 팬덤 -->
+            <section class="fandom">
+              <div class="inner">
+                <div class="swiper fandomSwiper" id="fandombox">
+                  <div class="swiper-wrapper star">
+                    <div class="swiper-slide" id="fandomslide1">
+                      <div class="inner">
+                      <div class="ranktxt">
+                        <div class="ranktitle"><h2>이달의 팬덤 <br />후원순위</h2></div>
+                        <h1 class="rankname">
+                          1위 아이유
+                          <span>유애나</span>
+                        </h1>
+                        <ul class="ranklist">
+                          <li><a href="#">총 기부횟수 50회</a></li>
+                          <li><a href="#">데뷔 15주년 기념 3억원 기부</a></li>
+                          <li><a href="#">[진행] 한부모 자녀를 위한 생필품 기부</a></li>
+                        </ul>
+                        <div class="rankbtn">
+                          <button class="rankbtn1"><p>페이지 보러가기</p></button>
+                          <button class="rankbtn2"><p>응원하기</p></button>
+                        </div>
+                      </div>
+                      <div class="fandomimg">
+                        <ul class="imgbox">
+                          <li class="starimg">
+                            <a href="#"
+                              ><span><p></p></span
+                            ></a>
+                          </li>
+                                          
+                        </ul>
+                        
+                      </div>
+                    </div>
+                          <!-- 총 모금액 -->
+      <section class="donation">
+        <div class="inner">
+          <div class="donation_box">
+            
+              <div class="cheering">
+                <p>아이유와 함께하는 기부</p>
+              </div>
+            
+            <div class="amount">
+              <p>총모금액 <span class="memberCountConTxt_1"></span></p>
+              <p>총인원  <span class="memberCountConTxt_2"></span></p>
+              <p>총기부횟수 <span class="memberCountConTxt_3"></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+                    </div>
+                    <div class="swiper-slide" id="fandomslide2">
+                      <div class="inner">
+                      <div class="ranktxt">
+                        <div class="ranktitle"><h2>이달의 팬덤 <br />후원순위</h2></div>
+                        <h1 class="rankname">
+                          2위 뷔
+                          <span>아미</span>
+                        </h1>
+                        <ul class="ranklist">
+                          <li><a href="#">총 기부횟수 45회</a></li>
+                          <li><a href="#">'Nicaragua_V', 온코비벤시아 통한 위생용품, 의약품 기부</a></li>
+                          <li><a href="#">'Nymba ya Wazee'x'흰색지팡이 기부'캠페인 기부금 전달</a></li>
+                        </ul>
+                        <div class="rankbtn">
+                          <button class="rankbtn1"><p>페이지 보러가기</p></button>
+                          <button class="rankbtn2"><p>응원하기</p></button>
+                        </div>
+                      </div>
+                      <div class="fandomimg">
+                        <ul class="imgbox">
+                          <li class="starimg">
+                            <a href="#"
+                              ><span><p></p></span
+                            ></a>
+                          </li>
+                        </ul>
+                        
+                      </div>
+                    </div>
+                          <!-- 총 모금액 -->
+                          <section class="donation">
+                            <div class="inner">
+                              <div class="donation_box">
+                                
+                                  <div class="cheering">
+                                    <p>뷔와 함께하는 기부</p>
+                                  </div>
+                                
+                                <div class="amount">
+                                  <p>총모금액 <span class="memberCountConTxt_4"></span></p>
+                                  <p>총인원  <span class="memberCountConTxt_5"></span></p>
+                                  <p>총기부횟수 <span class="memberCountConTxt_6"></span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                    </div>
+                    <div class="swiper-slide" id="fandomslide3">
+                      <div class="inner">
+                      <div class="ranktxt">
+                        <div class="ranktitle"><h2>이달의 팬덤 <br />후원순위</h2></div>
+                        <h1 class="rankname">
+                          3위 태연
+                          <span>소원</span>
+                        </h1>
+                        <ul class="ranklist">
+                          <li><a href="#">총 기부횟수 37회</a></li>
+                          <li><a href="#">청소년그루터기재단, 태연의 기부로 '꿈터'시설 1호 완공</a></li>
+                          <li><a href="#">적십자 아너스클럽 가입... 1억원 기부</a></li>
+                        </ul>
+                        <div class="rankbtn">
+                          <button class="rankbtn1"><p>페이지 보러가기</p></button>
+                          <button class="rankbtn2"><p>응원하기</p></button>
+                        </div>
+                      </div>
+                      <div class="fandomimg">
+                        <ul class="imgbox">
+                          <li class="starimg">
+                            <a href="#"
+                              ><span><p></p></span
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                          <!-- 총 모금액 -->
+                          <section class="donation">
+                            <div class="inner">
+                              <div class="donation_box">
+
+                                  <div class="cheering">
+                                    <p>태연과 함께하는 기부</p>
+
+                                </div>
+                                <div class="amount">
+                                  <p>총모금액 <span class="memberCountConTxt_7"></span></p>
+                                  <p>총인원  <span class="memberCountConTxt_8"></span></p>
+                                  <p>총기부횟수 <span class="memberCountConTxt_9"></span></p>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                    </div>
+                    <div class="swiper-pagination" id="fandombtn"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+      <!-- 캠페인 -->
+      <section class="campaign">
+        <div class="inner campaign-wrap">
+          <h1>진행중인 캠페인  <a href="#"><i class="fa-solid fa-chevron-right"></i></a></h1>
+          <div class="campaign_gap"></div>
+          <!-- 세븐틴 -->
+          <div class="campaign_item">
+            <div class="campaign_box">
+              <div class="imgBox">
+                <img src="images/s_seventeen.jpg" alt="세븐틴" />
+              </div>
+              <div class="imgBox imgBox_back">
+                <img src="images/s_1.JPG" alt="6.25" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[세븐틴] 6.25 참전 영웅 생활비 지원</p>
+                <p class="p2">
+                  6.25 참전 영웅들을 위해 작지만 보답하고자 합니다. <br />많은
+                  관심 부탁드립니다.
+                </p>
+              </div>
+            </div>
+            <p class="campaign_title" ><span>[세븐틴]</span> 6.25 참전 영웅 생활비 지원</p>
+            <div class="bar">
+              <span class="bar_60"></span>
+            </div>
+            <div class="campaign_ber_title">
+              <div class="campaign_text">12,437,544원</div>
+              <div class="campaign_percent">60% 달성</div>
+            </div>
+          </div>
+          <!-- BTS -->
+          <div class="campaign_item">
+            <div class="campaign_box">
+              <div class="imgBox">
+                <img src="images/s_bts.jpg" alt="BTS" />
+              </div>
+              <div class="imgBox imgBox_back">
+                <img src="images/s_2.jpg" alt="모로코" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[BTS] 모로코 강진 긴급 재난 지원</p>
+                <p class="p2">
+                  최근에 발생한 모로코 강진으로 인해 많은 분들이 고통을 받고
+                  있습니다.<br />
+                </p>
+              </div>
+            </div>
+            <p class="campaign_title" ><span>[BTS]</span> 모로코 강진 긴급 재난 지원</p>
+            <div class="bar">
+              <span class="bar_80"></span>
+            </div>
+            <div class="campaign_ber_title">
+              <div class="campaign_text">12,437,544원</div>
+              <div class="campaign_percent">80% 달성</div>
+            </div>
+          </div>
+          <!-- IU -->
+          <div class="campaign_item IU">
+            <div class="campaign_box">
+              <div class="imgBox">
+                <img src="images/s_IU.jpg" alt="IU" />
+              </div>
+              <div class="imgBox imgBox_back">
+                <img src="images/s_3.jpg" alt="한부모" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[IU] 한부모 자녀를 위한 생필품 기부</p>
+                <p class="p2">
+                  작지만 한부모 자녀및 가정을 위해 생필품을 기부하고자 합니다<br />
+                </p>
+              </div>
+            </div>
+            <p class="campaign_title" ><span>[IU]</span> 한부모 자녀를 위한 생필품 기부</p>
+            <div class="bar">
+              <span class="bar_20"></span>
+            </div>
+            <div class="campaign_ber_title">
+              <div class="campaign_text">5,135,248원</div>
+              <div class="campaign_percent">20% 달성</div>
+            </div>
+          </div>
+          <!-- 에스퍼 -->
+          <div class="campaign_item aespa">
+            <div class="campaign_box">
+              <div class="imgBox">
+                <img src="images/s_aespa.jpg" alt="에스파" />
+              </div>
+              <div class="imgBox imgBox_back">
+                <img src="images/s_4.jpg" alt="어르신 교육" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[에스파] 어르신 한글 교육기금 지원</p>
+                <p class="p2">
+                  공부를 할수 없었던 어르신분들을 위해 글을 알려드리고자
+                  합니다.<br />
+                </p>
+              </div>
+            </div>
+            <p class="campaign_title" ><span>[에스파]</span> 어르신 한글 교육기금 지원</p>
+            <div class="bar">
+              <span class="bar_50"></span>
+            </div>
+            <div class="campaign_ber_title">
+              <div class="campaign_text">5,445,788원</div>
+              <div class="campaign_percent">50% 달성</div>
+            </div>
+          </div>
+          <!-- 트와이스 -->
+          <div class="campaign_item twice">
+            <div class="campaign_box">
+              <div class="imgBox">
+                <img src="images/s_twice.jpg" alt="트와이스" />
+              </div>
+              <div class="imgBox imgBox_back">
+                <img src="images/s_5.jpg" alt="독거노인" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[트와이스] 독거노인 반찬 기부</p>
+                <p class="p2">
+                  혼자 거동이 불편하신 어르신들을 위해 작지만 반찬을 기부하고자
+                  합니다.<br />
+                </p>
+              </div>
+            </div>
+            <p class="campaign_title" ><span>[트와이스]</span> 독거노인 반찬 기부</p>
+            <div class="bar">
+              <span class="bar_90"></span>
+            </div>
+            <div class="campaign_ber_title">
+              <div class="campaign_text">22,164,547원</div>
+              <div class="campaign_percent">90% 달성</div>
+            </div>
+          </div>
+          <!-- 블랙핑크 -->
+          <div class="campaign_item balackpink">
+            <div class="campaign_box">
+              <div class="imgBox">
+                <img src="images/s_blackpink.jpg" alt="블랙핑크" />
+              </div>
+              <div class="imgBox imgBox_back">
+                <img src="images/s_6.jpg" alt="연탄 나눔" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[블랙핑크] 겨울나기 연탄 기부사업</p>
+                <p class="p2">
+                  곧 추운 겨울이 다가오고 있습니다. 따뜻하게 보내기를 바라는
+                  마음으로 연탄을 기부하고자 합니다.
+                </p>
+              </div>
+            </div>
+            <p class="campaign_title" ><span>[블랙핑크]</span> 겨울나기 연탄 기부사업</p>
+            <div class="bar">
+              <span class="bar_30"></span>
+            </div>
+            <div class="campaign_ber_title">
+              <div class="campaign_text">386,472원</div>
+              <div class="campaign_percent">30% 달성</div>
+            </div>
+          </div>
+          <!-- ive -->
+          <div class="campaign_item ive">
+            <div class="campaign_box">
+              <div class="imgBox">
+                <img src="images/s_ive.jpg" alt="ive" />
+              </div>
+              <div class="imgBox imgBox_back">
+                <img src="images/s_7.jpg" alt="리비아 홍수" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[IVE] 리비아 홍수 피난지원</p>
+                <p class="p2">
+                  최근 모로코 강진의 아품이 가기도 전에 리비아에 큰 홍수로 많은
+                  피해가 발행했습니다.
+                </p>
+              </div>
+            </div>
+            <p class="campaign_title" ><span>[IVE]</span> 리비아 홍수 피난지원</p>
+            <div class="bar">
+              <span class="bar_30"></span>
+            </div>
+            <div class="campaign_ber_title">
+              <div class="campaign_text">751,544원</div>
+              <div class="campaign_percent">30% 달성</div>
+            </div>
+          </div>
+          <!-- 악동뮤지션 -->
+          <div class="campaign_item akmu">
+            <div class="campaign_box">
+              <div class="imgBox">
+                <img src="images/s_akmu.jpeg" alt="악동" />
+              </div>
+              <div class="imgBox imgBox_back">
+                <img src="images/s_8.jpg" alt="소아암" />
+              </div>
+              <div class="hoverBox">
+                <p class="p1">[악동뮤지션] 소아암으로 치료비 지원</p>
+                <p class="p2">
+                  어린친구들이 현재 소아암으로 싸우고 있습니다. 이 친구들을 위해
+                  치료비를 지원하고자 합니다.
+                </p>
+              </div>
+            </div>
+            <p class="campaign_title" ><span>[악동뮤지션]</span> 소아암으로 치료비 지원</p>
+            <div class="bar">
+              <span class="bar_70"></span>
+            </div>
+            <div class="campaign_ber_title">
+              <div class="campaign_text">9,421,374원</div>
+              <div class="campaign_percent">70% 달성</div>
+            </div>
+        </div>
+      </section>
+
+      <!-- 굿즈 -->
+      <section class="goods">
+        <div class="inner">
+          <div class="goodsbox">
+            <div class="goodstxt">
+              <h2>별의온도 후원 굿즈</h2>
+              <p>
+                별의온도를 통해 기부해 주시는 팬분들을 위한<br />
+                오직 별의온도만의 특별한 굿즈.<br>
+                후원온도가 높을수록 받을 수 있는 높아지는 혜택. <br />
+                
+              </p>
+              <button>더보기</button>
+            </div>
+            <div class="goodslist">
+              <ul class="goodsart">
+                <li>
+<a href="#"
+                    ><img src="images/fandom_goods01.jpg" alt="굿즈1" />
+                    <p>미공개 앨범 (후원ver.)</p></a
+                  >
+                 
+                </li>
+                <li>
+
+                                      <a href="#"
+                    ><img src="images/fandom_goods02.jpg" alt="굿즈2" />
+                    <p>스타의 애장품</p></a
+                  >
+
+
+                </li>
+                <li>
+
+                                      <a href="#"
+                    ><img src="images/fandom_goods03.jpg" alt="굿즈3" />
+                    <p>랜덤카드 (후원ver.)</p></a
+                  >
+
+
+                </li>
+                <li>
+
+                                      <a href="#"
+                    ><img src="images/fandom_goods04.jpg" alt="굿즈4" />
+                    <p>콘서트 티켓 (양도불가)</p></a
+                  >
+
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+            <!-- 슬라이드 -->
+            <section class="slide">
+              <div class="inner">
+                <!--슬라이드 스와이퍼 -->
+                <div class="swiper slide_Swiper">
+                  <div class="swiper-wrapper">
+                    <!-- 슬라이드 1 홍수 -->
+                    <div class="swiper-slide slide_img">
+                      <div class="slide1_bg slide_bg">
+                        <div class="slide1_text slide_text">
+                          <h1>리비아 홍수 긴급 지원</h1>
+                          <p>갑자기  불어난  홍수로 많은 사람들이 집과 가족을 잃어버렸습니다.이분들에게 여러분의 관심과 도움의 손길 부탁드립니다.</p>
+                        </div>
+                        <div class="slide_right_img">
+                          <img src="images/slide1_img.png" alt="슬라이드1 이미지"></div>
+                        <div class="slide_left_button">
+                          <button>기부하기</button>
+                        </div>
+                      </div>                      
+                    </div>
+                    <!-- 슬라이드 2 강진 -->
+                    <div class="swiper-slide slide_img">
+                      <div class="slide2_bg slide_bg" >
+                        <div class="slide2_text slide_text">
+                          <h1>모로코 강진 긴급 지원</h1>
+                          <p>BTS와 함께 모로코 강진으로 집과 삶의 터전을 잃어버린 난민을 도와주세요</p>
+                        </div>
+                        <div class="slide_right_img">
+                          <img src="images/slide2_img.png" alt="슬라이드2 이미지"></div>
+                        <div class="slide_left_button">
+                          <button>기부하기</button>
+                        </div>
+                      </div>   
+                      </div>
+                      <!-- 슬라이드 3 행사 -->
+                    <div class="swiper-slide slide_img">
+                      <div class="slide3_bg slide_bg">
+                        <div class="slide3_text slide_text">
+                          <h1>재능 기부 행사</h1>
+                          <p>마음만 있다면 누구든지 참여가 가능한 축제의 장을 만들고자 합니다. <br>
+                            일자 : 2023.10.07(토) ~ 2023.10.08(일) <br>
+                            장소 : 서울 월드컵 경기장</p>
+                        </div>
+                        <div class="slide_left_img2">
+                          <img src="images/slide3_img.png" alt="슬라이드3 이미지" class="slide3_siz"></div>
+                        <div class="slide_right_button">
+                          <button>참가 신청</button>
+                        </div>
+                      </div>  
+                    </div>
+                    <!-- 슬라이드 4 우크라이나 -->
+                    <div class="swiper-slide slide_img">
+                      <div class="slide4_bg slide_bg">
+                        <div class="slide2_text slide_text">
+                          <h1>우크라이나 전쟁 난민 지원</h1>
+                          <p>아직도 많은 사람들이 전쟁으로 고통받고있습니다. <br>
+                            이들을 위해 많은 지원 부탁드립니다.</p>
+                        </div>
+                        <div class="slide_right_img4">
+                          <img src="images/slide6_img.png" alt="슬라이드4 이미지" class="slide6_siz"></div>
+                        <div class="slide_left_button">
+                          <button>지원하기</button>
+                        </div>
+                      </div>  
+                    </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+      <!-- 아티스트 목록 -->
+      <section class="artist">
+        <div class="inner">
+          <h1>함께 하고 싶은 아티스트를 찾아보세요 <i class="fa-solid fa-chevron-right"></i></h1>
+          <div class="card-list">
+          <div id="artist-card"></div>
+          <div class='highlight' id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+          <div id="artist-card"></div>
+        </div>
+      </section>
+      <!-- 소식 -->
+      <section class="news">
+        <div class="inner">
+          <div class="title">
+            <h1>마음이 따뜻해지는 모금 후기 <i class="fa-solid fa-chevron-right"></i></h1>
+            <h1>너도 나도 팬덤 한마디 <i class="fa-solid fa-chevron-right"></i></h1>
+          </div>
+          <div class="news-main">
+            <h1 class="mb_title1">마음이 따뜻해지는 모금 후기 <i class="fa-solid fa-chevron-right"></i></h1>
+          <div class="news-card">
+            <div class="card-box1" id="card-box">
+              <a href="#"
+                ><img src="images/news_picture1.jpg" alt="새소식_무더위"
+              /></a>
+              <h3><strong>[IVE]</strong> 한부모 가정에게 선선한 여름을 선물했습니다.</h3>
+              <div class="bar_news">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>1,861,200원 모금완료</p>
+                <b>30%</b>
+              </div>
+            </div>
+            <div class="card-box2" id="card-box">
+              <a href="#"
+                ><img src="images/news_picture2.jpg" alt="새소식_삼계탕"
+              /></a>
+              <h3><strong>[TWICE]</strong> 든든한 삼계탕을 먹고 힘 낼 수 있었습니다.</h3>
+              <div class="bar_news">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>3,000,000원 모금완료</p>
+                <b>100%</b>
+              </div>
+            </div>
+            <div class="card-box3" id="card-box">
+              <a href="#"
+                ><img src="images/news_picture3.jpg" alt="새소식_폐화분"
+              /></a>
+              <h3><strong>[TXT]</strong> 폐화분의 놀라운 변신!</h3>
+              <div class="bar_news">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>7,525,600원 모금완료</p>
+                <b>76%</b>
+              </div>
+            </div>
+            <div class="card-box4" id="card-box">
+              <a href="#"
+                ><img src="images/news_picture4.jpg" alt="새소식_김장"
+              /></a>
+              <h3><strong>[STAYC]</strong> 한 여름에도 든든한 김장김치를 전했어요.</h3>
+              <div class="bar_news">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>1,453,000원 모금완료</p>
+                <b>25%</b>
+              </div>
+            </div>
+            <div class="card-box5" id="card-box">
+              <a href="#"
+                ><img src="images/news_picture5.jpg" alt="새소식_희망"
+              /></a>
+              <h3><strong>[STRAY KIDS]</strong> 똑똑똑! 희망이 배달되었습니다.</h3>
+              <div class="bar_news">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>1,000,000원 모금완료</p>
+                <b>100%</b>
+              </div>
+            </div>
+            <div class="card-box6" id="card-box">
+              <a href="#"
+                ><img src="images/news_picture6.jpg" alt="새소식_어르신"
+              /></a>
+              <h3><strong>[NCT]</strong> 어르신들이 건강검진을 받고 왔어요</h3>
+              <div class="bar_news">
+                <span></span>
+              </div>
+              <div class="card-text">
+                <p>1,697,321원 모금완료</p>
+                <b>43%</b>
+              </div>
+            </div>
+          </div>
+          <div class="news-right">
+          <div class="slider-wrap">
+            <h1 class="mb_title2">너도 나도 팬덤 한마디 <i class="fa-solid fa-chevron-right"></i></h1>
+            <div id="card-slider" class="slider">
+              <div class="slider-item">
+                <div class="animation-card_image">
+                  <img src="images/news-message1.webp" alt="message-ive" />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    IVE LOVE 님이 <b>200,000</b>원을 후원합니다.
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    "좋은 일에 사용되었으면 좋겠어요~ IVE 화이팅~!"
+                  </p>
+                  <p class="animation-card_content_city">[DIVE]</p>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="animation-card_image">
+                  <img src="images/news-message2.webp" alt="message-newjeans" />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    뉴진스 버니즈 님이 <b>800,000</b>원을 후원합니다.
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    "별의온도와 함께하는 버니즈!!"
+                  </p>
+                  <p class="animation-card_content_city">[Bunnies]</p>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="animation-card_image">
+                  <img src="images/news-message3.webp" alt="message-bts" />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    BTS ARMY 님이 <b>1000,000</b>원을 후원합니다.
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    "우리는 영원한 ARMY"
+                  </p>
+                  <p class="animation-card_content_city">[ARMY]</p>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="animation-card_image">
+                  <img
+                    src="images/news-message4.webp"
+                    alt="message-seventeen"
+                  />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    SEVENTEEN 당근 님이 <b>500,000</b>원을 후원합니다.
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    "이런 일에는 캐럿도 빠질 수 없지!"
+                  </p>
+                  <p class="animation-card_content_city">[CARAT]</p>
+                </div>
+              </div>
+              <div class="slider-item">
+                <div class="animation-card_image">
+                  <img src="images/news-message5.webp" alt="message-aespa" />
+                </div>
+                <div class="animation-card_content">
+                  <h4 class="animation-card_content_title title-2">
+                    AESPA 카리나 님이 <b>600,000</b>원을 후원합니다.
+                  </h4>
+                  <p class="animation-card_content_description p-2">
+                    "착한 MY들은 기부 못 참지"
+                  </p>
+                  <p class="animation-card_content_city">[MY]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper newSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review-box">
+                  <h1>따뜻한 후기</h1>
+                  <h2>
+                    따뜻한 곰국으로 어르신들께 건강한 새해를 선물해주세요!
+                  </h2>
+                  <p>
+                    연수종합사회복지관 '나눔이 모락모락' 지원이 성공적으로
+                    종료되었습니다. 어르신 무료급식의 단가 3,500원은 그 어떤
+                    대상자의 급식비보다 열악한 상황입니다. 이에 복지관에서는
+                    양질의 급식 지원을 위한 모금을 준비하게 되었습니다.
+                    목표금액보다는 적은 모금액이지만 무더운 여름철 초복, 말복에
+                    특식으로 사용했습니다. 입추가 지났지만 아직도 무더운 날씨가
+                    지속되고 있습니다. 참여해 주신 모든 분의 안녕과 건강을
+                    기원하겠습니다. 앞으로도 우리 연수종합사회복지관의 다양한
+                    사업과 발걸음에 관심과 응원을 부탁드립니다.
+                  </p>
+                  <p id="mb-text">
+                    연수종합사회복지관 '나눔이 모락모락' 지원이 성공적으로
+                    종료되었습니다. 어르신 무료급식의 단가 3,500원은 그 어떤
+                    대상자의 급식비보다 열악한 상황입니다. 이에 복지관에서는
+                    양질의 급식 지원을 위한 모금을 준비하게 되었습니다.
+                    목표금액보다는 적은 모금액이지만 무더운...
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-box">
+                  <h1>따뜻한 후기</h1>
+                  <h2>
+                    어르신에게 찾아가는 칠순,팔순,구순 잔치를 선물해 주세요!
+                  </h2>
+                  <p>
+                    안녕하세요! 아름채노인복지관입니다. 지난 8월 2일 칠순, 팔순,
+                    구순 회원님을 대상으로 '찾아가는 장수잔치'를 진행했습니다.
+                    지난 6월 복지관에서 진행한 장수잔치에 불참한 어르신을 위하여
+                    직원이 직접 가정에 방문, 선물과 축하 케이크를 전달했습니다.
+                    모금함 개설 후 약 4천여 명 후원자분들이 관심을 가지고 함께해
+                    주셨고, 약 89만 원이 모금되어 여러분의 따뜻한 마음을 담아
+                    축하하는 시간을 가졌습니다. 아름채노인복지관 회원님들이
+                    행복한 생신을 보낼 수 있도록 동참해 주신 후원자 여러분,
+                    감사합니다. 사랑합니다.
+                  </p>
+                  <p id="mb-text">
+                    안녕하세요! 아름채노인복지관입니다. 지난 8월 2일 칠순, 팔순,
+                    구순 회원님을 대상으로 '찾아가는 장수잔치'를 진행했습니다.
+                    지난 6월 복지관에서 진행한 장수잔치에 불참한 어르신을 위하여
+                    직원이 직접 가정에 방문, 선물과 축하 케이크를 전달했습니다.
+                    모금함 개설 후 약 4천여 명...
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-box">
+                  <h1>따뜻한 후기</h1>
+                  <h2>'백년해로' 당신과 함께 할게요, 부디 건강하기만 해요</h2>
+                  <p>
+                    김기호 할아버지는 과거 건설업에 종사한 경험을 바탕으로
+                    새로운 일자리를 찾으러 외출을 하십니다. 일자리를 찾는 곳에는
+                    당연히 김기호 할아버지 보다 젊은 사람이 많습니다. 아마
+                    할아버지가 최고령이실 테지요. 할아버지는 젊은 사람들
+                    사이에서도 자신감을 잃지 않으려 노력하고 계십니다. 매일같이
+                    입는 양복을 보여주며 “여름철에 입고 나갈 양복이 없는데
+                    이사하면서 가구 사지 말고 남은 후원금으로 여름 양복을 사
+                    입을 수 있겠나?”라고 조심스럽게 물어오셨습니다. 다른 사람과
+                    사회적 관계를 이루어가는 김기호 할아버지. 여름 양복 선물로
+                    꾸준한 사회활동에 힘을...
+                  </p>
+                  <p id="mb-text">
+                    김기호 할아버지는 과거 건설업에 종사한 경험을 바탕으로
+                    새로운 일자리를 찾으러 외출을 하십니다. 일자리를 찾는 곳에는
+                    당연히 김기호 할아버지 보다 젊은 사람이 많습니다. 아마
+                    할아버지가 최고령이실 테지요. 할아버지는 젊은 사람들
+                    사이에서도 자신감을 잃지 않으려 노력하고 계십니다....
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+        </div>
+      </section>
+      <!-- 푸터 -->
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-left">
+            <div class="footer-logo">
+            <a href="#"><img src="images/logo.png" alt="푸터로고" /></a>
+            </div>
+            <p>Copyright © 사단법인 별의온도 All Rights Reserved.</p>
+          </div>
+          <div class="footer-middle">
+            <ul>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">문의하기</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <h3>
+              사단법인 별의 온도<br />사업자등록번호 : 504-85-25999 
+              대표자 : 김상곤 
+              대표번호 : 053.572.1005 
+              E-mail : green@gmail.com<br />
+              주소 : 대구광역시 중구 중앙대로 394, 제일빌딩 5F
+            </h3>
+          </div>
+          <div class="footer-right">
+            <a href="#"
+              ><img src="images/footer_facebook.png" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_instagram.png" alt="instagram"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_twitter.png" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KV63VKR9"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</html>

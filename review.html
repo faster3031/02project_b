@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link rel="icon" type="image/png" sizes="192x192" href="" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/mobile_web_icon.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
+    </script>
+    <!-- End Google Tag Manager -->
+        <!-- 네이버 서치 어드바이저 -->
+        <meta name="naver-site-verification" content="07782bcfa006cff898addd308409fe3efe0e2fe2" />
+                <!-- 구글 -->
+                <meta name="google-site-verification" content="8EY1-xng-olDAtUrVMi8koj8eQTRo6k0doX-1hXjgkg" />
+                    <!-- 선호 URL 및 로봇 메타 태그 -->
+    <link rel="canonical" href="https://sod-eight.vercel.app/">
+    <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
+    <title>별의 온도</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/review.css" />
+    <script src="js/header.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/donaiton.js"></script>
+    <script src="js/campaign.js"></script>
+    <script src="js/fandom.js"></script>
+    <script src="js/goods.js"></script>
+    <script src="js/artist.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/review.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css"/> -->
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 헤더 -->
+      <header class="header">
+        <div class="inner">
+          <a href="index.html" alt="메인 로고" class="logo">
+            <img src="images/logo.png" alt="logo" />
+          </a>
+          <!-- 메뉴 -->
+          <nav class="nav">
+            <ul>
+              <li><a href="infopage.html" alt="기부">기부</a></li>
+              <li><a href="#" alt="캠페인">캠페인</a></li>
+              <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
+              <li><a href="#" alt="후기">후기</a></li>
+              <li><a href="review.html" alt="게시판">게시판</a></li>
+            </ul>
+          </nav>
+          <div class="login">
+            <div id="login-section">
+              <button id="login-button">로그인</button>
+            </div>
+            <div id="dashboard-section" style="display: none">
+              <div id="username-display"></div>
+              <button id="logout-button">로그아웃</button>
+            </div>
+        </div>
+      </header>
+      <section id="review">
+        <div class="reviewlist">
+          <div class="inner">
+            <!-- 기부 타이틀 -->
+            <div class="reviewTitle">
+              <h2>기부후기</h2>
+              <ul>
+                <li>- 기부후기 게시판 입니다.</li>
+                <li>- 해당 게시판의 성격에 맞지 않는 글은 임의로 삭제됩니다.</li>
+                <li>- 항의, 신고 누적 시 해당 글을 임의로 삭제할 수 있으며, 계정삭제 및 이용정지 할 수 있습니다.</li>
+              </ul>
+            </div>
+           <!-- 기부 검색기능 -->
+           <div id="searchContainer">
+           
+              <div class="date">
+                <div class="datelist">
+
+                  <label for="postDate">날짜 &nbsp: &nbsp</label>
+                  <input type="date" id="postDatePrev" name="postDate"> &nbsp;~&nbsp;
+                  <input type="date" id="postDateNext" name="postDate">
+                </div>
+              <div class="subject">
+                <select name="searchList" id="searchList">
+                  <option value="bod_title">제목</option>
+                  <option value="con_name">작성자</option>
+                  <option>전체</option>
+                </select>
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button id="btnSearch">검색</button>
+
+              </div>
+              </div>
+
+
+              <!-- 게시글 작성버튼 -->
+              <button id="writeBtn">게시글 작성</button>
+            
+
+
+          </div>
+<!-- 작성글 -->
+          <div class="writecontainer">
+            <div class="writecontainerbox">
+            <h1>게시글 작성</h1>
+            <div class="post-form">
+                <div class="posttitles">
+                    <label for="postTitle">제&nbsp;&nbsp;&nbsp;&nbsp;목&nbsp;:</label>
+                    <input type="text" id="postTitle" required placeholder="제목을 입력하세요.">
+                </div>
+                <div class="posttitles">
+                    <label for="postWriter">작성자&nbsp;:</label>
+                    <input type="text" id="postWriter" required placeholder="">
+                </div>
+                <div class="postetc">
+                    <input type="file" id="postImage" accept="image/*">
+                    <label for="postDate">날&nbsp;&nbsp;&nbsp;짜&nbsp;:</label>
+                    <input type="date" id="postDate" name="postDate">
+                </div>
+                <div class="postcontents">
+                    <label for="postContent">내&nbsp;&nbsp;&nbsp;&nbsp;용&nbsp;:</label>
+                    <textarea name="postContent" id="postContent" required></textarea>
+                </div>
+                <div class="postBtns">
+
+                  <button id="addPostBtn">등록</button>
+                  <button id="postClosseBtn">나가기</button>
+                </div>
+
+                </div>
+            </div>
+
+            </div>
+
+            <!-- 기부 게시글 -->
+            <table class="board_st" id="board_st">
+                <caption>게시판설명나열</caption>
+                <thead>
+                    <tr>
+                        <th class="num">번호</th>
+                        <th class="subject">제목</th>
+                        <th class="writer">작성자</th>
+                        <th class="date">작성일</th>
+                        <th class="hit">조회</th>
+                        <th class="del">삭제</th>
+                    </tr>
+                </thead>
+                <tbody id="postTableBody">
+                    <tr>
+                        <td class="num">공지</td>
+                        <td class="subject"><a href="#">기부후기 게시판 공지사항</a></td>
+                        <td class="writer">관리자</td>
+                        <td class="date">2023-10-11</td>
+                        <td class="hit">9874</td>
+                        <td class="del"> </td>
+                    </tr>
+                    <tr>
+                        <td class="num">공지</td>
+                        <td class="subject"><a href="#">[STRAY KIDS] 똑똑똑! 희망 배달 후기</a></td>
+                        <td class="writer">스테이</td>
+                        <td class="date">2023-10-09</td>
+                        <td class="hit">65</td>
+                        <td class="del"> </td>
+                    </tr>
+                    <tr>
+                        <td class="num">공지</td>
+                        <td class="subject"><a href="#">[TWICE] 혼자사는 어르신들을 위한 든든한 삼계탕 후기 </a></td>
+                        <td class="writer">원스</td>
+                        <td class="date">2023-09-19</td>
+                        <td class="hit">90</td>
+                        <td class="del"> </td>
+                    </tr>
+                    <tr>
+                        <td class="num">000</td>
+                        <td class="subject"><a href="#">[MONSTA X] 글길문학반 어르신들께 가을 나들이 선물 후기</a></td>
+                        <td class="writer">몬베베</td>
+                        <td class="date">2023-09-19</td>
+                        <td class="hit">123</td>
+                        <td class="del"> </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+          <!-- 페이지번호 -->
+          <div class="page middle">
+            <div class="pageContainer">
+          
+              <div class="pagination">
+                  <ul>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li class="active"><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                      <li><a href="#"></a></li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- 푸터 -->
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-left">
+            <div class="footer-logo">
+            <a href="#"><img src="images/logo.png" alt="푸터로고" /></a>
+            </div>
+            <p>Copyright © 사단법인 별의온도 All Rights Reserved.</p>
+          </div>
+          <div class="footer-middle">
+            <ul>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">문의하기</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <h3>
+              사단법인 별의 온도<br />사업자등록번호 : 504-85-25999 
+              대표자 : 김상곤 
+              대표번호 : 053.572.1005 
+              E-mail : green@gmail.com<br />
+              주소 : 대구광역시 중구 중앙대로 394, 제일빌딩 5F
+            </h3>
+          </div>
+          <div class="footer-right">
+            <a href="#"
+              ><img src="images/footer_facebook.png" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_instagram.png" alt="instagram"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_twitter.png" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

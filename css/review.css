@@ -1,0 +1,586 @@
+@charset "utf-8";
+
+/* 후기 게시판 */
+/* 후기 썸네일 */
+#review {
+  width: 100%;
+  height: 100%;
+}
+/* 기부 타이틀 */
+.reviewTitle {
+  width: 100%;
+  height: 220px;
+  padding: 30px 50px;
+  background-color: #eee7f3;
+  user-select:none;
+}
+.reviewTitle h2 {
+  font-size: 2.5em;
+  text-align: left;
+  padding-bottom: 10px;
+  color: #333;
+}
+.reviewTitle > ul > li {
+  font-size: 15px;
+  padding: 5px 0;
+  display: block;
+  color: #424242;
+}
+
+/* 기부 게시글  */
+.board_st {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+.board_st .subject {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+}
+.board_st .subject:hover{
+  text-decoration: underline;
+  }
+table .subject a {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 90%;
+
+}
+#board_st caption {
+  text-indent: -9999;
+  width: 0;
+  height: 0;
+  font-size: 0;
+}
+
+thead {
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 14px;
+  table-layout: fixed;
+}
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
+tbody {
+  font-size: 15px;
+}
+tbody > tr:nth-child(1),
+tr:nth-child(2),
+tr:nth-child(3) {
+  background-color: #f1f1f1;
+  font-weight: 500;
+}
+th {
+  padding: 10px 10px;
+}
+th:nth-child(3),
+th:nth-child(5),
+th:last-child {
+  width: 10%;
+}
+th:nth-child(4) {
+  width: 20%;
+}
+th:nth-child(1) {
+  width: 10%;
+}
+
+td {
+  text-align: center;
+  padding: 13px;
+  border-bottom: 1px dashed #ccc;
+  color: #555;
+}
+
+/* 검색기능 */
+#searchContainer {
+  width: 100%;
+  height: 60px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 15px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  user-select:none;
+}
+#searchContainer .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* 검색기능 - 날짜 */
+#searchContainer .date {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 2px;
+}
+#searchContainer .date input {
+  height: 30px;
+  max-width: 150px;
+  padding: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#searchContainer .subject {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 2px;
+
+  padding-left: 20px;
+}
+#searchContainer .subject select {
+  height: 30px;
+  width: 20%;
+  max-width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  /* margin-right: 5px; */
+}
+#searchContainer .subject input {
+  height: 30px;
+  width: 150px;
+  padding: 0 10px;
+  margin-left: 5px;
+}
+#searchContainer .subject button {
+  height: 30px;
+  width: 70px;
+  padding: 0 5px;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 5px;
+}
+#writeBtn {
+  width: 15%;
+  max-width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #8d5cb2;
+  color: #fff;
+
+  cursor: pointer;
+}
+#writeBtn:hover {
+  background-color: #8038c7;
+}
+#postClosseBtn{
+  background-color: #8d6eab;
+}
+#postClosseBtn:hover{
+  background-color: #8038c7;
+}
+/* 검색기능 - 분류 */
+.subject option {
+  background: #eee7f3;
+}
+/* 페이지번호 */
+.page {
+  width: 100%;
+  background: #fdfdfd;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  counter-reset: pagination;
+  text-align: center;
+  margin: 0 auto;
+  /* margin-bottom: 7rem; */
+}
+.pageContainer {
+  width: 400px;
+  text-align: center;
+  display: inline-block;
+}
+.page:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.page ul {
+  width: 100%;
+}
+/* .container .middle {
+  width: 32rem;
+} */
+
+.page ul,
+li {
+  list-style: none;
+  display: inline;
+  padding-left: 0px;
+}
+
+.page li {
+  counter-increment: pagination;
+}
+.page li:hover a {
+  color: #fdfdfd;
+  background-color: #8d5cb2;
+  border: solid 1px #8d5cb2;
+}
+.page li.active a {
+  color: #fdfdfd;
+  background-color: #8d5cb2;
+  border: solid 1px #8d5cb2;
+}
+.page li:first-child {
+  float: left;
+}
+.page li:first-child a:after {
+  content: "Previous";
+}
+.page li:nth-child(2) {
+  counter-reset: pagination;
+}
+.page li:last-child {
+  float: right;
+}
+.page li:last-child a:after {
+  content: "Next";
+}
+.page li a {
+  border: solid 1px #d7d7d7;
+  border-radius: 0.2rem;
+  color: #7d7d7d;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 0.9rem;
+}
+.page li a:after {
+  content: " " counter(pagination) " ";
+}
+
+.middle li a {
+  display: none;
+}
+.middle li:first-child a {
+  display: inline-block;
+}
+.middle li:first-child a:after {
+  content: "<";
+}
+.middle li:last-child a {
+  display: inline-block;
+}
+.middle li:last-child a:after {
+  content: ">";
+}
+.middle li:nth-child(2) a {
+  display: inline-block;
+}
+.middle li:nth-child(3) a {
+  display: inline-block;
+}
+.middle li:nth-child(4) a {
+  display: inline-block;
+}
+.middle li:nth-child(5) a {
+  display: inline-block;
+}
+.middle li:nth-last-child(2) a {
+  display: inline-block;
+}
+.middle li:nth-last-child(3) {
+  display: inline-block;
+}
+.middle li:nth-last-child(3):after {
+  padding: 0 1rem;
+  content: "...";
+}
+
+/* 작성글 */
+.writecontainer {
+  width: 100%;
+
+  margin-bottom: 20px;
+}
+.writecontainerbox {
+  background-color: #f7f7f7;
+  padding: 20px 0;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.writecontainer h1 {
+  font-size: 25px;
+  text-align: left;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+.post-form {
+  padding: 20px 50px;
+}
+.posttitles,
+.postcontents,
+.postetc {
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.writecontainer label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  width: 5% !important;
+}
+.writecontainer input[type="text"],
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-left: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+/* .postcontents textarea{
+  height: 500px;
+} */
+.postBtns {
+  display: inline-block;
+  float: right;
+}
+.writecontainer button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: #8d5cb2;
+  color: #fff;
+  margin-left: 381px;
+  margin: 10px;
+  cursor: pointer;
+  margin-left: auto;
+  display: inline-block;
+}
+.writecontainer button:hover {
+  background-color: #8038c7;
+}
+#postImage {
+  margin-left: 77px;
+}
+#postList {
+  height: 800px;
+  overflow-y: auto;
+}
+#postDate {
+  width: 120px;
+  padding: 2px;
+}
+#postContent {
+  height: 150px;
+}
+.post {
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.post-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+}
+.post-details img {
+  max-width: 100px;
+  min-width: 100px;
+  margin-left: 20px;
+}
+.del > .delete-post-btn {
+  border: none;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #824ba7;
+  display: inline-block;
+}
+.del > .delete-post-btn:hover {
+  background: none;
+  font-weight: bold;
+}
+/* 헤더 포커스 */
+.header .nav ul li:nth-child(5) a {
+  color: #ad5cff;
+}
+.header .nav ul li:nth-child(5):after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -28px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #ad5cff;
+  opacity: 1;
+}
+@media all and (max-width: 1680px) {
+}
+
+@media all and (max-width: 1280px) {
+  .post-form {
+    padding: 20px 40px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .reviewTitle {
+    height: 200px;
+    padding: 30px 20px;
+  }
+  /* 기부검색기능 */
+  #searchContainer {
+    padding: 0 20px;
+  }
+  #searchContainer .date input {
+    max-width: 110px;
+  }
+  #searchContainer .subject {
+    padding-left: 5px;
+  }
+  /* 작성글 */
+  .post-form {
+    padding: 20px 15px;
+  }
+}
+@media all and (max-width: 760px) {
+  /* 기부타이틀 */
+  .reviewTitle {
+    height: 171px;
+    padding: 15px 20px;
+  }
+  .reviewTitle > ul > li {
+    font-size: 15px;
+    padding: 2px 0;
+  }
+  .reviewTitle h2 {
+    font-size: 2em;
+  }
+  #searchContainer {
+    /* height: 50px; */
+    padding: 10px;
+  }
+  #searchContainer .date {
+    display: inline-block;
+  }
+  #searchContainer .date .datelist {
+    display: none;
+  }
+  #searchContainer .subject {
+    justify-content: center;
+    padding-left: 0px;
+  }
+  #searchContainer .subject select {
+    height: 30px;
+    width: 20%;
+  }
+  #writeBtn {
+    width: 300px;
+  }
+  .writecontainer h1 {
+    font-size: 1.8em;
+    padding-left: 45px;
+    padding-bottom: 0px;
+    font-weight: 500;
+  }
+  .writecontainer label {
+    width: 10% !important;
+  }
+  #postDate {
+    margin-left: 10px;
+  }
+  .pageContainer {
+    width: 70%;
+  }
+  .middle li:nth-child(5) a {
+    display: none;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #review .inner{
+    padding: 0;
+  }
+  .reviewTitle {
+    height: 198px;
+    padding: 15px 10px;
+}
+#searchContainer{
+  justify-content: center;
+}
+.writecontainer h1{
+  padding-left: 13px;
+  font-size: 1.5em;
+}
+.writecontainer label{
+  margin-bottom: 0;
+}
+#postImage {
+  margin-left: 0px;
+}
+.pageContainer {
+  width: 60%;
+}
+#postTableBody .date{
+  font-size: 13px;
+}
+#postTableBody{
+  font-size: 14px;
+}
+td {
+  text-align: center;
+  padding: 8px 5px;}
+th {
+  text-align: center;
+  padding: 8px 5px;
+  font-size: 14px;}
+th:nth-child(4) {
+  width: 25%;
+}
+#postTableBody .writer {
+  font-size: 13px;
+}
+th:nth-child(3), th:nth-child(5), th:last-child {
+  width: 8%;
+}
+.middle li:nth-last-child(3){
+  display: none;
+}
+
+.middle li:nth-last-child(2){
+  display: none;
+}
+}
+@media all and (max-width: 480px){
+  .pageContainer {
+    width: 70%;
+  }
+  .postetc{
+    display: none;
+  }
+  .writecontainer label {
+    width: 15% !important;
+    font-size: 1.2em;
+}
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/mobile_web_icon.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
+    </script>
+    <!-- End Google Tag Manager -->
+    <title>별의 온도</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/infopage/infopage.css" />
+    <script src="js/header.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/donaiton.js"></script>
+    <script src="js/campaign.js"></script>
+    <script src="js/fandom.js"></script>
+    <script src="js/goods.js"></script>
+    <script src="js/artist.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/infopage.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css"
+    />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+        <!-- 네이버 서치 어드바이저 -->
+        <meta name="naver-site-verification" content="07782bcfa006cff898addd308409fe3efe0e2fe2" />
+        <!-- 구글 -->
+        <meta name="google-site-verification" content="8EY1-xng-olDAtUrVMi8koj8eQTRo6k0doX-1hXjgkg" />
+            <!-- 선호 URL 및 로봇 메타 태그 -->
+    <link rel="canonical" href="https://sod-eight.vercel.app/">
+    <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
+  </head>
+  <body>
+    <div class="info_wrap">
+     <!-- 결제창 모달 -->
+     <div id="paymentModal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="closePaymentModalBtn">&times;</span>
+          <h2>기부하기</h2>
+          <div class="payment-form">
+              <!-- 상세 정보 -->
+              <div class="payment-info">
+                <img src="images/infopage_main.jpg" alt="결제창상세">
+                <h1>[BTS] BTS와 함께 재난으로 고통 받는 어린이를 구해주세요.</h1>
+              </div>
+              <!-- 금액 선택 버튼 -->
+              <div class="amount-buttons">
+                  <button class="amount-button" data-amount="5000">+5천원</button>
+                  <button class="amount-button" data-amount="10000">+1만원</button>
+                  <button class="amount-button" data-amount="30000">+3만원</button>
+                  <button class="amount-button" data-amount="50000">+5만원</button>
+                  <button class="amount-button" data-amount="100000">+10만원</button>
+                  <button class="amount-button" data-amount="500000">+50만원</button>
+                  <button class="amount-button" data-amount="1000000">+100만원</button>
+                  <button class="amount-button" data-amount="2000000">+200만원</button>
+              </div>
+              <!-- 선택한 금액을 표시할 필드 -->
+              <div class="form-group">
+                  <label for="selected-amount">기부 금액</label>
+                  <span id="selected-amount-display"></span>
+              </div>
+              <!-- 사용자가 직접 금액을 입력할 수 있는 필드 -->
+              <div class="form-group" id="custom-box">
+                  <label for="custom-amount">직접 입력</label>
+                  <input type="text" id="custom-amount" name="custom-amount">
+              </div>
+              <div class="form-group">
+                <label for="message">응원 메세지 입력</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="따뜻한 응원 메세지를 남겨주세요."></textarea>
+            </div>
+            <div class="form-group" id="form-check">
+              <label for="anonymous-payment">익명으로 기부하기</label>
+              <input type="checkbox" id="anonymous-payment" name="anonymous-payment">
+              <span class="custom-checkbox"></span>
+          </div>
+              <!-- ... (이전 코드) ... -->
+              <button id="confirmAmountBtn">확인</button>
+          </div>
+      </div>
+  </div>
+    <!-- 결제 확인 모달 (중첩 모달) -->
+    <div id="confirmPaymentModal" class="modal">
+      <div class="modal-content" id="modal-content">
+          <span class="close" id="closeConfirmPaymentModalBtn">&times;</span>
+          <h2>후원 확인</h2>
+          <p id="confirm-message">후원하시겠습니까?</p>
+          <button id="confirmPaymentBtn">예</button>
+          <button id="cancelPaymentBtn">아니오</button>
+      </div>
+  </div>
+      <!-- 결제 완료 모달 (중첩 모달) -->
+      <div id="paymentCompleteModal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <h2>후원 완료</h2>
+            <p>따뜻한 후원에 감사드립니다.</p>
+            <button id="closePaymentCompleteModalBtn">닫기</button>
+        </div>
+    </div>
+      <!-- 헤더 -->
+      <header class="header">
+        <div class="inner">
+          <a href="index.html" alt="메인 로고" class="logo">
+            <img src="images/logo_02.png" alt="logo" />
+          </a>
+          <!-- 메뉴 -->
+          <nav class="nav">
+            <ul>
+              <li><a href="#" alt="기부">기부</a></li>
+              <li><a href="#" alt="캠페인">캠페인</a></li>
+              <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
+              <li><a href="#" alt="후기">후기</a></li>
+              <li><a href="review.html" alt="게시판">게시판</a></li>
+            </ul>
+          </nav>
+          <div class="login">
+            <div id="login-section">
+              <button id="login-button">로그인</button>
+            </div>
+            <div id="dashboard-section" style="display: none">
+              <div id="username-display"></div>
+              <button id="logout-button">로그아웃</button>
+            </div>
+        </div>
+      </header>
+      <!-- 인포 메인 -->
+      <section class="info-main clearfix">
+        <div class="inner clearfix">
+          <div class="info-left">
+            <a href="#"
+              ><img src="images/infopage_main.jpg" alt="인포메인"
+            /></a>
+            <nav class="nav_tab">
+              <ul>
+                <li><a href="#">모금 소개</a></li>
+              </ul>
+            </nav>
+            <div class="main_tab">
+              <h1>120년 만에 최악의 지진이 발생한 모로코</h1>
+              <p>
+                120년 만에 최악의 지진이 발생한 모로코 2023년 9월 8일 오후 23시
+                11분(현지 시각), 북아프리카 모로코 중부 도시 마라케시의 남서쪽
+                약 72km 지점에서 지진이 발생했습니다. 규모 6.8의 강진이 강타한
+                모로코에는 지진 발생 19분 만에 규모 4.9의 여진이 더해진 만큼
+                피해가 극심했습니다. 인접 국가 알제리를 비롯해, 모로코에서 멀리
+                떨어진 포르투갈, 스페인에서도 진동이 감지될 정도로 강력한
+                지진이었습니다.
+              </p>
+              <p>
+                이번 지진으로 현재까지 확인된 사망자는 2,946명, 부상자는
+                5,674명이며, 이 중 1,404명은 위독한 상태입니다. (2023년 9월
+                13일, 모로코 내무부 기준) 건물 잔해에 깔린 실종자와 구조·수색
+                작업이 계속 진행 중이어서 인명피해가 계속 늘어날 것으로
+                예상됩니다.
+              </p>
+              <figure>
+                <img src="images/infopage_main2.jpg" alt="인포메인2" />
+                <figcaption>
+                  마라케시 골목길에서 잔해 속을 걷는 모로코 주민
+                </figcaption>
+              </figure>
+              <h1>건물 잔해 속에 갇힌 어린이와 가족</h1>
+              <p>
+                수도 라바트와 마라케시를 비롯해 알 하우자, 우아르자자트, 아질랄,
+                치차우아, 타루단트 등 모로코 곳곳에서 건물이 흔들리고
+                파괴됐으며, 특히 진앙에서 가까운 알 하우자와 타루단트는에서
+                다수의 사망자가 발행했습니다. 모로코는 강진이 잦은 국가가 아닌
+                데다 마라케시 인근 지역은 1900년 이래 단 한 번도 규모 6 이상의
+                강진이 발생한 적 없는 곳입니다. 내진 설계가 흔하지 않고, 지진에
+                취약한 낡은 벽돌 건물이 많아서 피해가 더 극심한 상황입니다.
+              </p>
+              <p>
+                또한 지진이 한밤중에 발생하여 모로코 주민들은 대피할 수조차
+                없었으며, 아직도 많은 어린이와 가족들이 건물 잔해에 매몰된 채
+                구조를 기다리고 있습니다.
+              </p>
+              <figure>
+                <img src="images/infopage_main3.jpg" alt="인포메인3" />
+                <figcaption>
+                  지진 피해를 입은 집 앞에서 울고 있는 모로코 주민
+                </figcaption>
+              </figure>
+              <h1>지진이 발생한 현장에서 공포에 떨고 있는 어린이</h1>
+              <p>
+                산사태와 지진으로 마을로 향하는 도로가 끊기면서 구조 활동은
+                난항을 겪고 있습니다. 또한 마땅한 장비가 없어서 주민들은 삽과
+                곡괭이, 맨손으로 잔해를 뒤지며, 가족들을 애타게 찾고 있습니다.
+                병원은 쏟아지는 부상자로 붐비고 있으며, 모로코 당국은 혈액
+                수급을 위해 주민들에게 긴급히 헌혈을 요청했습니다. 최소 약 10만
+                명의 어린이가 피해를 입은 것으로 확인되며, 어린이를 비롯한 많은
+                모로코 주민들이 여전히 여진의 공포에 휩싸여 있습니다. 건물이
+                다시 무너져 내리지 않을까 두려운 마음에 주차장, 공원, 광장
+                등에서 담요 한 장에 의지한 채 겨우 잠을 청하고 있습니다.
+              </p>
+              <figure>
+                <img src="images/infopage_main4.jpg" alt="인포메인4" />
+                <figcaption>
+                  거리에서 잠을 청하는 모로코 어린이와 가족들
+                </figcaption>
+              </figure>
+              <h1>유니세프는 언제나처럼 재난 현장에서 어린이를 지킵니다.</h1>
+              <p>
+                이번 모로코 지진처럼 자연재해는 수많은 어린이와 가족들의 안전을
+                위협하며, 한순간에 평생 일궈온 모든 것을 앗아갑니다. 유니세프는
+                재난 상황이 발생하는 곳이 어디든지, 어린이와 가족들 곁을 지키며
+                전문적인 구호활동을 이어가고 있습니다. 당장 머물 임시 거처,
+                깨끗한 식수와 안전한 식량, 부상을 치료할 의약품 등 긴급구호
+                물품을 비롯하여 트라우마로 고통받는 어린이와 가족들을 위해
+                심리적 지원을 이어갑니다. 또한 긴급한 재난 상황에서 가장 취약한
+                존재인 어린이를 보호하는 일을 최우선으로 하며, 재난 현장 곳곳에
+                어린이 센터를 운영하여 어린이 안전과 회복을 위해 앞장서고
+                있습니다.
+              </p>
+              <p>
+                유니세프는 1957년부터 모로코 어린이를 지원해왔으며, 1978년
+                모로코 국가사무소를 설립해 45년간 활동하고 있습니다. 후원자님 한
+                분 한 분의 따뜻한 손길은 자연재해와 재난으로 어려움을 겪는
+                어린이와 가족들에게 큰 힘이 됩니다.
+              </p>
+              <h1>
+                지금 유니세프와 함께, 모로코를 포함한 전 세계 어린이의 생명을
+                구해주세요!
+              </h1>
+            </div>
+            <div class="main_donate">
+              <h1>모금함 상세정보</h1>
+              <div class="donate_box">
+                <div class="donate_text">
+                  <h2>프로젝트팀</h2>
+                  <p>유니세프한국위원회</p>
+                  <h2>모금기간</h2>
+                  <p>2023. 09. 11 ~ 2023. 12. 11</p>
+                  <h2>사업기간</h2>
+                  <p>2023. 12. 26 ~ 2024. 08. 31</p>
+                  <h2>영수증 발급기관</h2>
+                  <p>유니세프한국위원회</p>
+                </div>
+                <h3>
+                  본 모금은 유니세프한국위원회에서 사업 검토 및 기부금 집행,
+                  사후관리를 담당하고 있습니다.
+                </h3>
+              </div>
+            </div>
+            <div class="main_memo">
+              <div id="comments">
+                <h2>실시간 응원 보드</h2>
+                <form id="comment-form">
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="따뜻한 응원을 남겨주세요."
+                    required
+                  />
+                  <button type="submit">응원</button>
+                  <h3>남긴 응원</h3>
+                  <ul id="comment-list">
+                    <!-- 여기에 댓글이 나타납니다. -->
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- 인포 라이트 -->
+          <section class="info-right">
+            <div class="side_title">
+              <button>#모로코-리비아긴급모금</button>
+              <h1>[BTS] BTS와 함께 재난으로 고통받는 어린이를 구해주세요.</h1>
+              <div class="title_box">
+                <h1>57,302,336원</h1>
+                <h2>100,000,000원 목표</h2>
+              </div>
+              <div class="bar_news">
+                <span></span>
+              </div>
+              <div class="bar_per">
+                <p>58% 달성</p>
+                <p>83일 남음</p>
+              </div>
+            </div>
+            <div class="side_box">
+              <div class="side_box_text_wrap">
+                <div class="side_box_text0">
+                  <img src="images/artist_iu.webp" alt="iu" />
+                  <img src="images/artist_itzy.webp" alt="itzy" />
+                  <h1>총 11,240명이 참여중입니다.</h1>
+                </div>
+                <div class="side_box_text1">
+                  <p>직접기부 (3,150명)</p>
+                  <p>참여기부 (8,090명)</p>
+                </div>
+                <div class="side_box_text2">
+                  <p>54,762,936원</p>
+                  <p>688,600원</p>
+                </div>
+              </div>
+              <div class="side_box_notice">
+                <p>*공유, 응원, 댓글로 참여하면 별의온도가 기부합니다.</p>
+                <p>*기부금은 100% 단체에 전달됩니다.</p>
+              </div>
+              <div class="button-container" id="buttonContainer">
+              <button id="openPaymentModalBtn">기부하기</button>
+            </div>
+              <div class="side_box_icon">
+                <a href="#"><i class="fa-regular fa-heart"></i>3,000</a>
+                <a href="#"
+                  ><i class="fa-regular fa-share-from-square"></i>3,000</a
+                >
+              </div>
+            </div>
+            <div class="side_fandom">
+              <a href="#" class="more">더보기</a>
+              <div class="fandom_title">
+                <h1>함께하는 ARMY</h1>
+                <h3>총 11,240명</h3>
+              </div>
+              <div class="fandom_nick">
+                <a href="#"
+                  ><img src="images/artist_bts.webp" alt="bts_fan" />방탄없이 못살겠음</a
+                >
+                <a href="#"
+                  ><img src="images/fandom_v.jpg" alt="bts_fan2" />내사랑뷔</a
+                >
+                <a href="#"
+                  ><img src="images/infopage_jin.webp" alt="bts_fan3" />핑크공주 진</a
+                >
+                <a href="#"
+                  ><img src="images/infopage_jimin.webp" alt="bts_fan4"/>아미밤들고 응원하쟈</a>
+                <a href="#"
+                  ><img src="images/infopage_sugar.webp" alt="bts_fan5" />월드 와이드 핸섬 </a>
+              </div>
+            </div>
+            <div class="side_campaign">
+              <h1>같이 기부해요</h1>
+              <div class="campaign_box1" id="campaign_box">
+                <img src="images/s_ive.jpg" alt="side_ive">
+                <h3><b>[IVE]</b> 리비아 홍수 피난 지원</h3>
+                <p>유니세프한국위원회</p>
+              </div>
+              <div class="campaign_box2" id="campaign_box">
+                <img src="images/s_twice.jpg" alt="side_twice">
+                <h3><b>[TWICE]</b> 독거노인 반찬 기부</h3>
+                <p>공주노인복지센터</p>
+              </div>
+              <div class="campaign_box3" id="campaign_box">
+                <img src="images/s_bts.jpg" alt="side_bts">
+                <h3><b>[BTS]</b> 6.25 참전 영웅 생활비 지원</h3>
+                <p>동구종합사회복지관</p>
+              </div>
+              <div class="campaign_box4" id="campaign_box">
+                <img src="images/s_aespa.jpg" alt="side_aespa">
+                <h3><b>[AESPA]</b> 어르신 한글 교육기금 지원</h3>
+                <p>더 라이트 핸즈</p>
+              </div>
+              <div class="campaign_box5" id="campaign_box">
+                <img src="images/s_IU.jpg" alt="side_iu">
+                <h3><b>[IU]</b> 한부모 자녀를 위한 생필품 기부</h3>
+                <p>사단법인 함께하는 이웃</p>
+              </div>
+              <div class="campaign_box6" id="campaign_box">
+                <img src="images/s_blackpink.jpg" alt="side_blackpink">
+                <h3>[BLACKPINK] 겨울나기 연탄 기부사업</h3>
+                <p>사단법인 오픈월드</p>
+
+              </div>
+              <div class="campaign_more">
+              <a href="#"><span>기부 더보기 1/2</span></a>
+            </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- 푸터 -->
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-left">
+            <div class="footer-logo">
+            <a href="#"><img src="images/logo.png" alt="푸터로고" /></a>
+            </div>
+            <p>Copyright © 사단법인 별의온도 All Rights Reserved.</p>
+          </div>
+          <div class="footer-middle">
+            <ul>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">문의하기</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <h3>
+              사단법인 별의 온도<br />사업자등록번호 : 504-85-25999 
+              대표자 : 김상곤 
+              대표번호 : 053.572.1005 
+              E-mail : green@gmail.com<br />
+              주소 : 대구광역시 중구 중앙대로 394, 제일빌딩 5F
+            </h3>
+          </div>
+          <div class="footer-right">
+            <a href="#"
+              ><img src="images/footer_facebook.png" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_instagram.png" alt="instagram"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_twitter.png" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KV63VKR9"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</html>

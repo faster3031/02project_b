@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+/* 로그인 시작 */
+
+.login {
+  width: 100%;
+  height: 100%;
+  /* background-color: #e9dbff; */
+}
+#singup-botton {
+  position: relative;
+  display: block;
+  height: 70px;
+  /* width: 50%; */
+  background: none;
+  margin: 0 auto;
+  font-size: 18px;
+  border: none;
+  color: aliceblue;
+  /* height: 20px; */
+  /* width: 300px; */
+  /* background-color: #e9dbff; */
+}
+#singup-botton a {
+  margin: 10px 0px;
+  padding: 5px;
+  font-size: 18px;
+  width: 1px;
+  height: 10px;
+  color: rgb(192, 192, 192);
+  /* width: 300px; */
+  /* background-color: #e9dbff; */
+}
+
+#singup-botton a:hover {
+  color: #333;
+}
+
+.logo_box {
+  position: relative;
+  display: block;
+  /* background-color: aquamarine; */
+  /* width: 70%; */
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.logo_box img {
+  position: relative;
+  display: block;
+  width: 20%;
+  margin: 10px auto;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+.login_box {
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+  display: block;
+  /* background-color: aliceblue; */
+  width: 23%;
+  height: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+#login-form {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding-top: 37px;
+}
+
+#login-form input {
+  /* position: relative; */
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  height: 40px;
+  /* border: 1px solid #333; */
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 18px;
+  width: 90%;
+}
+#login-form button {
+  position: absolute;
+  display: block;
+  top: 40px;
+  /* left: 70%; */
+  margin: 0 auto;
+  height: 50px;
+  background-color: #8d5cb2;
+  color: aliceblue;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "AppleSDGothicNeo";
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+#login-form button:hover {
+  background-color: #663e83;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: "AppleSDGothicNeo";
+  border: none;
+}
+/* 체크박스 모양 */
+/* 체크박스 모양 변경 */
+.terms_shape {
+  display: inline-block; /* 영역적용가능해짐 */
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+  border-radius: 10px; /* 모서리둥글게 처리 */
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer; /* 마우스 올렸을때 손모양 처리 */
+}
+.terms_shape:after {
+  content: "\2714"; /* 체크박스 특수문자 */
+  font-size: 24px;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: -15px;
+
+  opacity: 0; /* 처음엔 안보이게 처리 */
+  transition: 0.2s; /* CSS변화에 시간차 처리 */
+}
+
+/* input이 체크되면 특수문자 보이게 처리 */
+#chk:checked + .terms_shape:after {
+  opacity: 1;
+}
+
+/* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+#chk {
+  position: absolute;
+  left: -999em;
+}
+.chk {
+  position: relative;
+  display: flex;
+  width: 90%;
+  padding: 0;
+  /* margin: 0 auto; */
+  text-align: center;
+  /* background-color: aquamarine; */
+  margin: 0 auto;
+  align-items: center;
+}
+.easy_login_img {
+  padding: 0;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.easy_login_img a {
+  margin: 0;
+  padding: 0;
+}
+.easy_login_text {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.easy_login img {
+  position: relative;
+  display: block;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  margin: 5px 15px;
+}
+
+/* 로그인 반응형 */
+@media all and (max-width: 1680px) {
+}
+
+@media all and (max-width: 1280px) {
+  .login_box {
+    width: 27%;
+  }
+}
+@media all and (max-width: 1024px) {
+  .login_box {
+    width: 34%;
+  }
+  .logo_box img {
+    width: 35%;
+  }
+}
+@media all and (max-width: 760px) {
+  .login_box {
+    width: 43%;
+  }
+  .logo_box img {
+    width: 60%;
+  }
+}
+@media all and (max-width: 480px) {
+  .login_box {
+    width: 64%;
+  }
+  .logo_box img {
+    width: 70%;
+  }
+  #login-form input {
+    font-size: 15px;
+  }
+  #singup-botton a {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,331 @@
+/* 캠페인 */
+
+/* 작업 */
+
+.campaign {
+  width: 100%;
+  /* height: 900px; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.campaign-wrap h1 {
+  position: absolute;
+  display: block;
+  font-family: 'GmarketSansMedium';
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 1);
+}
+.campaign_gap {
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 100%;
+}
+.campaign-wrap {
+  flex-wrap: wrap;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+.campaign_item {
+  width: calc(95% / 4);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+.campaign_box {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 5px;
+  overflow: hidden;
+  display: inline-block;
+}
+.campaign_box::after {
+  content: "";
+  display: block;
+  padding-bottom: 60%;
+}
+.campaign_box .imgBox {
+  transition: 0.8s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.campaign_box .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.campaign_box:hover .imgBox {
+  opacity: 0;
+}
+.campaign_box .imgBox_back {
+  opacity: 0;
+}
+
+.campaign_box:hover .imgBox_back {
+  opacity: 1;
+}
+.campaign_box .hoverBox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 50px 20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 10%,
+    rgb(0, 0, 0) 70%
+  );
+  bottom: -100%;
+  transition: 0.5s; /* transform 속성에 대한 transition을 추가 */
+}
+.campaign_box:hover .hoverBox {
+  bottom: -20%;
+}
+.campaign_box .hoverBox p.p1 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "AppleSDGothicNeo";
+  color: #fff;
+  padding-bottom: 20px;
+}
+.campaign_box .hoverBox p.p2 {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "AppleSDGothicNeo";
+  color: #afafaf;
+}
+
+/* 바 테스트 */
+.campaign_title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px;
+  color: #242424;
+}
+.campaign_title span {
+  font-size: 14px;
+  font-weight: bold;
+}
+.campaign_ber_title {
+  /* width: calc(80% / 3); */
+  color: #000000;
+  position: relative;
+  display: flex;
+  /* padding-right: 20px; */
+  justify-content: space-between;
+  margin: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  /* font-family: "AppleSDGothicNeo"; */
+  font-weight: bold;
+}
+.campaign_percent {
+  font-weight: bold;
+  color: #7724c9;
+}
+.bar {
+  /* margin-top: 25px; */
+  margin: 0 auto;
+  width: 95%;
+  height: 7px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.bar_10 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 20%;
+  height: 7px;
+  background-color: #7724c9;
+  border-radius: 5px;
+}
+.bar_20 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 20%;
+  height: 7px;
+  background-color: #7724c9;
+  border-radius: 5px;
+}
+.bar_30 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 30%;
+  height: 7px;
+  background-color: #7724c9;
+  border-radius: 5px;
+}
+.bar_40 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 40%;
+  height: 7px;
+  background-color: #7724c9;
+  border-radius: 5px;
+}
+.bar_50 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 50%;
+  height: 7px;
+  background-color: #7724c9;
+  border-radius: 5px;
+}
+.bar_60 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 60%;
+  height: 7px;
+  background-color: #7724c9;
+  border-radius: 5px;
+}
+.bar_70 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 70%;
+  height: 7px;
+  background-color: #7724c9;
+  border-radius: 5px;
+}
+.bar_80 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 80%;
+  height:7px;
+  background-color: #7724c9;
+  border-radius: 5px;
+}
+.bar_90 {
+  position: relative;
+  display: block;
+  z-index: 99;
+  width: 90%;
+  height: 7px;
+  background-color: #7724c9;
+  border-radius: 5px;
+}
+
+/* 반응형 */
+@media all and (max-width: 1680px) {
+  .campaign_box .hoverBox p.p1 {
+    font-size: 15px;
+  }
+  .campaign_box .hoverBox {
+    bottom: -120%;
+  }
+  .campaign_title{
+    font-size: 15px;
+  }
+  .campaign-wrap{
+    margin: 10px 0;
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .campaign_item {
+    width: calc(98% / 4);
+  }
+  .campaign_title{
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .campaign_item {
+    
+    width: calc(65% / 2);
+  }
+  .campaign_ber_title {
+    font-size: 15px;
+  }
+  .campaign_title{
+    font-size: 12px;
+  }
+  .campaign_box .hoverBox {
+    bottom: -150%;
+  }
+  .campaign_box:hover .hoverBox {
+    bottom: -10%;
+  }
+  .ive{
+    display: none;
+  }
+  .akmu{
+    display: none;
+  }
+}
+@media all and (max-width: 760px) {
+  .campaign_item {
+    width: calc(98% / 2);
+  }
+  .campaign_box .hoverBox p.p1 {
+    display: block;
+    text-align: center;
+  }
+  .campaign_box .hoverBox p.p2 {
+    display: none;
+    text-align: center;
+  }
+  .campaign_ber_title {
+    font-size: 12px;
+  }
+  .campaign_box .hoverBox {
+    bottom: -150%;
+  }
+  .campaign_box:hover .hoverBox {
+    bottom: -20%;
+  }
+  .balackpink {
+    display: none;
+  }
+  .twice {
+    display: none;
+  }
+}
+@media all and (max-width: 480px) {
+  .campaign_item {
+    width: calc(98%);
+  }
+  .campaign_box .hoverBox p.p1 {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    /* text-align: center; */
+  }
+  .campaign_box .hoverBox p.p2 {
+    display: none;
+    text-align: center;
+  }
+  .campaign_ber_title {
+    font-size: 12px;
+  }
+  .campaign_box .hoverBox {
+    bottom: -150%;
+  }
+  .campaign_box:hover .hoverBox {
+    bottom: -30%;
+  }
+
+  .aespa {
+    display: none;
+  }
+}

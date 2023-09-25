@@ -1,0 +1,592 @@
+/* 메인 비주얼 */
+
+/* 본문 슬라이더 */
+.slide {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  max-width: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /* height: 600px; */
+}
+.slide .inner {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  padding: 0;
+}
+.slide_Swiper {
+  width: 100%;
+  height: 100%;
+}
+.slide_img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  /* text-align: center; */
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  /* justify-content: center; */
+  /* width: \0%; */
+  /* height: 100%; */
+  /* align-items: center; */
+}
+.slide_bg {
+  width: 1400px;
+}
+.slide1_bg {
+  position: relative;
+  display: inline-block;
+  width: 1400px;
+  height: 300px;
+  margin: 0 auto;
+  /* text-align: center; */
+  background-color: #383838;
+}
+
+.slide1_text h1 {
+  position: absolute;
+  display: inline-block;
+  top: 15%;
+  left: 10%;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  font-size: 43px;
+  color: #fff;
+}
+.slide1_text p {
+  position: absolute;
+  display: inline-block;
+  top: 35%;
+  left: 10%;
+  width: 430px;
+  text-align: left;
+  font-family: "Noto Sans KR";
+  /* font-weight: bold; */
+  font-size: 15px;
+  color: #aeaeae;
+}
+
+.slide2_bg {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  margin: 0 auto;
+  /* text-align: center; */
+  background-color: #a6877d;
+}
+.slide2_text h1 {
+  position: absolute;
+  display: inline-block;
+  top: 15%;
+  left: 10%;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  font-size: 45px;
+  color: #131313;
+}
+.slide2_text p {
+  position: absolute;
+  display: inline-block;
+  top: 40%;
+  left: 10%;
+  width: 500px;
+  text-align: left;
+  font-family: "Noto Sans KR";
+  /* font-weight: bold; */
+  font-size: 15px;
+  color: #2e2e2e;
+}
+.slide3_bg {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  margin: 0 auto;
+  /* text-align: center; */
+  background-color: #e8f1ff;
+}
+.slide3_text h1 {
+  position: absolute;
+  display: inline-block;
+  top: 15%;
+  right: 10%;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  font-size: 45px;
+  color: #131313;
+}
+.slide3_text p {
+  position: absolute;
+  display: inline-block;
+  top: 40%;
+  right: 10%;
+  width: 700px;
+  text-align: right;
+  font-family: "Noto Sans KR";
+  /* font-weight: bold; */
+  font-size: 15px;
+  color: #2e2e2e;
+}
+.slide4_bg {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  margin: 0 auto;
+  /* text-align: center; */
+  background: linear-gradient(#aecced 30%, #efe9c8 80%);
+}
+.slide4_text h1 {
+  position: absolute;
+  display: inline-block;
+  top: 15%;
+  left: 10%;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+  font-size: 45px;
+  color: #131313;
+}
+.slide4_text p {
+  position: absolute;
+  display: inline-block;
+  top: 40%;
+  left: 10%;
+  width: 500px;
+  text-align: right;
+  font-family: "Noto Sans KR";
+  /* font-weight: bold; */
+  font-size: 15px;
+  color: #2e2e2e;
+}
+.slide5_bg {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  margin: 0 auto;
+  /* text-align: center; */
+  background: linear-gradient(45deg, #fedffc 40%, #f8efe4 50%);
+}
+.slide5_text h1 {
+  position: absolute;
+  display: inline-block;
+  top: 15%;
+  right: 10%;
+  font-family: "Noto Sans KR";
+  text-align: right;
+  font-weight: bold;
+  font-size: 45px;
+  color: #131313;
+}
+.slide5_text p {
+  position: absolute;
+  display: inline-block;
+  top: 60%;
+  right: 10%;
+  width: 500px;
+  text-align: right;
+  font-family: "Noto Sans KR";
+  /* font-weight: bold; */
+  font-size: 20px;
+  color: #2e2e2e;
+}
+.slide6_bg {
+  position: relative;
+  display: inline-block;
+  height: 300px;
+  margin: 0 auto;
+  /* text-align: center; */
+  background: linear-gradient(90deg, #e3d9f3 40%, #f8f3ff 50%);
+}
+.slide6_text h1 {
+  position: absolute;
+  display: inline-block;
+  top: 10%;
+  left: 10%;
+  font-family: "Noto Sans KR";
+  text-align: right;
+  font-weight: bold;
+  font-size: 45px;
+  color: #131313;
+  text-align: left;
+}
+.slide6_text p {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 10%;
+  width: 500px;
+  text-align: right;
+  font-family: "Noto Sans KR";
+  /* font-weight: bold; */
+  font-size: 25px;
+  color: #7d51c3;
+  text-align: left;
+}
+.slide6_text p span {
+  font-size: 15px;
+}
+/* 4 번 슬라이드 이미지 */
+.slide6_siz {
+  width: 55%;
+}
+/* 5 번 슬라이드 이미지 */
+.slide5_siz {
+  margin-top: 10px;
+  /* width: 60%; */
+}
+
+.slide_right_img {
+  position: absolute;
+  display: block;
+  top: 5%;
+  right: 1%;
+  width: 50%;
+}
+.slide_right_img4 {
+  position: absolute;
+  display: block;
+  top: 3%;
+  right: -7%;
+  width: 60%;
+}
+.slide_right_img3 {
+  position: absolute;
+  display: block;
+  top: 5%;
+  right: 5%;
+  width: 50%;
+}
+.slide_left_img {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+.slide_left_img2 {
+  position: absolute;
+  display: block;
+  top: -20px;
+  left: 5%;
+  width: 40%;
+}
+.slide_left_img3 {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+.slide_right_img3 {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 50%;
+}
+.slide_left_button {
+  position: absolute;
+  display: block;
+  bottom: 15%;
+  left: 10%;
+}
+.slide_left_button button {
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #bda1d3;
+  color: #fff;
+  margin-right: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: bold;
+}
+.slide_left_button button:hover {
+  background-color: #7d51c3;
+  color: #d9d9d9;
+}
+.slide_right_button {
+  position: absolute;
+  display: block;
+  bottom: 10%;
+  right: 8%;
+}
+.slide_right_button button {
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin-right: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  font-weight: bold;
+}
+.slide_right_button button:hover {
+  background-color: #353535;
+  color: #d9d9d9;
+}
+
+/* 반응형 */
+@media all and (max-width: 1680px) {
+  .slide_bg {
+    width: 1400px;
+  }
+}
+@media all and (max-width: 1440px) {
+  .slide_bg {
+    width: calc(100% - 40px)
+  }
+}
+@media all and (max-width: 1280px) {
+  .slide_left_button {
+    left: 10%;
+  }
+  .slide_right_button {
+    right: 8%;
+  }
+  .slide_right_img {
+    width: 50%;
+    top: 7%;
+    right: 2%;
+  }
+  .slide_left_img {
+    width: 40%;
+    /* top: 15%; */
+    right: 2%;
+  }
+  .slide2_bg {
+    position: relative;
+    display: block;
+  }
+  .slide5_siz {
+    top: 0px;
+  }
+  .slide_left_img2 {
+    width: 46%;
+    left: 2%;
+    top: -0%;
+  }
+  .slide_right_img4{
+  top: 3%;
+  right: -13%;
+  width: 70%;
+  }
+  
+}
+@media all and (max-width: 1024px) {
+  .slide_left_button {
+    left: 10%;
+    font-size: 10px;
+    width: 10%;
+  }
+
+  .slide_right_button {
+    right: 16%;
+    font-size: 10px;
+    width: 15%;
+
+    /* padding: 10px; */
+  }
+  .slide_left_img3 {
+    width: 35%;
+    left: 10%;
+    top: 3%;
+  }
+  .slide_text h1 {
+    font-size:30px;
+  }
+  .slide_text p {
+    top: 35%;
+    font-size: 13px;
+    width: 380px;
+  }
+  .slide_left_img {
+    width: 35%;
+    left: 10%;
+    top: 10%;
+  }
+  .slide_right_img {
+    width: 48%;
+    right: 2%;
+    top: 12%;
+  }
+  .slide5_siz {
+    /* width: 80%; */
+    margin-top: 10px;
+  }
+  .slide5_text p {
+    top: 50%;
+  }
+  .slide_left_img2 {
+    width: 46%;
+    left: 2%;
+    top: 7%;
+  }
+  .slide_right_img4{
+    top: 10%;
+    right: -10%;
+    width:70%;
+  }
+}
+@media all and (max-width: 900px) {
+  .slide_right_img4{
+    top: 25%;
+    right: -10%;
+    width:70%;
+  }
+}
+@media all and (max-width: 760px) {
+  .slide_left_button {
+    left: 10%;
+    width: 100px;
+  }
+  .slide_text h1 {
+    font-size: 35px;
+  }
+  .slide_text p {
+    font-size: 14px;
+    /* width: 500px; */
+    width: 300px;
+  }
+  .slide_right_img {
+    width: 40%;
+    right: 2%;
+    top: 30%;
+  }
+  .slide_right_button {
+    right: 20%;
+  }
+  .slide_left_img > .slide3_siz {
+    top: 20%;
+  }
+  .slide_left_img2 {
+    top: 20%;
+    width: 41%;
+    left: 5%;
+  }
+}
+@media all and (max-width: 620px) {
+  .slide_text p {
+    display: none;
+  }
+  .slide_text {
+    width: 100%;
+    text-align: center;
+  }
+  .slide_right_img {
+    width: 50%;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide_left_img {
+    width: 40%;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide_text h1 {
+    font-size: 25px;
+    top: 5%;
+    width: 100%;
+    left: 50%;
+    z-index: 99;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+  .slide_left_button {
+    width: 85%;
+    bottom: 10%;
+    margin: 0 auto;
+  }
+  .slide_right_button {
+    width: 85%;
+    bottom: 10%;
+    margin: 0 auto;
+    transform: translateX(15%);
+  }
+  .slide6_siz {
+    width: 80%;
+  }
+  .slide_left_img2 {
+    width: 300px;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide5_text h1 {
+    color: #e8356d;
+  }
+  .slide6_text h1 {
+    color: #e8356d;
+  }
+  .slide_left_img3 {
+    width: 200px;
+    /* top: 15%; */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide_right_img3 {
+    width: 65%;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide_right_img4{
+    top: 15%;
+    right:15%;
+    width:70%;
+  }
+}
+@media all and (max-width: 480px) {
+  .slide_text p {
+    display: none;
+  }
+  .slide_right_img {
+    width: 300px;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+}
+@media all and (max-width: 320px) {
+  .slide_text p {
+    display: none;
+  }
+  .slide_right_img {
+    width: 80%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide_left_img2 {
+    width: 80%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide_left_img3 {
+    width: 50%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide_right_img3 {
+    width: 80%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }.slide_right_img4{
+    top: 50%;
+    right:0%;
+    width:100%;
+  }
+}

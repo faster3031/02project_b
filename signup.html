@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/mobile_web_icon.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
+    </script>
+    <!-- End Google Tag Manager -->
+        <!-- 네이버 서치 어드바이저 -->
+        <meta name="naver-site-verification" content="07782bcfa006cff898addd308409fe3efe0e2fe2" />
+                <!-- 구글 -->
+                <meta name="google-site-verification" content="8EY1-xng-olDAtUrVMi8koj8eQTRo6k0doX-1hXjgkg" />
+                    <!-- 선호 URL 및 로봇 메타 태그 -->
+    <link rel="canonical" href="https://sod-eight.vercel.app/">
+    <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
+    <title>별의 온도</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/login/signup.css" />
+    <script src="js/header.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/donaiton.js"></script>
+    <script src="js/campaign.js"></script>
+    <script src="js/fandom.js"></script>
+    <script src="js/goods.js"></script>
+    <script src="js/artist.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/signup.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css"
+    />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 아이콘 -->
+    <script
+      src="https://kit.fontawesome.com/def66b134a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="signup">
+        <div class="inner">
+          <div class="content_box">
+            <div class="logo_box">
+              <a href="index.html"><img src="images/logo_02.png" alt="로고" /></a>
+            </div>
+
+            <!-- signup_top 박스 -->
+            <form id="signup-form">
+              <!--  -->
+              <div class="signup_box_top">
+                <input
+                  type="text"
+                  id="signup-username"
+                  name="signup-username"
+                  placeholder="아이디"
+                  required
+                />
+                <input
+                  type="password"
+                  id="signup-password"
+                  name="signup-password"
+                  placeholder="비밀번호"
+                  required
+                />
+                <input
+                  type="email"
+                  id="signup-email"
+                  name="signup-email"
+                  placeholder="[선택]분실시 사용할 이메일"
+                />
+                <!-- 바텀 -->
+                <div class="signup_box_bottom">
+                  <input
+                    type="text"
+                    id="signup-name"
+                    name="signup-name"
+                    placeholder="이름"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="signup-date"
+                    name="signup-date"
+                    placeholder="생년월일"
+                    min="1900-01-01"
+                    max="2023-12-31"
+                    required
+                  />
+                  <div class="news_agency">
+                    <input
+                      type="radio"
+                      id="news_agency_skt"
+                      name="news_agency"
+                    />
+                    <label for="news_agency_skt">SKT</label>
+                    <input
+                      type="radio"
+                      id="news_agency_kt"
+                      name="news_agency"
+                    />
+                    <label for="news_agency_kt">KT</label>
+                    <input
+                      type="radio"
+                      id="news_agency_lg"
+                      name="news_agency"
+                    />
+                    <label for="news_agency_lg">LGU+</label>
+                  </div>
+                  <input
+                    type="tel"
+                    id="signup-tel"
+                    name="signup-tel"
+                    placeholder="전화번호"
+                    required
+                  />
+                  <!-- 남자 여자 -->
+                  <div class="sex">
+                    <input type="radio" id="select_man" name="sex" />
+                    <label for="select_man">남자</label>
+                    <input type="radio" id="select_woman" name="sex" />
+                    <label for="select_woman">여자</label>
+                  </div>
+                  <!-- 개인 정보 란  -->
+                  <div class="all_terms_box">
+                    <div class="all_terms">
+                      <!-- 전체 동의란 -->
+                      <form action="#">
+                        <!--label태그는 체크박스를 누르지 않아도 연결된 체크박스를 체크해줌-->
+                        <label for="chk">
+                          <input type="checkbox" id="chk" required  />
+                          <!--실제로는 글자를 기울이는 태그, 퍼블리셔들이 아이콘담을 때 많이 사용-->
+                          <i class="terms_shape "></i>
+                          <span class="text">전채 약관 동의하기</span>
+                          <button class="terms_but">
+                            <i class="fa-solid fa-chevron-down"></i>
+                          </button>
+                        </label>
+                      </form>
+                      <p class="test_text">
+                        실명 인증된 아이디로 가입, 위치기반서비스
+                        이용약관(선택), 이벤트・혜택 정보 수신(선택) 동의를
+                        포함합니다.
+                      </p>
+                      <!-- 개인 동의란 -->
+                      <!-- 1번 시작 -->
+                      <div class="terms_box_hiding" id="terms_box_hiding">
+                        <input
+                          type="checkbox"
+                          name="terms"
+                          value="selectall25"
+                          required
+                        />
+                        <label for="terms">개인정보 이용</label>
+                        <div
+                          class="terms_text"
+                        >
+                          <p>
+                            여러분을 환영합니다. 별의 온도 서비스 및 제품(이하)
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Nesciunt labore illum molestias velit hic quod
+                            possimus, voluptatibus inventore! Debitis recusandae
+                            iusto facilis suscipit doloremque! Voluptatum soluta
+                            suscipit tempora at animi! Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit. Nesciunt labore
+                            illum molestias velit hic quod possimus,
+                            voluptatibus inventore! Debitis recusandae iusto
+                            facilis suscipit doloremque! Voluptatum soluta
+                            suscipit tempora at animi! Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit. Nesciunt labore
+                            illum molestias velit hic quod possimus,
+                            voluptatibus inventore! Debitis recusandae iusto
+                            facilis suscipit doloremque! Voluptatum soluta
+                            suscipit tempora at animi! Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit. Nesciunt labore
+                            illum molestias velit hic quod possimus,
+                            voluptatibus inventore! Debitis recusandae iusto
+                            facilis suscipit doloremque! Voluptatum soluta
+                            suscipit tempora at animi! Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit. Nesciunt labore
+                            illum molestias velit hic quod possimus,
+                            voluptatibus inventore! Debitis recusandae iusto
+                            facilis suscipit doloremque! Voluptatum soluta
+                            suscipit tempora at animi! Lorem ipsum dolor sit,
+                            amet consectetur adipisicing elit. Nesciunt labore
+                            illum molestias velit hic quod possimus,
+                            voluptatibus inventore! Debitis recusandae iusto
+                            facilis suscipit doloremque! Voluptatum soluta
+                            suscipit tempora at animi!
+                          </p>
+                        </div>
+                      </div>
+                      <!-- 2번 시작 -->
+                      <div class="terms_box_hiding">
+                        <input
+                          type="checkbox"
+                          name="terms"
+                          value="rabbit"
+                          required
+                        />
+                        <label for="terms">개인정보 수집 및 이용</label>
+                        <div
+                          class="terms_text"
+                        >
+                          <p>
+                            개인정보보호법에 따라 네이버에 회원가입 신청하시는
+                            회원가입이 어려울 수 있습니다. Lorem ipsum dolor sit
+                            amet consectetur, adipisicing elit. Culpa suscipit
+                            quo quos magnam a molestiae. Praesentium laborum
+                            iusto illo earum quis libero voluptatem? Quasi omnis
+                            error aperiam sint! Assumenda, sint. Lorem ipsum
+                            dolor sit amet consectetur, adipisicing elit. Culpa
+                            suscipit quo quos magnam a molestiae. Praesentium
+                            laborum iusto illo earum quis libero voluptatem?
+                            Quasi omnis error aperiam sint! Assumenda, sint.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Culpa suscipit quo quos magnam a molestiae.
+                            Praesentium laborum iusto illo earum quis libero
+                            voluptatem? Quasi omnis error aperiam sint!
+                            Assumenda, sint. Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Culpa suscipit quo
+                            quos magnam a molestiae. Praesentium laborum iusto
+                            illo earum quis libero voluptatem? Quasi omnis error
+                            aperiam sint! Assumenda, sint.
+                          </p>
+                        </div>
+                      </div>
+                      <!-- 3번 시작 -->
+                      <div class="terms_box_hiding">
+                        <input
+                          type="checkbox"
+                          name="terms"
+                          value="rabbit2"
+                          required
+                        />
+                        <label for="terms">실명 인증된 아이디로 가입</label>
+                        <div
+                          class="terms_text"
+                        >
+                          <p>
+                            실명 인증된 아이디로 가입하시면 본인인증이 필요한
+                            서비스(네이버 페이, 쇼핑, 멤버십 등)를 가입 후 바로
+                            이용하실 수 있어요. Lorem ipsum dolor sit amet
+                            consectetur, adipisicing elit. Quibusdam reiciendis
+                            sapiente nam quas iure, dolorem quisquam vitae
+                            ratione quam accusantium unde excepturi atque
+                            tempore placeat vero saepe. Fuga, eum? Dicta? Lorem
+                            ipsum dolor sit amet consectetur, adipisicing elit.
+                            Quibusdam reiciendis sapiente nam quas iure, dolorem
+                            quisquam vitae ratione quam accusantium unde
+                            excepturi atque tempore placeat vero saepe. Fuga,
+                            eum? Dicta? Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Quibusdam reiciendis sapiente nam
+                            quas iure, dolorem quisquam vitae ratione quam
+                            accusantium unde excepturi atque tempore placeat
+                            vero saepe. Fuga, eum? Dicta? Lorem ipsum dolor sit
+                            amet consectetur, adipisicing elit. Quibusdam
+                            reiciendis sapiente nam quas iure, dolorem quisquam
+                            vitae ratione quam accusantium unde excepturi atque
+                            tempore placeat vero saepe. Fuga, eum? Dicta?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="signup_but" >가입하기</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

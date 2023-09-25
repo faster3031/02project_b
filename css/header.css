@@ -1,0 +1,185 @@
+/* 헤더 */
+.header {
+  position: sticky;
+  width: 100%;
+  height: 80px;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  transform: 0.3s;
+}
+.header-active {
+  background-color: rgb(255, 255, 255);
+}
+.header .inner {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  width: 200px;
+  height: 40px;
+}
+.header .logo img {
+  height: 100%;
+}
+.nav {
+  width: 50%;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.nav ul li {
+  position: relative;
+  font-family: 'GmarketSansMedium';
+  font-weight: bold;
+  font-size: 17px;
+  padding: 0 5px;
+}
+.nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -28px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #ad5cff;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.nav ul li a {
+  transition: all 0.3s;
+}
+.nav ul li:hover::after {
+  opacity: 1;
+}
+.nav ul li:hover {
+  cursor: pointer;
+}
+.nav ul li:hover a {
+  color: #ebdeff;
+}
+.login {
+  width: 20%;
+  position: relative;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.login a {
+  margin-right: 20px;
+
+  font-weight: bold;
+  font-size: 17px;
+  transition: all 0.3s;
+}
+
+.login a:hover {
+  color: #ebdeff;
+}
+.login i {
+  font-size: 17px;
+}
+
+/* 로그인 */
+/* 섹션 스타일 */
+#login-section,
+#singup-section,
+#dashboard-section {
+  position: relative;
+  display: flex;
+  /* width: 100%; */
+  /* background-color: #ebdeff; */
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+#singup-section {
+  width: 30%;
+  margin-left: 20px;
+}
+
+#dashboard-section {
+  position: relative;
+  display: flex;
+  /* width: 70%; */
+  align-items: center;
+}
+
+/* 버튼 */
+#login-button {
+  background:none;
+  color: #1b1b1b;
+  padding: 10px 20px;
+  font-family: 'GmarketSansMedium';
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+#logout-button {
+  height: 100%;
+  color: #1b1b1b;
+  font-family: 'GmarketSansMedium';
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 50px;
+  background:none
+}
+
+/* 사용자 이름 디스플레이 스타일 */
+#username-display {
+  position: relative;
+  display: flex;
+  color: #8d5cb2;
+  font-weight: bold;
+  width: 60%;
+  margin-right: 25px;
+  font-size: 18px;
+}
+.top-button {
+  position: fixed;
+  right: 30px;
+  bottom: 40px;
+  z-index: 9999;
+  width: auto;
+}
+.top-btn {
+  display: block;
+  background-color: #d7bcff;
+  border-radius: 50%;
+  width: 55px;
+  line-height: 55px;
+  text-align: center;
+}
+.top-btn img {
+  transform: rotate(180deg);
+}
+.top-btn img.up {
+  transform: rotate(0deg);
+}
+@media all and (max-width: 1680px) {
+}
+
+@media all and (max-width: 1280px) {
+}
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 760px) {
+}
+@media all and (max-width: 480px) {
+}

@@ -1,0 +1,184 @@
+/* 총 모금액 */
+
+.donation {
+  width: 100%;
+  height: 230px;
+}
+.donation .inner {
+  padding: 0px 20px;
+}
+.amount span {
+  width: 150px;
+  height: 30px;
+}
+.cheering p {
+  font-size: 35px !important;
+  font-weight: 900;
+}
+.cheering::after {
+  background-color: #3b4212;
+  width: 120px;
+  display: block;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+}
+.donation_box {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  width: 100%;
+
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.donation_box p {
+  font-family: "AppleSDGothicNeo";
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  color: #3b4212;
+  width: 100%;
+}
+#fandomslide2 .donation_box p {
+  color: #4b2e61;
+}
+#fandomslide3 .donation_box p {
+  color: #711f63;
+}
+.amount {
+  display: flex;
+}
+.amount p {
+  font-family: "AppleSDGothicNeo";
+  color: #555e23;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+#fandomslide2 .amount p {
+  color: #583672;
+}
+#fandomslide3 .amount p {
+  color: #ad3098;
+}
+.amount span {
+  color: #7a8a20;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size: 30px;
+}
+#fandomslide2 .amount span {
+  color: #734695;
+}
+#fandomslide3 .amount span {
+  color: #d66cc5;
+}
+/* 반응형 */
+@media all and (max-width: 1680px) {
+  .donation {
+    height: 130px;
+  }
+  /* cheering ~~와 함께하는 기부 */
+  .cheering p {
+    font-size: 28px !important;
+    font-weight: 900;
+  }
+  .amount p {
+    font-size: 27px;
+  }
+  .amount p > span {
+    font-size: 25px !important;
+  }
+  .amount span {
+    width: 100px;
+    height: 30px;
+  }
+}
+@media all and (max-width: 1280px) {
+  .donation {
+    height: 100px;
+  }
+  .cheering p {
+    font-size: 25px !important;
+    font-weight: 900;
+  }
+  .amount p {
+    padding-right: 0;
+    font-size: 20px;
+  }
+
+  .amount > p > span {
+    padding-left: 20px !important;
+  }
+}
+@media all and (max-width: 1024px) {
+  .cheering {
+    width: 0%;
+    min-width: 219px;
+  }
+  .cheering p {
+    font-size: 21px !important;
+    font-weight: 900;
+    padding-left: 0;
+  }
+  .amount {
+    width: 100%;
+  }
+  .amount p {
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 760px) {
+  .donation {
+    height: 50px;
+  }
+  .donation .inner {
+    padding: 0 15px;
+  }
+  .cheering {
+    width: 0;
+    display: none;
+  }
+  .amount {
+    width: 100%;
+  }
+  .amount span {
+    width: 85px;
+  }
+  .amount p {
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .amount > p > span {
+    padding-left: 5px !important;
+    font-size: 18px !important;
+    line-height: 30px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .donation_box {
+    justify-content: space-between;
+    overflow: auto hidden;
+  }
+  .cheering {
+    display: none;
+  }
+  .amount span {
+    width: 60px;
+  }
+}
+@media all and (max-width: 320px) {
+  .amount span {
+    width: 60px;
+  }
+  .amount p {
+    font-size: 15px;
+  }
+}
