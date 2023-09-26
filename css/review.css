@@ -85,7 +85,7 @@ th:nth-child(5) {
   width: 7%;
 }
 th:nth-child(6) {
-  width: 5%;
+  width: 10%;
 }
 td {
   text-align: center;
@@ -99,6 +99,12 @@ tr:nth-child(2n) {
 td:nth-child(3) {
   text-align: left;
 }
+td:nth-child(3) > span {
+  font-size: 12px;
+  float: right;
+  color: #b1b1b1;
+  display: none;
+}
 td:nth-child(2) {
   font-weight: 600;
 }
@@ -108,12 +114,13 @@ td:nth-child(2) {
   height: 100%;
   position: relative;
 }
+
 .heart {
   width: 50px;
   height: 50px;
   overflow: hidden;
   background: url("https://cssanimation.rocks/images/posts/steps/heart.png")
-    no-repeat;
+    no-repeat center;
   background-size: cover;
   background-position: 13px 0px;
   cursor: pointer;
@@ -121,10 +128,12 @@ td:nth-child(2) {
   transition-duration: 0s;
   position: absolute;
   top: 0;
+  right: 50%;
+  transform: translateX(30%);
 }
 .heart.is-active {
   overflow: hidden;
-  transition-duration: 1s;
+  /* transition-duration: 1s; */
   background-position: -1137px 0px;
 }
 
@@ -324,7 +333,7 @@ li {
   width: 100%;
 }
 .posttitles .nickname {
-  width: 30%;
+  /* width: 30%; */
   display: flex;
   align-items: center;
   margin-right: 10px;
@@ -465,6 +474,10 @@ textarea {
   .post-form {
     padding: 20px 15px;
   }
+  .writecontainerbox {
+    background-color: #f7f7f7;
+    padding: 20px 20px;
+  }
 }
 @media all and (max-width: 760px) {
   /* 기부타이틀 */
@@ -539,6 +552,23 @@ textarea {
     bottom: 0;
     right: 0;
     height: 65px;
+  }
+  th:nth-child(4) {
+    display: none;
+  }
+  th:nth-child(5),
+  td:nth-child(5) {
+    padding-right: 0;
+  }
+  th:nth-child(6),
+  td:nth-child(6) {
+    padding-left: 0;
+  }
+  td:nth-child(4) {
+    display: none;
+  }
+  td:nth-child(3) > span {
+    display: block;
   }
   #postWriter {
     width: 100%;
