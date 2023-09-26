@@ -180,4 +180,25 @@ window.addEventListener("load", function () {
       checkbox.checked = false;
     }
   });
+  // 첫 번째 버튼을 클릭할 때 실행되는 함수
+document.getElementById("openPaymentModalBtn").addEventListener("click", function () {
+  openPaymentModal();
+});
+
+// 두 번째 버튼을 클릭할 때 실행되는 함수
+document.getElementById("openPaymentModalBtn2").addEventListener("click", function () {
+  openPaymentModal();
+});
+
+// 모달 열기 함수
+function openPaymentModal() {
+  const paymentModal = document.getElementById("paymentModal");
+  paymentModal.style.display = "block";
+}
+
+// 모달 닫기 함수
+function closePaymentModal() {
+  const paymentModal = document.getElementById("paymentModal");
+  paymentModal.style.display = "none";
+}
 });

@@ -11,10 +11,10 @@
   position: relative;
   display: block;
   height: 70px;
-  /* width: 50%; */
+  width: 100%;
   background: none;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 15px;
   border: none;
   color: aliceblue;
   /* height: 20px; */
@@ -24,10 +24,11 @@
 #singup-botton a {
   margin: 10px 0px;
   padding: 5px;
-  font-size: 18px;
-  width: 1px;
+  font-size: 15px;
+  width: 110px;
   height: 10px;
   color: rgb(192, 192, 192);
+  font-weight: bold;
   /* width: 300px; */
   /* background-color: #e9dbff; */
 }
@@ -43,11 +44,20 @@
   /* width: 70%; */
   margin: 0 auto;
   padding-top: 20px;
+  text-align: center;
+}
+.logo_box_a{
+  position: relative;
+  display: inline-block;
+  width: 230px;
+  margin: 0 auto;
+  text-align: center;
 }
 .logo_box img {
   position: relative;
   display: block;
-  width: 20%;
+  width: 100%;
+  height: 100%;
   margin: 10px auto;
   margin-top: 50px;
   padding: 20px;
@@ -83,7 +93,8 @@
   border: none;
   border-radius: 5px;
   padding: 0 20px;
-  font-size: 18px;
+  padding-top: 5px;
+  font-size: 15px;
   width: 90%;
 }
 #login-form button {
@@ -93,9 +104,9 @@
   /* left: 70%; */
   margin: 0 auto;
   height: 50px;
-  background-color: #8d5cb2;
+  background-color: #c29cff;
   color: aliceblue;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   font-family: "AppleSDGothicNeo";
   border: none;
@@ -104,11 +115,15 @@
   text-align: center;
 }
 #login-form button:hover {
-  background-color: #663e83;
+  background-color: #8d5cb2;
   color: aliceblue;
   font-weight: bold;
   font-family: "AppleSDGothicNeo";
   border: none;
+}
+.text {
+  font-size: 15px;
+  color: #4c4c4c;
 }
 /* 체크박스 모양 */
 /* 체크박스 모양 변경 */
@@ -128,7 +143,7 @@
   font-size: 24px;
   color: #333;
   position: absolute;
-  left: 0;
+  left: 1px;
   top: -15px;
 
   opacity: 0; /* 처음엔 안보이게 처리 */
@@ -174,7 +189,7 @@
   margin: 0 auto;
   text-align: center;
   margin: 20px auto;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   color: #333;
 }
@@ -185,6 +200,10 @@
   text-align: center;
   height: 40px;
   margin: 5px 15px;
+}
+.easy_login img:hover {
+  border: 2px solid #c29cff;
+  border-radius: 50%;
 }
 
 /* 로그인 반응형 */
@@ -201,23 +220,18 @@
     width: 34%;
   }
   .logo_box img {
-    width: 35%;
+    width: 100%;
   }
 }
 @media all and (max-width: 760px) {
   .login_box {
     width: 43%;
   }
-  .logo_box img {
-    width: 60%;
-  }
+
 }
 @media all and (max-width: 480px) {
   .login_box {
     width: 64%;
-  }
-  .logo_box img {
-    width: 70%;
   }
   #login-form input {
     font-size: 15px;

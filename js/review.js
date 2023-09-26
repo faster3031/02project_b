@@ -8,6 +8,12 @@ $(document).ready(function () {
     $(".writecontainerbox").hide();
   });
 });
+// 좋아요
+$(function() {
+  $(".heart").on("click", function() {
+    $(this).toggleClass("is-active");
+  });
+});
 
 // 멀티미디어 리소스 로딩 완료 후 실행
 window.addEventListener("load", function () {
@@ -23,7 +29,7 @@ window.addEventListener("load", function () {
 
   let posts = [];
   // 등록 번호를 나타내는 변수
-  let registrationNumber = 0;
+  let registrationNumber = 4;
 
   function addPostToDOM(post) {
     const postTableBody = document.getElementById("postTableBody");
@@ -41,39 +47,46 @@ window.addEventListener("load", function () {
        <td class="subject"><a href="#">${post.title}</a></td>
        <td class="writer">${post.writer}</td>
        <td class="date">${post.date || ""}</td>
-       <td class="hit">000</td>
+       <td class="hearttitle"><div class="heart"></div></td>
        <td class="del"><button class=delete-post-btn>x</button></td>
        `;
- // 삭제 버튼에 클릭 이벤트 추가
- const deleteButton = newRow.querySelector(".delete-post-btn");
- deleteButton.addEventListener("click", function () {
-   // 게시글을 삭제하고 화면에서 제거
-   const index = posts.indexOf(post);
-   //       if (index !== -1) { ... }: index가 -1이 아니라면
-   // (즉, 해당 게시글이 배열에 존재한다면) 아래 코드를 실행합니다.
-   // posts.splice(index, 1);: index 위치에 있는
-   // 게시글을 posts 배열에서 1개만큼 제거합니다.즉, 해당 게시글을 삭제
-   if (index !== -1) {
-     posts.splice(index, 1);
-     localStorage.setItem("posts", JSON.stringify(posts));
-     newRow.remove();
-   }
- });
-    postTableBody.appendChild(newRow);
+    // 삭제 버튼에 클릭 이벤트 추가
+    const deleteButton = newRow.querySelector(".delete-post-btn");
+    deleteButton.addEventListener("click", function () {
+      // 게시글을 삭제하고 화면에서 제거
+      const index = posts.indexOf(post);
+      //       if (index !== -1) { ... }: index가 -1이 아니라면
+      // (즉, 해당 게시글이 배열에 존재한다면) 아래 코드를 실행합니다.
+      // posts.splice(index, 1);: index 위치에 있는
+      // 게시글을 posts 배열에서 1개만큼 제거합니다.즉, 해당 게시글을 삭제
+      if (index !== -1) {
+        posts.splice(index, 1);
+        localStorage.setItem("posts", JSON.stringify(posts));
+        newRow.remove();
+      }
+    });
+    postTableBody.prepend(newRow);
   }
 
   addPostBtn.addEventListener("click", function () {
     const title = postTitleInput.value;
     const writer = postWriterInput.value;
-    const content = postContentInput.value;
-    const date = postDateInput.value;
+    // const content = postContentInput.value;
+    // const date = postDateInput.value;
 
-    if (title && content) {
+    if (title && writer) {
+      const currentDate = new Date(); // 현재 날짜와 시간을 가져옵니다.
+    const formattedDate = `${currentDate.getFullYear()}-${(currentDate.getMonth() + 1)
+      .toString()
+      .padStart(2, "0")}-${currentDate.getDate().toString().padStart(2, "0")} ${currentDate
+      .getHours()
+      .toString()
+      .padStart(2, "0")}:${currentDate.getMinutes().toString().padStart(2, "0")}`;
+
       const newPost = {
         title,
         writer,
-        content,
-        date: date || null,
+        date: formattedDate,
       };
 
       posts.push(newPost);
@@ -82,25 +95,25 @@ window.addEventListener("load", function () {
 
       postTitleInput.value = "";
       postWriterInput.value = "";
-      postContentInput.value = "";
-      postDateInput.value = "";
+      // postContentInput.value = "";
+      // postDateInput.value = "";
     }
   });
 
-  btnSearch.addEventListener("click", function () {
-    const searchTerm = searchInput.value.toLowerCase();
-    const filteredPosts = posts.filter((post) => {
-      return (
-        post.title.toLowerCase().includes(searchTerm) ||
-        post.content.toLowerCase().includes(searchTerm)
-      );
-    });
+  // btnSearch.addEventListener("click", function () {
+  //   const searchTerm = searchInput.value.toLowerCase();
+  //   const filteredPosts = posts.filter((post) => {
+  //     return (
+  //       post.title.toLowerCase().includes(searchTerm) ||
+  //       post.content.toLowerCase().includes(searchTerm)
+  //     );
+  //   });
 
-    postTableBody.innerHTML = "";
-    for (const post of filteredPosts) {
-      addPostToDOM(post);
-    }
-  });
+  //   postTableBody.innerHTML = "";
+  //   for (const post of filteredPosts) {
+  //     addPostToDOM(post);
+  //   }
+  // });
 
   if (localStorage.getItem("posts")) {
     posts = JSON.parse(localStorage.getItem("posts"));

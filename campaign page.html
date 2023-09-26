@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/mobile_web_icon.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- 네이버 서치 어드바이저 -->
+    <meta name="naver-site-verification" content="07782bcfa006cff898addd308409fe3efe0e2fe2" />
+    <!-- 구글 콘솔 -->
+    <meta name="google-site-verification" content="8EY1-xng-olDAtUrVMi8koj8eQTRo6k0doX-1hXjgkg" />
+    <!-- 선호 URL 및 로봇 메타 태그 -->
+    <link rel="canonical" href="https://sod-eight.vercel.app/">
+    <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
+    <title>별의 온도</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="css/sub_campaign/sub_campaign.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/header.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/donaiton.js"></script>
+    <script src="js/campaign.js"></script>
+    <script src="js/fandom.js"></script>
+    <script src="js/goods.js"></script>
+    <script src="js/artist.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/sub_campaign.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 스크롤 버튼 -->
+      <div class="top-button">
+      <a href="#" class="top-btn" id="top-btn">
+        <img src="images/top-btn.png" alt="top-btn" id="top-btn-img" />
+      </a>
+      </div>
+      <!-- 헤더 -->
+      <header class="header">
+        <div class="inner">
+          <a href="index.html" alt="메인 로고" class="logo">
+            <img src="images/logo_02.png" alt="logo" />
+          </a>
+          <!-- 메뉴 -->
+          <nav class="nav">
+            <ul>
+              <li><a href="infopage.html" alt="기부">기부</a></li>
+              <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
+              <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
+              <li><a href="#" alt="후기">후기</a></li>
+              <li><a href="review.html" alt="게시판">게시판</a></li>
+            </ul>
+          </nav>
+          <!-- 로그인  -->
+          <div class="login">
+            <div id="login-section">
+              <button id="login-button">로그인</button>
+            </div>
+            <div id="dashboard-section" style="display: none">
+              <div id="username-display"></div>
+              <button id="logout-button">로그아웃</button>
+            </div>
+            <!-- 로그인 끝 -->
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+        </div>
+      </header>
+      <section class="sub_campaign">
+        <div class="inner">
+          <div class="sub_campaign_title_box">
+            <p><span>별의 온도</span>는 여러분들과 함께 <br>더 나은 미래를 만듭니다</p>
+          </div>
+
+          <div class="sub_campaign_chk">
+            <label for="chk">
+              <div class="sub_chk_box">
+                <input type="checkbox" id="chk">
+                <i class="terms_shape"></i>
+                <span class="text">진행중인 캠페인</span>
+              </div>
+            </label>
+          </div>
+          <div class="sub_campaign_wrap">
+            <!-- 1번 캠페인 -->
+            <div class="sub_campaign_item">
+              <div class="sub_campaign_img">
+                <img src="images/campaign_p_01.png" alt="모로코-리비아" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[해외]</span> 모로코-리비아 긴급 지원</p>
+                <div class="d-day">
+                  <p>D-20</p>
+                </div>
+                <p class="sub_campaign_gather">2023.9.12 ~ 2023.10.30</p>
+              </div>
+            </div>
+            <!-- 2번 캠페인 -->
+            <div class="sub_campaign_item close">
+              <div class="sub_campaign_img">
+                <img src="images/s_10.png" alt="6.25" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span> 6.25참전 영웅 감사 편지 캠페인</p>
+                <div class="d-close">
+                  <p>CLOSE</p>
+                </div>
+                <p class="sub_campaign_gather">2023.4.12 ~ 2023.6.25</p>
+              </div>
+            </div>
+            <!-- 3번 캠페인 -->
+            <div class="sub_campaign_item">
+              <div class="sub_campaign_img">
+                <img src="images/s_12.png" alt="한부모" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span>한부모 가정 지원</p>
+                <div class="d-day_7">
+                  <p>D-7</p>
+                </div>
+                <p class="sub_campaign_gather">2023.9.12 ~ 2023.9.30</p>
+              </div>
+            </div>
+            <!-- 4번 캠페인 -->
+            <div class="sub_campaign_item">
+              <div class="sub_campaign_img">
+                <img src="images/s_13.png" alt="반찬지원" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span> 어르신 반찬 지원</p>
+                <div class="d-day">
+                  <p>D-27</p>
+                </div>
+                <p class="sub_campaign_gather">2023.9.12 ~ 2023.10.15</p>
+              </div>
+            </div>
+            <!-- 5번 캠페인 -->
+            <div class="sub_campaign_item">
+              <div class="sub_campaign_img">
+                <img src="images/s_15.png" alt="연탄" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span> 겨울나기 연탄 지원</p>
+                <div class="d-day">
+                  <p>D-25</p>
+                </div>
+                <p class="sub_campaign_gather">2023.9.15 ~ 2023.9.25</p>
+              </div>
+            </div>
+            <!-- 6번 캠페인 -->
+            <div class="sub_campaign_item">
+              <div class="sub_campaign_img">
+                <img src="images/s_14.png" alt="홍수" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[해외]</span> 리비아 홍수 긴급 지원</p>
+                <div class="d-day">
+                  <p>D-41</p>
+                </div>
+                <p class="sub_campaign_gather">2023.9.12 ~ 2023.11.10.</p>
+              </div>
+            </div>
+            <!-- 7번 캠페인 -->
+            <div class="sub_campaign_item">
+              <div class="sub_campaign_img">
+                <img src="images/s_16.png" alt="소화암" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span> 소화암 어린이 수술비 모금</p>
+                <div class="d-day">
+                  <p>D-80</p>
+                </div>
+                <p class="sub_campaign_gather">2023.9.12 ~ 2023.12.30</p>
+              </div>
+            </div>
+            <!-- 8번 캠페인 -->
+            <div class="sub_campaign_item">
+              <div class="sub_campaign_img">
+                <img src="images/campaign_p_02.png" alt="열매" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span> 사랑의 열매 연합모금</p>
+                <div class="d-day">
+                  <p>D-20</p>
+                </div>
+                <p class="sub_campaign_gather">2023.8.16 ~ 2023.11.15</p>
+              </div>
+            </div>
+            <!-- 9번 캠페인 -->
+            <div class="sub_campaign_item close">
+              <div class="sub_campaign_img">
+                <img src="images/campaign_p_03.png" alt="폭우" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span> 호우 피해 긴급 모집 </p>
+                <div class="d-close">
+                  <p>CLOSE</p>
+                </div>
+                <p class="sub_campaign_gather">2023.7.18 ~ 2023.8.31</p>
+              </div>
+            </div>
+            <!-- 10번 캠페인 -->
+            <div class="sub_campaign_item close">
+              <div class="sub_campaign_img">
+                <img src="images/campaign_p_04.png" alt="경제" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span> 사회 경제 응원 캠페인</p>
+                <div class="d-close">
+                  <p>CLOSE</p>
+                </div>
+                <p class="sub_campaign_gather">2023.7.1 ~ 2023.10.01</p>
+              </div>
+            </div>
+            <!-- 11번 캠페인 -->
+            <div class="sub_campaign_item close">
+              <div class="sub_campaign_img">
+                <img src="images/campaign_p_05.png" alt="8.15" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span> 8.15 응원 캠페인</p>
+                <div class="d-close">
+                  <p>CLOSE</p>
+                </div>
+                <p class="sub_campaign_gather">2023.7.14 ~ 2023.8.31</p>
+              </div>
+            </div>
+            <!-- 12번 캠페인 -->
+            <div class="sub_campaign_item close">
+              <div class="sub_campaign_img">
+                <img src="images/campaign_p_06.png" alt="에너지" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span> 2023 에너지 절약 캠페인</p>
+                <div class="d-close">
+                  <p>CLOSE</p>
+                </div>
+                <p class="sub_campaign_gather">2023.7.10 ~ 2023.8.31</p>
+              </div>
+            </div>
+            <!-- 13번 캠페인 -->
+            <div class="sub_campaign_item close">
+              <div class="sub_campaign_img">
+                <img src="images/campaign_p_07.png" alt="장애" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span> 장애 복지 캠페인</p>
+                <div class="d-close">
+                  <p>CLOSE</p>
+                </div>
+                <p class="sub_campaign_gather">2023.4.21 ~ 2023.7.31</p>
+              </div>
+            </div>
+            <!-- 14번 캠페인 -->
+            <div class="sub_campaign_item close">
+              <div class="sub_campaign_img">
+                <img src="images/campaign_p_08.png" alt="강릉" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[국내]</span> 강릉산불 긴급모금</p>
+                <div class="d-close">
+                  <p>CLOSE</p>
+                </div>
+                <p class="sub_campaign_gather">2023.4.21 ~ 2023.7.31</p>
+              </div>
+            </div>
+            <!-- 15번 캠페인 -->
+            <div class="sub_campaign_item close">
+              <div class="sub_campaign_img">
+                <img src="images/campaign_p_09.png" alt="튀르키예-시리아" />
+              </div>
+              <div class="sub_campaign_text">
+                <p><span>[해외]</span> 튀르키예-시리아 긴급 모금</p>
+                <div class="d-close">
+                  <p>CLOSE</p>
+                </div>
+                <p class="sub_campaign_gather">2023.2.7 ~ 2023.5.31</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+      </section>
+            
+      </section>
+      <!-- 푸터 -->
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-left">
+            <div class="footer-logo">
+            <a href="#"><img src="images/logo.png" alt="푸터로고" /></a>
+            </div>
+            <p>Copyright © 사단법인 별의온도 All Rights Reserved.</p>
+          </div>
+          <div class="footer-middle">
+            <ul>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">문의하기</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <h3>
+              사단법인 별의 온도<br />사업자등록번호 : 504-85-25999 
+              대표자 : 김상곤 
+              대표번호 : 053.572.1005 
+              E-mail : green@gmail.com<br />
+              주소 : 대구광역시 중구 중앙대로 394, 제일빌딩 5F
+            </h3>
+          </div>
+          <div class="footer-right">
+            <a href="#"
+              ><img src="images/footer_facebook.png" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_instagram.png" alt="instagram"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_twitter.png" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KV63VKR9"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</html>

@@ -1,5 +1,12 @@
 //  dom (html 태그 로딩 완료시 실행)
-$(document).ready(function () {});
+$(document).ready(function () {
+  $("#qna-btn").click(function () {
+    $(".qna").show();
+  })
+  $("#qnaClose").click(function () {
+    $(".qna").hide();
+  })
+});
 
 // 멀티미디어 리소스 로딩 완료 후 실행
 window.addEventListener("load", function () {
@@ -110,4 +117,100 @@ window.addEventListener("load", function () {
     }
   });
   // 로그인 함수 테스트
+// Q&A
+  //TODO
+  // allow to send messages to que
+  // interactive AI chat to respond
+  $chat_log = {
+    user: [],
+    ai: [],
+  };
+  
+  $chat_opt = {
+    inputSelector: ".qnainput input[type=text]",
+  };
+  
+  $chat = {
+    msgcnt: 0, // 초기화된 msgcnt 변수 추가
+    AddMessage: function (message, who) {
+      if (message != "") {
+        var $msg = '<div class="message ' + who + '">' + message + "</div>";
+        $(".messages").append($msg);
+        if (who.indexOf("ai") > -1) {
+          $chat_log.ai.push($msg);
+        } else {
+          $chat_log.user.push($msg);
+        }
+      }
+    },
+    input: function () {
+      if (!$(".idle").length && $($chat_opt.inputSelector).val() != "") {
+        var userInput = $($chat_opt.inputSelector).val().trim();
+        var response = "";
+        $chat.AddMessage($($chat_opt.inputSelector).val(), "me");
+        setTimeout(function () {
+          $chat.Respond();
+        });
+        $($chat_opt.inputSelector).val("");
+        switch (userInput) {
+          case '1':
+            response = '- 로그인/회원가입시 커뮤니티 글 작성, 후원굿즈 구매 등 다양한 혜택이 있습니다. <br> - 로그인/회원가입이 안되시는 경우, 별의온도 고객만족실 1234-4321으로 전화주시길 부탁드립니다.';
+            break;
+          case '2':
+            response = '박재완님은 나무늘보입니다. 푸하하';
+            break;
+          case '3':
+            response = 'ㅠㅠㅠ';
+            break;
+          case '4':
+            response = '별의온도에 대한 관심과 애용에 진심으로 감사의 말씀을 드립니다. 귀한 시간을 할애해 주신 점 감사드리며, 칭찬 내용을 별의온도 홈페이지 "고객지원-고객문의-칭찬상담"으로 접수해 주시면 칭찬 내용을 바탕으로 더 좋은 상품, 서비스를 제공하도록 하겠습니다. 감사합니다.';
+            break;
+          case '5':
+            response = '불편을 드려 죄송합니다.<br>별의온도 이메일 starsondo@stars.com 혹은 별의온도 고객만족실 1234-4321으로 접수 부탁드립니다.';
+            break;
+          default:
+            response = "무슨 말인지 모르겠어";
+            break;
+        }
+  
+        // 'userinput'에 입력한 내용을 'qnainput'에 추가
+        var $qnainput = $(".qnainput input[type=text]");
+        $qnainput.val(userInput);
+  
+        $chat.AddMessage(response, "ai");
+        setTimeout(function () {
+          $chat.Respond();
+        }, 1000);
+  
+        // 'userinput' 초기화
+        $qnainput.val("");
+      }
+    },
+    Respond: function () {
+      $(".idle").remove();
+      $chat.AddMessage("<div></div><div></div><div></div>", "ai idle");
+      setTimeout(function () {
+        $(".idle").remove();
+        var $msgcnt = $(".ai").length;
+        // $chat.AddMessage($chat_opt.QAs["q" + ($msgcnt++)].q, "ai");
+      }, 3000);
+    },
+  };
+  
+  $(document).ready(function () {
+    setTimeout(function () {
+      $chat.input();
+    }, 1000);
+  });
 });
+    // 모바일 메뉴 토글
+    const toggleButton = document.getElementById('toggleButton');
+    const navMb = document.querySelector('.nav-mb');
+    toggleButton.addEventListener('click', () => {
+        if (navMb.style.opacity === '1') {
+            navMb.style.opacity = '0';
+        } else {
+            navMb.style.opacity = '1';
+        }
+    });
+

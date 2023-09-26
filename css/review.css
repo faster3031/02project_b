@@ -12,13 +12,14 @@
   height: 220px;
   padding: 30px 50px;
   background-color: #eee7f3;
-  user-select:none;
+  user-select: none;
 }
 .reviewTitle h2 {
   font-size: 2.5em;
   text-align: left;
   padding-bottom: 10px;
   color: #333;
+  font-family: "GmarketSansMedium";
 }
 .reviewTitle > ul > li {
   font-size: 15px;
@@ -36,20 +37,12 @@
   border-top: 2px solid #333;
   border-bottom: 2px solid #333;
 }
-.board_st .subject {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  text-align: left;
-}
-.board_st .subject:hover{
-  text-decoration: underline;
-  }
+
 table .subject a {
   text-overflow: ellipsis;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   overflow: hidden;
   max-width: 90%;
-
 }
 #board_st caption {
   text-indent: -9999;
@@ -71,69 +64,70 @@ tr {
 tbody {
   font-size: 15px;
 }
-tbody > tr:nth-child(1),
-tr:nth-child(2),
-tr:nth-child(3) {
-  background-color: #f1f1f1;
-  font-weight: 500;
-}
 th {
   padding: 10px 10px;
-}
-th:nth-child(3),
-th:nth-child(5),
-th:last-child {
-  width: 10%;
-}
-th:nth-child(4) {
-  width: 20%;
+  background-color: #d8d8d8;
+  line-height: initial;
 }
 th:nth-child(1) {
-  width: 10%;
+  width: 8%;
 }
-
+th:nth-child(2) {
+  width: 15%;
+}
+th:nth-child(3) {
+  width: 45%;
+}
+th:nth-child(4) {
+  width: 15%;
+}
+th:nth-child(5) {
+  width: 7%;
+}
+th:nth-child(6) {
+  width: 5%;
+}
 td {
   text-align: center;
   padding: 13px;
   border-bottom: 1px dashed #ccc;
   color: #555;
 }
-
-/* 검색기능 */
-#searchContainer {
+tr:nth-child(2n) {
+  background-color: #ececec;
+}
+td:nth-child(3) {
+  text-align: left;
+}
+td:nth-child(2) {
+  font-weight: 600;
+}
+/* 좋아요 */
+.hearttitle {
   width: 100%;
-  height: 60px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 15px;
-  padding: 0 50px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-bottom: 15px;
-  user-select:none;
+  height: 100%;
+  position: relative;
 }
-#searchContainer .inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.heart {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png")
+    no-repeat;
+  background-size: cover;
+  background-position: 13px 0px;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+  position: absolute;
+  top: 0;
 }
-/* 검색기능 - 날짜 */
-#searchContainer .date {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  line-height: 2px;
+.heart.is-active {
+  overflow: hidden;
+  transition-duration: 1s;
+  background-position: -1137px 0px;
 }
-#searchContainer .date input {
-  height: 30px;
-  max-width: 150px;
-  padding: 0 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
+
 #searchContainer .subject {
   display: flex;
   align-items: center;
@@ -179,10 +173,10 @@ td {
 #writeBtn:hover {
   background-color: #8038c7;
 }
-#postClosseBtn{
+#postClosseBtn {
   background-color: #8d6eab;
 }
-#postClosseBtn:hover{
+#postClosseBtn:hover {
   background-color: #8038c7;
 }
 /* 검색기능 - 분류 */
@@ -213,9 +207,6 @@ td {
 .page ul {
   width: 100%;
 }
-/* .container .middle {
-  width: 32rem;
-} */
 
 .page ul,
 li {
@@ -312,10 +303,9 @@ li {
 }
 .writecontainerbox {
   background-color: #f7f7f7;
-  padding: 20px 0;
-  padding-bottom: 50px;
-  margin-bottom: 20px;
-  display: none;
+  padding: 20px 79px;
+  margin-top: 20px;
+  /* display: none; */
 }
 
 .writecontainer h1 {
@@ -329,24 +319,38 @@ li {
 .post-form {
   padding: 20px 50px;
 }
-.posttitles,
-.postcontents,
-.postetc {
+.posttitles {
   display: flex;
-  margin-bottom: 10px;
   width: 100%;
 }
+.posttitles .nickname {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.posttitles .talking {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.posttitles input[type="text"] {
+  height: 30px;
+}
+
 .writecontainer label {
   display: inline-block;
   margin-bottom: 5px;
   font-size: 16px;
-  width: 5% !important;
+}
+#postWriter {
+  width: 80%;
 }
 .writecontainer input[type="text"],
 textarea {
-  width: 95%;
   padding: 10px;
-  margin-left: 20px;
+  margin-left: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   resize: none;
@@ -366,18 +370,16 @@ textarea {
   padding: 5px;
   background-color: #8d5cb2;
   color: #fff;
-  margin-left: 381px;
-  margin: 10px;
+  margin-left: 20px;
   cursor: pointer;
-  margin-left: auto;
   display: inline-block;
 }
 .writecontainer button:hover {
   background-color: #8038c7;
 }
-#postImage {
+/* #postImage {
   margin-left: 77px;
-}
+} */
 #postList {
   height: 800px;
   overflow-y: auto;
@@ -467,7 +469,6 @@ textarea {
 @media all and (max-width: 760px) {
   /* 기부타이틀 */
   .reviewTitle {
-    height: 171px;
     padding: 15px 20px;
   }
   .reviewTitle > ul > li {
@@ -476,6 +477,7 @@ textarea {
   }
   .reviewTitle h2 {
     font-size: 2em;
+    margin-top: 10px;
   }
   #searchContainer {
     /* height: 50px; */
@@ -498,6 +500,20 @@ textarea {
   #writeBtn {
     width: 300px;
   }
+  .writecontainerbox {
+    padding: 0;
+  }
+  .posttitles {
+    flex-direction: column;
+    position: relative;
+  }
+  .posttitles .nickname {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .posttitles .talking {
+    width: 100%;
+  }
   .writecontainer h1 {
     font-size: 1.8em;
     padding-left: 45px;
@@ -506,6 +522,26 @@ textarea {
   }
   .writecontainer label {
     width: 10% !important;
+  }
+  .writecontainer input[type="text"],
+  textarea {
+    padding: 10px;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .writecontainer input[type="text"] {
+    margin-right: 110px;
+  }
+
+  .writecontainer button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 65px;
+  }
+  #postWriter {
+    width: 100%;
   }
   #postDate {
     margin-left: 10px;
@@ -519,68 +555,49 @@ textarea {
 }
 
 @media all and (max-width: 480px) {
-  #review .inner{
+  #review .inner {
     padding: 0;
   }
   .reviewTitle {
     height: 198px;
     padding: 15px 10px;
-}
-#searchContainer{
-  justify-content: center;
-}
-.writecontainer h1{
-  padding-left: 13px;
-  font-size: 1.5em;
-}
-.writecontainer label{
-  margin-bottom: 0;
-}
-#postImage {
-  margin-left: 0px;
-}
-.pageContainer {
-  width: 60%;
-}
-#postTableBody .date{
-  font-size: 13px;
-}
-#postTableBody{
-  font-size: 14px;
-}
-td {
-  text-align: center;
-  padding: 8px 5px;}
-th {
-  text-align: center;
-  padding: 8px 5px;
-  font-size: 14px;}
-th:nth-child(4) {
-  width: 25%;
-}
-#postTableBody .writer {
-  font-size: 13px;
-}
-th:nth-child(3), th:nth-child(5), th:last-child {
-  width: 8%;
-}
-.middle li:nth-last-child(3){
-  display: none;
-}
+  }
+  .writecontainer h1 {
+    padding-left: 13px;
+    font-size: 1.5em;
+  }
+  .writecontainer label {
+    margin-bottom: 0;
+  }
+  #postImage {
+    margin-left: 0px;
+  }
+  .pageContainer {
+    width: 60%;
+  }
+  #postTableBody .date {
+    font-size: 13px;
+  }
+  #postTableBody {
+    font-size: 14px;
+  }
+  #postTableBody .writer {
+    font-size: 13px;
+  }
+  .middle li:nth-last-child(3) {
+    display: none;
+  }
 
-.middle li:nth-last-child(2){
-  display: none;
+  .middle li:nth-last-child(2) {
+    display: none;
+  }
 }
-}
-@media all and (max-width: 480px){
+@media all and (max-width: 480px) {
   .pageContainer {
     width: 70%;
-  }
-  .postetc{
-    display: none;
   }
   .writecontainer label {
     width: 15% !important;
     font-size: 1.2em;
-}
+  }
 }

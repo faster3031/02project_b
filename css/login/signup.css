@@ -76,8 +76,9 @@
   border: none;
   border-radius: 10px;
   padding-left: 20px;
-  margin: 5px 0;
+  margin: 7px 0;
   font-size: 15px;
+  overflow: hidden;
 }
 .tal_but button {
   position: relative;
@@ -138,6 +139,7 @@
   font-size: 13px;
   line-height: 30px;
   border-radius: 10px;
+  overflow: hidden;
 }
 .sex input[type="radio"] + label {
   background-color: #fff;
@@ -175,6 +177,7 @@
   display: block;
   background: none;
   border: none;
+  cursor: pointer;
 }
 /* 체크박스 모양 변경 */
 .terms_shape {
@@ -347,7 +350,7 @@
     width: calc(94% / 2);
   }
   .test_text {
-    font-size: 8px;
+    font-size: 10px;
   }
   .terms_text {
     overflow: scroll;

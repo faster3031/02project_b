@@ -89,7 +89,7 @@
           <nav class="nav">
             <ul>
               <li><a href="infopage.html" alt="기부">기부</a></li>
-              <li><a href="#" alt="캠페인">캠페인</a></li>
+              <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
               <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
               <li><a href="#" alt="후기">후기</a></li>
               <li><a href="review.html" alt="게시판">게시판</a></li>
@@ -110,69 +110,30 @@
           <div class="inner">
             <!-- 기부 타이틀 -->
             <div class="reviewTitle">
-              <h2>기부후기</h2>
+              <h2>너도 나도 팬덤 한마디 </h2>
               <ul>
-                <li>- 기부후기 게시판 입니다.</li>
-                <li>- 해당 게시판의 성격에 맞지 않는 글은 임의로 삭제됩니다.</li>
+                <li>- 나의 아이돌과, 팬덤들을 향한 응원 메세지를 남겨주세요.</li>
+                <li>- 해당 게시판의 성격에 맞지 않는 댓글은 임의로 삭제됩니다.</li>
                 <li>- 항의, 신고 누적 시 해당 글을 임의로 삭제할 수 있으며, 계정삭제 및 이용정지 할 수 있습니다.</li>
               </ul>
             </div>
            <!-- 기부 검색기능 -->
-           <div id="searchContainer">
-           
-              <div class="date">
-                <div class="datelist">
 
-                  <label for="postDate">날짜 &nbsp: &nbsp</label>
-                  <input type="date" id="postDatePrev" name="postDate"> &nbsp;~&nbsp;
-                  <input type="date" id="postDateNext" name="postDate">
-                </div>
-              <div class="subject">
-                <select name="searchList" id="searchList">
-                  <option value="bod_title">제목</option>
-                  <option value="con_name">작성자</option>
-                  <option>전체</option>
-                </select>
-                <input type="text" id="searchInput" placeholder="Search...">
-                <button id="btnSearch">검색</button>
-
-              </div>
-              </div>
-
-
-              <!-- 게시글 작성버튼 -->
-              <button id="writeBtn">게시글 작성</button>
-            
-
-
-          </div>
 <!-- 작성글 -->
           <div class="writecontainer">
             <div class="writecontainerbox">
-            <h1>게시글 작성</h1>
             <div class="post-form">
-                <div class="posttitles">
-                    <label for="postTitle">제&nbsp;&nbsp;&nbsp;&nbsp;목&nbsp;:</label>
-                    <input type="text" id="postTitle" required placeholder="제목을 입력하세요.">
+              <div class="posttitles">
+                <div class="nickname">
+                                    <label for="postName">닉네임&nbsp;:</label>
+                  <input type="text" id="postTitle" required placeholder="">
                 </div>
-                <div class="posttitles">
-                    <label for="postWriter">작성자&nbsp;:</label>
-                    <input type="text" id="postWriter" required placeholder="">
+                <div class="talking">
+                                    <label for="postWriter" id="postWriterTalk">한마디&nbsp;:</label>
+                  <input type="text" id="postWriter" required placeholder=" 한마디를 남겨 보세요.">
                 </div>
-                <div class="postetc">
-                    <input type="file" id="postImage" accept="image/*">
-                    <label for="postDate">날&nbsp;&nbsp;&nbsp;짜&nbsp;:</label>
-                    <input type="date" id="postDate" name="postDate">
-                </div>
-                <div class="postcontents">
-                    <label for="postContent">내&nbsp;&nbsp;&nbsp;&nbsp;용&nbsp;:</label>
-                    <textarea name="postContent" id="postContent" required></textarea>
-                </div>
-                <div class="postBtns">
-
-                  <button id="addPostBtn">등록</button>
-                  <button id="postClosseBtn">나가기</button>
-                </div>
+                <button id="addPostBtn">등록</button>
+              </div>
 
                 </div>
             </div>
@@ -185,46 +146,50 @@
                 <thead>
                     <tr>
                         <th class="num">번호</th>
-                        <th class="subject">제목</th>
                         <th class="writer">작성자</th>
+                        <th class="subject">한마디</th>
                         <th class="date">작성일</th>
-                        <th class="hit">조회</th>
+                        <th class="hearttitle">좋아요</th>
                         <th class="del">삭제</th>
                     </tr>
                 </thead>
                 <tbody id="postTableBody">
+                                  <tr>
+                  <td class="num">004</td>
+                  <td class="writer">몬베베여누</td>
+                  <td class="subject">오늘 9월26일 몬베베생일!! 벌써 8번째 생일을 맞게해줘서 너무너무 고맙고!! 늘 자리지켜줘서 고마워❤ 군대 잘기다리고있을니깐 걱정말고 잘다녀와! 사랑한다 몬스타엑스 사랑한다 몬베베!</td>
+                  <td class="date">2023-09-26 10:33</td>
+                  <td class="hearttitle"><div class="heart"></div></td>
+                  <td class="del"> </td>
+              </tr>
+                  <tr>
+                    <td class="num">003</td>
+                    <td class="writer">재완투쓰리</td>
+                    <td class="subject">얼마전에 후원 굿즈로 카리나모자 받았어요 성덕ㅠ </td>
+                    <td class="date">2023-09-19 16:04</td>
+                    <td class="hearttitle"><div class="heart"></div></td>
+                    <td class="del"> </td>
+                  </tr>
+                  <tr>
+                    <td class="num">002</td>
+                    <td class="writer">아미새</td>
+                    <td class="subject">이달의 팬덤 2위가 v라니. 기부한 보람이 있어. </td>
+                    <td class="date">2023-09-19 16:04</td>
+                    <td class="hearttitle"><div class="heart"></div></td>
+                    <td class="del"> </td>
+                </tr>
+
                     <tr>
-                        <td class="num">공지</td>
-                        <td class="subject"><a href="#">기부후기 게시판 공지사항</a></td>
-                        <td class="writer">관리자</td>
-                        <td class="date">2023-10-11</td>
-                        <td class="hit">9874</td>
-                        <td class="del"> </td>
-                    </tr>
-                    <tr>
-                        <td class="num">공지</td>
-                        <td class="subject"><a href="#">[STRAY KIDS] 똑똑똑! 희망 배달 후기</a></td>
-                        <td class="writer">스테이</td>
-                        <td class="date">2023-10-09</td>
-                        <td class="hit">65</td>
-                        <td class="del"> </td>
-                    </tr>
-                    <tr>
-                        <td class="num">공지</td>
-                        <td class="subject"><a href="#">[TWICE] 혼자사는 어르신들을 위한 든든한 삼계탕 후기 </a></td>
+                        <td class="num">001</td>
                         <td class="writer">원스</td>
-                        <td class="date">2023-09-19</td>
-                        <td class="hit">90</td>
+                        <td class="subject">트와이스가 기부하면 나도 기부한다.</td>
+                        <td class="date">2023-09-19 14:55</td>
+                        <td class="hearttitle"><div class="heart"></div></td>
                         <td class="del"> </td>
                     </tr>
-                    <tr>
-                        <td class="num">000</td>
-                        <td class="subject"><a href="#">[MONSTA X] 글길문학반 어르신들께 가을 나들이 선물 후기</a></td>
-                        <td class="writer">몬베베</td>
-                        <td class="date">2023-09-19</td>
-                        <td class="hit">123</td>
-                        <td class="del"> </td>
-                    </tr>
+
+
+
                     
                 </tbody>
             </table>

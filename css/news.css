@@ -132,6 +132,7 @@
 }
 .news-card img {
   width: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
 .news-card .bar_news {
@@ -279,7 +280,9 @@
     height: 50px;
     line-height: 50px;
   }
-
+#card-box{
+  padding: 10px 10px;
+}
   .slider-item {
     width: 370px;
     height: 140px;

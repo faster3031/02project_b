@@ -8,35 +8,35 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 100px 0;
 }
 .campaign-wrap h1 {
-  position: absolute;
+  position: relative;
   display: block;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
   font-family: 'GmarketSansMedium';
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   color: #000;
   font-size: 20px;
   font-weight: bold;
-  text-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 1);
 }
 .campaign_gap {
   position: relative;
   display: block;
-  height: 50px;
+  height: 100px;
   width: 100%;
+  margin-top: 60px;
 }
 .campaign-wrap {
   flex-wrap: wrap;
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
 }
 .campaign_item {
   width: calc(95% / 4);
+  cursor: pointer;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   padding: 20px 10px;
@@ -211,7 +211,7 @@
   display: block;
   z-index: 99;
   width: 80%;
-  height:7px;
+  height: 7px;
   background-color: #7724c9;
   border-radius: 5px;
 }
@@ -233,11 +233,14 @@
   .campaign_box .hoverBox {
     bottom: -120%;
   }
-  .campaign_title{
+  .campaign_title {
     font-size: 15px;
   }
-  .campaign-wrap{
-    margin: 10px 0;
+  .campaign-wrap {
+    margin-bottom: 50px;
+  }
+  .campaign_gap {
+    margin-top: 65px;
   }
 }
 
@@ -245,19 +248,21 @@
   .campaign_item {
     width: calc(98% / 4);
   }
-  .campaign_title{
+  .campaign_title {
     font-size: 12px;
+  }
+  .campaign_gap {
+    margin-top: 0px;
   }
 }
 @media all and (max-width: 1024px) {
   .campaign_item {
-    
     width: calc(65% / 2);
   }
   .campaign_ber_title {
     font-size: 15px;
   }
-  .campaign_title{
+  .campaign_title {
     font-size: 12px;
   }
   .campaign_box .hoverBox {
@@ -266,10 +271,10 @@
   .campaign_box:hover .hoverBox {
     bottom: -10%;
   }
-  .ive{
+  .ive {
     display: none;
   }
-  .akmu{
+  .akmu {
     display: none;
   }
 }
