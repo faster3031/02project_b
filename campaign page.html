@@ -80,10 +80,28 @@
     <div class="wrap">
       <!-- 스크롤 버튼 -->
       <div class="top-button">
-      <a href="#" class="top-btn" id="top-btn">
-        <img src="images/top-btn.png" alt="top-btn" id="top-btn-img" />
-      </a>
-      </div>
+        <a class="qna-btn" id="qna-btn">
+          <img src="images/logo_05.png" alt="qna-btn" id="qna-btn-img" />
+        </a>
+        <a href="#" class="top-btn" id="top-btn">
+          <img src="images/top-btn.png" alt="top-btn" id="top-btn-img" />
+        </a>
+        </div>
+        <!-- qna 버튼 내용 -->
+        <div class="qna">
+          <div class="qnaheader"><p>별들의 따뜻한 후원, 별의온도</p><br>
+            <span>문의사항이 있으신가요?</span> <i class="fa-solid fa-xmark" id="qnaClose"></i></div>
+          <div class="messages">
+            <span class="msg"><img src="images/logo_05.png" alt="별의온도 로고">별의온도</span>
+            <span><img src="images/logo_04.png" alt="별의온도 로고"></span>
+            <div class="message ai">안녕하세요. <br> 별의온도 입니다.<br> 무엇을 도와드릴까요?</div>
+            <div class="message ai">다음 중 문의사항에 해당되는 번호를 입력해주세요.<br>1. 로그인/회원가입<br>2. 박재완<br>3. 집에보내줘<br>4. 칭찬<br>5. 불만상담<br></div>
+          </div>
+          <div class="qnainput">
+            <input type="text"  placeholder="..."/>
+            <button onclick="$chat.input();">전송</button>
+          </div>
+        </div>
       <!-- 헤더 -->
       <header class="header">
         <div class="inner">

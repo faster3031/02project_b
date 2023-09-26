@@ -20,8 +20,8 @@
   align-items: center;
 }
 .header .logo {
-  width: 200px;
-  height: 35px;
+  width: 180px;
+  height: 30px;
 }
 .header .logo img {
   height: 100%;
@@ -397,15 +397,12 @@
   right: 0;
   transition: opacity 0.3s ease;
 }
-.nav-mb ul{
-  width: 320px;
-  height: 400px;
-}
+
 .nav-mb ul li{
   font-family: 'GmarketSansMedium';
   display: none;
   background-color: #fff;
-  width: 100%;
+  width: 320px;
   padding: 0 20px;
   line-height: 50px;
   height: 50px;
@@ -441,7 +438,7 @@
   .nav{
     display: none;
   }
-  .login{
+  #login{
     display: none;
   }
   .nav-mb ul li{
