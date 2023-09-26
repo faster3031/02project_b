@@ -1,0 +1,256 @@
+/* section */
+.sub_campaign {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sub_campaign_title_box {
+  line-height: 2;
+  text-align: center;
+}
+.sub_campaign_title_box p {
+  color: #121212;
+  font-size: 26px;
+  font-family: "Noto Sans KR";
+  font-weight: bold;
+}
+.sub_chk_box {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+.sub_chk_box span {
+  font-size: 20px;
+}
+
+.sub_campaign_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 0;
+  justify-content: space-between;
+}
+.sub_campaign_item {
+  width: calc(95% / 3);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px 20px;
+  cursor: pointer;
+}
+.sub_campaign_img {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-bottom: 50%;
+  overflow: hidden;
+}
+.sub_campaign_img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.sub_campaign_text {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  font-weight: bold;
+  color: #242424;
+  flex-wrap: wrap;
+}
+.sub_campaign_title_box p span{
+  color: #aa78dc;
+}
+.sub_campaign_text .d-day {
+  width: 50px;
+  height: 20px;
+  font-size: 13px;
+  text-align: center;
+  background-color: #aa78dc;
+  color: #fff;
+  border-radius: 10px;
+}
+.sub_campaign_text .d-day_7 {
+  width: 50px;
+  height: 20px;
+  font-size: 13px;
+  text-align: center;
+  background-color: #5b0fff;
+  color: #fff;
+  border-radius: 10px;
+}
+.sub_campaign_text .d-close {
+  width: 50px;
+  height: 20px;
+  font-size: 13px;
+  text-align: center;
+  background-color: rgb(148, 148, 148);
+  color: #fff;
+  border-radius: 10px;
+}
+.sub_campaign_gather {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: normal;
+}
+/* ------------------------------------------------------ */
+/* 체크박스 */
+/* 전체 체크박스 옆 버튼 */
+.terms_but {
+  color: black;
+  position: absolute;
+  /* top: 2px; */
+  left: 150px;
+  padding: 0;
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/* 체크박스 모양 변경 */
+.terms_shape {
+  display: inline-block; /* 영역적용가능해짐 */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  border-radius: 10px; /* 모서리둥글게 처리 */
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer; /* 마우스 올렸을때 손모양 처리 */
+}
+.terms_shape:after {
+  content: "\2714"; /* 체크박스 특수문자 */
+  font-size: 24px;
+  color: #333;
+  position: absolute;
+  top: -14px;
+  left: 0;
+
+  opacity: 0; /* 처음엔 안보이게 처리 */
+  transition: 0.2s; /* CSS변화에 시간차 처리 */
+}
+
+/* input이 체크되면 특수문자 보이게 처리 */
+#chk:checked + .terms_shape:after {
+  opacity: 1;
+}
+
+/* 체크박스는 display:none;을 주면 데이터 처리가 안됨 */
+#chk {
+  position: absolute;
+  left: -999em;
+}
+/* -------------------------------------------------------------------- */
+/* 헤더 색 */
+.header .nav ul li:nth-child(2) a {
+  color: #ad5cff;
+}
+.header .nav ul li:nth-child(2):after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -28px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #ad5cff;
+  opacity: 1;}
+/* ------------------------------------------------------------ */
+/* 서브 페이지 캠페인 */
+@media all and (max-width: 1680px) {
+  .sub_campaign_item {
+    width: calc(95% / 3);
+  }
+}
+
+@media all and (max-width: 1280px) {
+  .sub_campaign_item {
+    width: calc(95% / 3);
+  }
+  .sub_campaign_text {
+    font-size: 15px;
+  }
+  .sub_campaign_gather{
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 1024px) {
+  .sub_campaign_item {
+    width: calc(97% / 3);
+  }
+  .sub_campaign_text {
+    font-size: 12px;
+  }
+  .sub_campaign_gather{
+    font-size: 13px;
+  }
+  .sub_campaign_text .d-day {
+    font-size: 14px;
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+  .sub_campaign_text .d-day_7 {
+    font-size: 14px;
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+  .sub_campaign_text .d-close {
+    font-size: 14px;
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 760px) {
+  .sub_campaign_text {
+    font-size: 13px;
+  }
+  .sub_campaign_gather{
+    font-size: 13px;
+  }
+  .sub_campaign_item {
+    width: calc(97% / 2);
+  }
+}
+@media all and (max-width: 480px) {
+  .sub_campaign_item {
+    width: calc(97% / 1);
+  }
+  .sub_campaign_text {
+    font-size: 17px;
+  }
+  .sub_campaign_gather{
+    font-size: 15px;
+  }
+  .sub_campaign_text .d-day {
+    font-size: 15px;
+    padding: 5px 15px;
+    font-size: 10px;
+  }
+  .sub_campaign_text .d-day_7 {
+    font-size: 15px;
+    padding: 5px 15px;
+    font-size: 10px;
+  }
+  .sub_campaign_text .d-close {
+    font-size: 15px;
+    padding: 5px 5px;
+    font-size: 10px;
+  }
+  .sub_campaign_title_box p{
+    font-size: 20px;
+  }
+  .sub_chk_box{
+    margin-top: 10px;
+  }
+  .sub_campaign_wrap{
+    gap: 15px 0;
+  }
+}

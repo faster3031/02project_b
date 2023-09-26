@@ -73,6 +73,7 @@
   align-items: center;
   justify-content: flex-end;
 }
+
 .login a {
   margin-right: 20px;
   font-weight: bold;
@@ -80,12 +81,7 @@
   transition: all 0.3s;
 }
 
-.login a:hover {
-  color: #ebdeff;
-}
-.login i {
-  font-size: 17px;
-}
+
 
 /* 로그인 */
 /* 섹션 스타일 */
@@ -158,7 +154,7 @@
 }
 .top-btn {
   display: block;
-  background-color: #d7bcff;
+  background-color: #8d4ccd;
   border-radius: 50%;
   width: 55px;
   line-height: 55px;
@@ -169,6 +165,229 @@
 }
 .top-btn img.up {
   transform: rotate(0deg);
+}
+.top-button .qna-btn {
+  display: block;
+  background-color: #8d4ccd;
+
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  margin-bottom: 5px;
+}
+.qna-btn:hover {
+  transform: rotateY( 180deg );
+}
+/* qna 버튼 */
+.qnainput input[type=text]{
+  border-radius:5px;
+  border:none;
+  padding:10px;
+  display:block;
+  box-sizing:border-box;
+  background:#d9c4ee;
+  font-size:16px;
+  color:#401c64;
+}
+.qnainput button{
+    border-radius: 5px;
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    background-color: #a674d8;
+    cursor: pointer;
+    color: #fff;
+    padding:  10px;;
+  font-size:14px;
+  line-height: initial;
+}
+.qnainput button:hover{
+  background-color:#8d4ccd;
+}
+.qna{
+  position: fixed;
+  right: 30px;
+  bottom: 157px;
+  width:30%;
+  min-width: 390px;
+  box-sizing:border-box;
+  z-index: 99999;
+  background-color: #fff;
+  display: none;
+  border-radius: 10px;
+}
+.qna>.qnaheader{
+  text-align:center;
+  font-size:17px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+  padding:10px;
+  box-sizing:border-box;
+  color:#fff;
+  border-radius: 10px 10px 0 0;
+  background-color: #8d57c2;
+  
+}
+.qna>.qnaheader p{
+  font-weight: bold;
+  display: inline;
+
+}
+.qna>.qnaheader span{
+  font-size: 15px;
+}
+.qna>.qnaheader i{
+  float: right;
+  cursor: pointer;
+  line-height: inherit;
+  transform: translate(-5px, -22px);
+}
+.qna>.qnaheader i:hover{
+  color: #000;
+}
+.qna>.messages{
+  height:450px;
+  background:linear-gradient(#fff , #fff);
+  overflow:hidden;
+  overflow-y:scroll;
+  padding-top:20px;
+}
+.qna>.messages .msg{
+  float:left;
+  margin-right:50%;
+  margin-left:2%;
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+}
+.qna>.messages .msg img{
+  border-radius: 50%;
+  background-color: #8d57c2;
+  width: 15%;
+  margin-right: 10px;
+}
+.qna>.messages>span img{
+  width: 40%;
+
+  object-fit: contain;
+}
+.messages::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+	background-color: #fff;
+
+}
+
+.messages::-webkit-scrollbar
+{
+	width: 4px;
+	background-color: #fff;
+}
+
+.messages::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color:rgba(0,0,0,0.1);
+  border-radius:5px;
+}
+.qna>.messages>.message{
+    margin-top:5px;
+    width:48%;
+    padding:15px 8px;
+    box-sizing:border-box;
+    border-radius:8px;
+}
+.qna>.messages>.message.ai{
+  float:left;
+  margin-right:50%;
+  margin-left:2%;
+  border-bottom-left-radius:0px;
+  background:#f3ebfa;
+  font-size: 15px;
+  
+}
+.qna>.messages>.message.me{
+  float:right;
+  margin-left:50%;
+  margin-right:2%;
+  border-bottom-right-radius:0px;
+  background:#a674d8;
+  color:#fff;
+}
+.idle{
+  opacity:0.5;
+  height:41px;
+  width:60px !important;
+}
+.idle div{
+  display:inline-block;
+  width:3px;
+  height:3px;
+  background-color:#000;
+  margin:0px 2px;
+  border-radius:3px;
+}
+.idle div:first-child{
+  margin-left:10px;
+  animation:idlea 2s infinite ease-in-out;
+}
+.idle div:nth-child(2){
+  animation:idlea1 2s infinite ease-in-out;
+}
+.idle div:nth-child(3){
+  animation:idlea2 2s infinite ease-in-out;
+}
+@keyframes idlea{
+  0%{
+    transform:scale(1);
+  }
+  33.3%{
+    transform:scale(2);
+  }
+  33.4%{
+    transform:scale(1);
+  }
+}
+@keyframes idlea1{
+  33.4%{
+    transform:scale(1);
+  }
+  66.6%{
+    transform:scale(2);
+  }
+  66.7%{
+    transform:scale(1);
+  }
+}
+@keyframes idlea2{
+  66.7%{
+    transform:scale(1);
+  }
+  99.9%{
+    transform:scale(2);
+  }
+}
+.qna>.qnainput{
+  border-top: 1px solid rgba(0, 0, 0, 0.18);
+  box-sizing:border-box;
+  padding:10px 5px;
+  overflow:hidden;
+}
+.qna>.qnainput input{
+  width:85%;
+  float:left;
+  border-top-right-radius:0px;
+  border-bottom-right-radius:0px;
+}
+.qna>.qnainput button{
+  float:right;
+  width:15%;
+  border-top-left-radius:0px;
+  border-bottom-left-radius:0px;
 }
 /* 모바일 메뉴 */
 .nav-mb{
@@ -198,6 +417,7 @@
   display: none;
   cursor: pointer;
 }
+
 @media all and (max-width: 1680px) {
 }
 
@@ -237,4 +457,17 @@
   }
 }
 @media all and (max-width: 480px) {
+  .qna{
+    width: 90%;
+    min-width: 220px;
+  }
+  .qna>.messages>.message.ai{
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 320px) {
+  .qna{
+    width: 80%;
+    min-width: 220px;
+  }
 }

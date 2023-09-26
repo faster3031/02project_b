@@ -294,7 +294,7 @@
   width: 200px;
   height: 30px;
   border-radius: 20px;
-  background-color: #bda1d3;
+  background-color: #8d4ccd;
   color: #fff;
   margin-right: 20px;
   margin-top: 10px;
@@ -305,7 +305,7 @@
   font-weight: bold;
 }
 .slide_left_button button:hover {
-  background-color: #7d51c3;
+  background-color: #8038c7;
   color: #d9d9d9;
 }
 .slide_right_button {
@@ -318,7 +318,8 @@
   width: 200px;
   height: 30px;
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: #8d4ccd;
+  color: #fff;
   margin-right: 20px;
   margin-top: 10px;
   cursor: pointer;
@@ -328,8 +329,7 @@
   font-weight: bold;
 }
 .slide_right_button button:hover {
-  background-color: #353535;
-  color: #d9d9d9;
+  background-color: #8038c7;
 }
 
 /* 반응형 */
@@ -436,7 +436,7 @@
 }
 @media all and (max-width: 900px) {
   .slide_right_img4{
-    top: 25%;
+    top: 30%;
     right: -10%;
     width:70%;
   }
@@ -512,7 +512,7 @@
     transform: translateX(15%);
   }
   .slide6_siz {
-    width: 80%;
+    width: 100%;
   }
   .slide_left_img2 {
     width: 300px;
@@ -539,7 +539,7 @@
     transform: translateX(-50%);
   }
   .slide_right_img4{
-    top: 15%;
+    top: 20%;
     right:15%;
     width:70%;
   }
@@ -584,8 +584,8 @@
     left: 50%;
     transform: translateX(-50%);
   }.slide_right_img4{
-    top: 50%;
-    right:0%;
-    width:100%;
+    top: 30%;
+    right:10%;
+    width:80%;
   }
 }
