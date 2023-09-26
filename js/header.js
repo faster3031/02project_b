@@ -202,7 +202,6 @@ window.addEventListener("load", function () {
       $chat.input();
     }, 1000);
   });
-});
     // 모바일 메뉴 토글
     const toggleButton = document.getElementById('toggleButton');
     const navMb = document.querySelector('.nav-mb');
@@ -213,4 +212,6 @@ window.addEventListener("load", function () {
             navMb.style.opacity = '1';
         }
     });
+});
+
 
