@@ -154,13 +154,26 @@
           <!-- 메뉴 -->
           <nav class="nav">
             <ul>
-              <li><a href="#" alt="기부">기부</a></li>
+              <li><a href="infopage.html" alt="기부">기부</a></li>
               <li><a href="#" alt="캠페인">캠페인</a></li>
               <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
               <li><a href="#" alt="후기">후기</a></li>
               <li><a href="review.html" alt="게시판">게시판</a></li>
             </ul>
           </nav>
+                    <!-- 모바일 메뉴 -->
+                    <i class="fa-solid fa-bars" id="toggleButton"></i>
+                    <nav class="nav-mb">
+                      <ul>
+                        <li><a href="infopage.html" alt="기부">기부</a></li>
+                        <li><a href="#" alt="캠페인">캠페인</a></li>
+                        <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
+                        <li><a href="#" alt="후기">후기</a></li>
+                        <li><a href="review.html" alt="게시판">게시판</a></li>
+                        <li><a href="login.html">로그인 페이지로 이동</a></li>
+                      </ul>
+                    </nav>
+          <!-- 로그인  -->
           <div class="login">
             <div id="login-section">
               <button id="login-button">로그인</button>
@@ -169,6 +182,9 @@
               <div id="username-display"></div>
               <button id="logout-button">로그아웃</button>
             </div>
+            <!-- 로그인 끝 -->
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
         </div>
       </header>
       <!-- 인포 메인 -->
@@ -178,6 +194,29 @@
             <a href="#"
               ><img src="images/infopage_main.jpg" alt="인포메인"
             /></a>
+            <!-- 모바일 -->
+            <div class="side_title" id="mb_side_title">
+              <button>#모로코-리비아긴급모금</button>
+              <h1>[BTS] BTS와 함께 재난으로 고통받는 어린이를 구해주세요.</h1>
+              <div class="title_box">
+                <h1>57,302,336원</h1>
+                <h2>100,000,000원 목표</h2>
+              </div>
+              <div class="bar_news">
+                <span></span>
+              </div>
+              <div class="bar_per">
+                <p>58% 달성</p>
+                <p>83일 남음</p>
+              </div>
+              <div class="button-container" id="mb-buttonContainer">
+                <a href="#"><i class="fa-regular fa-heart"></i>3,000</a>
+                <button id="openPaymentModalBtn" class="openmodal">기부하기</button>
+                <a href="#"
+                ><i class="fa-regular fa-share-from-square"></i>3,000</a
+              >
+              </div>
+            </div>
             <nav class="nav_tab">
               <ul>
                 <li><a href="#">모금 소개</a></li>
@@ -346,8 +385,8 @@
                 <p>*기부금은 100% 단체에 전달됩니다.</p>
               </div>
               <div class="button-container" id="buttonContainer">
-              <button id="openPaymentModalBtn">기부하기</button>
-            </div>
+                <button id="openPaymentModalBtn2" class="openmodal">기부하기</button>
+              </div>
               <div class="side_box_icon">
                 <a href="#"><i class="fa-regular fa-heart"></i>3,000</a>
                 <a href="#"

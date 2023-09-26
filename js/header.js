@@ -110,4 +110,14 @@ window.addEventListener("load", function () {
     }
   });
   // 로그인 함수 테스트
+    // 모바일 메뉴 토글
+    const toggleButton = document.getElementById('toggleButton');
+    const navMb = document.querySelector('.nav-mb');
+    toggleButton.addEventListener('click', () => {
+        if (navMb.style.opacity === '1') {
+            navMb.style.opacity = '0';
+        } else {
+            navMb.style.opacity = '1';
+        }
+    });
 });
