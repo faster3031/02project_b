@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex: 1,2,1;
 }
 .header .logo {
   width: 200px;
@@ -34,7 +35,7 @@
 }
 .nav ul li {
   position: relative;
-  font-family: "GmarketSansMedium";
+  font-family: 'GmarketSansMedium';
   font-weight: bold;
   font-size: 17px;
   padding: 0 5px;
@@ -64,7 +65,7 @@
   color: #ebdeff;
 }
 .login {
-  width: 20%;
+  width: 133px;
   position: relative;
   display: flex;
   /* height: 40px; */
@@ -78,6 +79,8 @@
   font-size: 17px;
   transition: all 0.3s;
 }
+
+
 
 /* 로그인 */
 /* 섹션 스타일 */
@@ -106,10 +109,9 @@
 
 /* 버튼 */
 #login-button {
-  background: none;
+  background:none;
   color: #1b1b1b;
-  padding: 0px 20px;
-  font-family: "GmarketSansMedium";
+  font-family: 'GmarketSansMedium';
   border: none;
   border-radius: 10px;
   font-size: 17px;
@@ -120,15 +122,14 @@
 #logout-button {
   height: 100%;
   color: #1b1b1b;
-  font-family: "GmarketSansMedium";
-  padding: 0px 20px;
+  font-family: 'GmarketSansMedium';
   border: none;
   font-weight: bold;
   border-radius: 10px;
   font-size: 17px;
   cursor: pointer;
   font-weight: bold;
-  background: none;
+  background:none
 }
 
 /* 사용자 이름 디스플레이 스타일 */
@@ -382,6 +383,7 @@
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
+/* 모바일 메뉴 */
 .nav-mb{
   z-index: 999; /* 다른 요소 위에 나타나도록 설정 */
   width: 100%;
@@ -391,16 +393,25 @@
   right: -300px; /* 초기에 오른쪽으로 숨겨진 상태, 메뉴의 너비만큼 이동 */
   transition: right 0.5s ease; /* 메뉴 위치 변화를 부드럽게 만들기 위한 트랜지션 */
 }
-.nav-mb ul li{
-  font-family: 'GmarketSansMedium';
+
+.nav-mb ul li {
+  font-family: "GmarketSansMedium";
   display: none;
   background-color: #fff;
   width: 100%;
   padding: 0 20px;
+  font-size: 14px;
   line-height: 50px;
   height: 50px;
   text-align: center;
   font-weight: bold;
+  transition: all 0.3s;
+}
+.nav-mb ul li:hover{
+  background-color: #eee4f8;
+}
+.nav-mb ul li:hover a{
+  color: #8d4ccd;
 }
 #toggleButton {
   font-size: 23px;
@@ -408,33 +419,34 @@
   cursor: pointer;
 }
 
+
 @media all and (max-width: 1680px) {
 }
 
 @media all and (max-width: 1280px) {
 }
 @media all and (max-width: 1024px) {
-  .nav ul li {
+  .nav ul li{
     font-size: 15px;
   }
   #login-button {
     font-size: 15px;
   }
-  #logout-button {
+  #logout-button{
     font-size: 15px;
   }
-  .login i {
+  .login i{
     font-size: 15px;
   }
 }
 @media all and (max-width: 760px) {
-  .nav {
+  .nav{
     display: none;
   }
-  #login {
+  #login{
     display: none;
   }
-  .nav-mb ul li {
+  .nav-mb ul li{
     display: block;
   }
   #toggleButton{
@@ -442,16 +454,16 @@
   }
 }
 @media all and (max-width: 480px) {
-  .qna {
+  .qna{
     width: 90%;
     min-width: 220px;
   }
-  .qna > .messages > .message.ai {
+  .qna>.messages>.message.ai{
     font-size: 16px;
   }
 }
 @media all and (max-width: 320px) {
-  .qna {
+  .qna{
     width: 80%;
     min-width: 220px;
   }
