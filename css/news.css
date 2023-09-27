@@ -260,6 +260,117 @@
 }
 
 @media all and (max-width: 1280px) {
+  .news .inner{
+    overflow: hidden;
+  }
+  .news .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    height: 100px;
+    overflow: hidden;
+  }
+  .news h1 {
+    font-family: 'AppleSDGothicNeo';
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+  }
+#card-box{
+  padding: 10px 10px;
+}
+#card-box h3{
+  font-size: 13px;
+}
+  .slider-item {
+    width: 370px;
+    height: 140px;
+    padding: 20px 0 25px 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    opacity: 0;
+    z-index: 0;
+    box-shadow: 0 4px 9px #f1f1f4;
+    position: absolute;
+    left: -70px;
+    top: 0;
+  }
+  .slider-wrap {
+    padding-top: 20px;
+    width: 100%;
+    height: 520px;
+  }
+#card-slider p{
+  margin: 3px;
+  font-size: 12px;
+}
+#card-slider h4{
+  font-size: 12px;
+}
+.slider-item .animation-card_image {
+  max-width: 50px;
+  max-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 9px rgba(122, 122, 122, 0.72);
+  background-color: #ffffff;
+}
+.review-box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+}
+.news .newSwiper p {
+  line-height: 25px;
+  font-weight: 300;
+  text-align: left;
+  font-size: 13px;
+  margin: 0;
+  padding: 0 15px;
+  opacity: 0.8;
+}
+.news .newSwiper h1 {
+  font-family: "Noto Sans KR";
+  font-weight: 500;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  font-size: 16px;
+  padding: 0 15px;
+  text-align: left;
+}
+.news .newSwiper h2 {
+  /* font-family: "Cafe24Oneprettynight"; */
+  font-size: 16px;
+  text-align: left;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+.news .newSwiper {
+  width: 80%;
+  height: 80%;
+  margin-top: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+}
+.news-right{
+  width: 50%;
+  height: 78%;
+  display: flex;
+  flex-direction: column;
+}
+.news-main{
+  height: 100%;
+}
 }
 @media all and (max-width: 1024px) {
   .news .inner{

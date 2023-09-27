@@ -7,8 +7,6 @@
   top: 0;
   z-index: 9999;
   transform: 0.3s;
-}
-.header-active {
   background-color: rgb(255, 255, 255);
 }
 .header .inner {
