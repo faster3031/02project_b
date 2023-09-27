@@ -17,56 +17,10 @@
 
 .star {
   width: 100%;
-  height: 750px;
+  height: 832px;
   display: flex;
 }
-#fandomslide {
-  padding: 0 20px;
-  max-width: 1480px;
-  display: block;
-  position: relative;
-  height: 100%;
-}
-#fandomslide1 {
 
-  background-color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-#fandomslide1 #fandombg{
-  background: url("../images/fandomb02.jpg");
-}
-#fandomslide2 {
-  background-color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-#fandomslide2 #fandombg{
-  background: url("../images/fandomb03.jpg");
-  background-position-y: -306px;
-  background-position-x: -180px;
-}
-#fandomslide3 {
-  background-color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-#fandomslide3 #fandombg{
-  background: url("../images/fandomb04.jpg");
-
-}
 .rank {
   display: flex;
   flex-direction: column;
@@ -103,62 +57,32 @@
   color: #444504;
   padding-left: 5px;
 }
-#fandomslide2 .ranktitle span,
-#fandomslide2 .ranktitle h2 {
-  color: #4b2e61;
-}
-#fandomslide3 .ranktitle span,
-#fandomslide3 .ranktitle h2 {
-  color: #491440;
-}
 .ranktxt {
   min-width: 593px;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
-#fandomslide1 .ranktxt{
-  position: absolute;
-  bottom: 30px;
-  right: 50px;
-}
-#fandomslide2 .ranktxt{
-  position: absolute;
-  bottom: 30px;
-  right: 50px;
-}
-#fandomslide3 .ranktxt{
-  position: absolute;
-  bottom: 30px;
-  right: 50px;
-}
-.rankname {
-  text-align: right;
-  line-height: 60px;
 
+.rankname {
+  text-align: left;
+  line-height: 60px;
 }
+
 .ranktxt .ranktitle h2 {
-  text-align: right;
-  font-size: 30px;
+  text-align: left;
+  font-size: 20px;
   line-height: 30px;
   color: #fff;
   font-weight: 500;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
   letter-spacing: 0.8px;
 }
+
 .ranktxt h1 {
   font-size: 70px;
   color: #fff;
   font-weight: bold;
+}
 
-}
-#fandomslide1 .ranktxt h1{
-  background-color:#EDBE19;
-}
-#fandomslide2 .ranktxt h1 {
-  color: #8d5cb2;
-}
-#fandomslide3 .ranktxt h1 {
-  color: #d158bd;
-}
 .ranktxt > span {
   font-size: 50px;
   color: #fff;
@@ -166,21 +90,10 @@
   display: block;
 }
 
-/* 랭킹순서버튼  */
-#fandombtn {
-  width: 157px;
-  position: absolute;
-  display: flex;
-  top: 74%;
-  transform: translateX(100%);
-  left: 55.5%;
-  flex-direction: row;
-  height: 50px;
-}
 /* 보러가기 버튼 */
-.rankbtn{
+.rankbtn {
   position: absolute;
-  bottom: 180px;
+  bottom: -60px;
   right: 0;
 }
 .rankbtn1 {
@@ -193,137 +106,141 @@
   border: none;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
-#fandomslide2 .rankbtn1 {
-  background-color: #8d5cb2;
-}
-#fandomslide3 .rankbtn1 {
-  background-color: #d66cc5;
-}
 .rankbtn1 p {
-  color: #EDBE19;
-  font-weight: bold;
-  font-size: 20px;
-}
-.rankbtn2 {
-  margin-left: 24px;
-  width: 200px;
-  height: 60px;
-  border-radius: 20px;
-  background-color: #ffffff;
-  cursor: pointer;
-  border: none;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.116);
-}
-.rankbtn2 p {
-  color: #5c5c5c;
+  color: #ffffff;
   font-weight: bold;
   font-size: 20px;
 }
 
-/* 랭킹이미지 */
-.fandomimg {
+/* 슬라이드 1 */
+
+#fandomslide {
+  padding: 0 20px;
+  max-width: 1480px;
   display: block;
+  position: relative;
   height: 100%;
-  width: 50%;
-  position: relative;
-}
-.imgbox {
-  position: relative;
-  height: 685px;
-  overflow: hidden;
-}
-.imgbox li {
-  text-indent: -99999;
-  display: block;
-  position: absolute;
-  border: 2px solid #394057;
-}
-.imgbox li span {
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-.imgbox li.active {
-  border-color: #aa4200;
 }
 
-.fandom .swiper-slide {
+#fandomslide1 {
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
   display: flex;
+  flex-direction: column;
 }
-/* .fandom .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-} */
-.imgbox .starimg {
-  width: 450px;
-  height: 450px;
-  -webkit-border-radius: 400px;
-  -moz-border-radius: 400px;
-  border-radius: 50%;
-  background: url("../images/fandom_iu.jpg") no-repeat;
+#fandomslide1 .ranktxt .ranktitle h2 {
+  text-align: right;
+}
+#fandomslide1 #fandombg {
+  background: url("../images/fandomb03.jpg") no-repeat center;
   background-size: cover;
-  display: block;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: none;
-  box-shadow: 0 0 50px #e4e724;
-  z-index: 100;
+}
+#fandomslide1 .ranktxt {
+  position: absolute;
+  bottom: 120px;
+  right: 50px;
+}
+#fandomslide1 .ranktxt h1 {
+  color: #ffffff;
+}
 
-  transition: all 0.2s ease-in;
+#fandomslide1 .ranktxt > span {
+  display: none;
 }
-#fandomslide2 .imgbox .starimg {
-  background: url("../images/fandom_v2.jpg") no-repeat;
+#fandomslide1 .rankbtn1 {
+  background-color: #ffffff;
+}
+#fandomslide1 .rankbtn1 p {
+  color: #314633;
+}
+#fandomslide1 .rankname {
+  text-align: right;
+}
+#fandomslide1 .ranktxt > span {
+  display: none;
+}
+
+/* 슬라이드 2 */
+
+#fandomslide2 {
+  background-color: #fff;
   background-size: cover;
-  background-position-y: -50px;
-  -webkit-box-shadow: 0 0 50px #8d5cb2;
-  -moz-box-shadow: 0 0 50px #8d5cb2;
-  box-shadow: 0 0 50px #8d5cb2;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-#fandomslide3 .imgbox .starimg {
-  background: url("../images/fandom_taeyeon.png") no-repeat;
+#fandomslide2 .ranktitle h2 {
+  color: #ffffff;
+}
+#fandomslide2 .ranktxt h1 {
+  color: #b85f87;
+}
+#fandomslide2 #fandombg {
+  background: url("../images/fandomb06.jpg") no-repeat center;
   background-size: cover;
-  background-position-y: -50px;
-  -webkit-box-shadow: 0 0 50px #e769d2;
-  -moz-box-shadow: 0 0 50px #e769d2;
-  box-shadow: 0 0 50px #e769d2;
 }
-.imgbox .starimg span {
-  width: 520px;
-  height: 520px;
-  border-radius: 50%;
-  border: 1px dotted #8d5cb2;
-  position: relative;
-  top: -7%;
-  left: -8%;
-  transform: translate(-50%, -50%);
-  animation: rotate 10s linear infinite;
+#fandomslide2 .ranktxt {
+  position: absolute;
+  bottom: 250px;
+  left: 50px;
 }
-.imgbox .starimg span p {
-  background: #ffee51;
+
+#fandomslide2 .ranktxt > span {
+  text-align: left;
+  font-size: 35px;
+}
+
+#fandomslide2 .rankbtn {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+}
+#fandomslide2 .rankbtn1 p {
+  color: #e588b2;
+}
+
+/* 슬라이드 3  */
+#fandomslide3 {
+  background-color: #fff;
   background-size: cover;
-  top: 51px;
-  left: 45px;
-  display: block;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  /* animation: rotate 10s linear infinite; */
-  border-radius: 50%;
-  box-shadow: 0 0 20px #fff281;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-#fandomslide2 .imgbox .starimg span p {
-  background-color: #8d5cb2;
-  box-shadow: 0 0 20px #bb88e2;
+
+#fandomslide3 #fandombg {
+  background: url("../images/fandomb04.jpg") no-repeat center;
+  background-size: cover;
 }
-#fandomslide3 .imgbox .starimg span p {
-  background-color: #e769d2;
-  box-shadow: 0 0 20px #ff95ed;
+#fandomslide3 .ranktxt {
+  position: absolute;
+  bottom: 50%;
+  right: 10%;
 }
+#fandomslide3 .ranktxt h1 {
+  text-align: right;
+}
+#fandomslide3 .ranktxt .ranktitle h2 {
+  text-align: right;
+}
+#fandomslide3 .ranktxt > span {
+  display: none;
+}
+#fandomslide3 .rankbtn {
+  position: absolute;
+  bottom: -70px;
+}
+#fandomslide3 .rankbtn1 p {
+  color: #00008b;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -341,9 +258,6 @@
 }
 
 @media all and (max-width: 1680px) {
-  #fandombtn {
-    left: 58%;
-  }
 }
 @media all and (max-width: 1280px) {
   .fandom
@@ -356,11 +270,6 @@
     height: 780px;
   }
   /* 랭킹내용 */
-  #fandomslide1,
-  #fandomslide2,
-  #fandomslide3 {
-    padding-left: 40px;
-  }
   .ranktxt {
     min-width: 420px;
     padding: 0;
@@ -368,67 +277,55 @@
   .ranktxt h1 {
     font-size: 58px;
   }
-  .ranktxt h2 {
-    font-size: 40px;
+  .ranktxt .ranktitle h2 {
+    font-size: 20px;
   }
   .ranktxt > h1 > span {
     font-size: 40px;
   }
-  /* 랭킹순서버튼 */
-  #fandombtn {
-    top: 75%;
-    left: 53%;
-  }
-  /* 보러가기버튼 */
-.rankbtn1,
-.rankbtn2 {
-  width: 165px;
-  height: 55px;
-  border-radius: 15px;
-}
-.rankbtn1 p,
-.rankbtn2 p {
-  font-size: 18px;
-}
-/* 랭킹이미지 */
-.fandombox {
-  padding-right: 20px;
-  padding-left: 20px;
-  position: relative;
-}
-.imgbox .starimg {
-  width: 380px;
-  height: 380px;
-}
-.imgbox .starimg span {
-  width: 430px;
-  height: 430px;
-  border-radius: 50%;
-  border: 1px dotted #8d5cb2;
-  position: relative;
-  top: -6%;
-  left: -7%;
-}
-.imgbox .starimg span p {
-  top: 34px;
-  width: 43px;
-  height: 43px;
-}
-.donation {
-  height: 86px;
-}
 
+  /* 보러가기버튼 */
+  #fandomslide1 .rankbtn {
+    position: absolute;
+    right: 50px;
+  }
+  /* 슬라이드 2 */
+  #fandomslide2 .ranktxt {
+    bottom: 120px;
+  }
+  /* 슬라이드3 */
+  #fandomslide3 .ranktxt {
+    bottom: 120px;
+    right: 50px;
+  }
+  #fandomslide3 .ranktxt .ranktitle h2 {
+    text-align: right;
+  }
+  #fandomslide3 .rankbtn {
+    bottom: -57px;
+    right: 50px;
+  }
+  .rankbtn1 p,
+  .rankbtn2 p {
+    font-size: 18px;
+  }
+  /* 랭킹이미지 */
+  .fandombox {
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+  }
+  .donation {
+    height: 86px;
+  }
 }
 
 @media all and (max-width: 1024px) {
   .fandom {
-    height: 700px;
+    height: 600px;
   }
   .star {
-    height: 700px;
-  }
-  #fandombox {
-    /* height: 700px; */
+    height: 600px;
   }
   #fandomslide1,
   #fandomslide2,
@@ -450,41 +347,50 @@
   .ranktxt {
     min-width: 359px;
   }
-
+  .ranktitle {
+    margin-bottom: 0px;
+  }
   .ranktxt .ranktitle h2 {
     margin-top: 0px;
     font-size: 36px;
-    line-height: 40px;}
+    line-height: 40px;
+  }
 
   .ranktxt h1 {
     font-size: 50px;
   }
-  .ranktxt > h1 > span {
-    font-size: 25px;
-  }
-  .ranklist li::before {
-    left: 33%;
-  }
   .rankbtn {
-    width: 100%;
-    top: 52%;
-    left: 47%;
-    /* text-align: center; */
+    position: absolute;
+    bottom: -55px;
   }
-  .ranktxt > h1 > span {
+  /* 슬라이드 */
+  #fandomslide1 .rankbtn {
+    right: 0;
+  }
+  /* 슬라이드 2 */
+  #fandomslide2 .ranktitle {
+    margin-bottom: 0px;
+  }
+  #fandomslide2 .ranktitle h2 {
+    font-size: 20px;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    line-height: 21px;
+  }
+
+  #fandomslide2 .ranktxt > span {
     font-size: 30px;
   }
-  .ranklist li {
-    padding: 5px 0px;
-    margin-left: 0;
+  #fandomslide2 .rankbtn {
+    bottom: -55px;
   }
-  .ranklist li a {
-    font-size: 20px;
+  /* 슬라이드 3 */
+  #fandomslide3 .rankbtn {
+    bottom: -55px;
+    right: 0;
   }
-  .ranklist li::before {
-    display: none;
+  .ranktxt .ranktitle h2 {
+    font-size: 30px;
   }
-  /* 보러가기버튼 */
   .rankbtn1,
   .rankbtn2 {
     width: 140px;
@@ -496,32 +402,6 @@
     font-size: 15px;
   }
   /* 랭킹이미지 */
-  .imgbox {
-    height: 559px;
-  }
-  .imgbox .starimg {
-    width: 300px;
-    height: 300px;
-  }
-  .imgbox .starimg span {
-    width: 340px;
-    height: 340px;
-    border-radius: 50%;
-    border: 1px dotted #8d5cb2;
-    position: relative;
-    top: -6%;
-    left: -6%;
-  }
-  .imgbox .starimg span p {
-    top: 10px;
-  }
-  .imgbox li span {
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
   /* 총모금액 */
   .cheering {
     width: 35%;
@@ -536,82 +416,73 @@
     padding: 0;
   }
   .fandom {
-    height: 757px;
+    height: 440px;
   }
   #fandombox {
-    height: 771px;
+    height: 450px;
   }
   .star {
-    height: 736px;
-  }
-  .star .inner {
-    flex-direction: column-reverse;
+    height: 450px;
   }
 
-  /* 랭킹이미지 */
-  .fandomimg {
-    height: 70%;
-    width: 100%;
-  }
-  #fandombtn {
-    display: none;
-  }
-  .imgbox {
-    height: 360px;
-  }
-  .ranktitle {
-    margin-top: 0;
-  }
-  .ranktitle h2 {
-    text-align: center;
-  }
-  .ranktxt .ranktitle h2 {
-    margin-top: 0;
-    text-align: center;
-    font-size: 40px;
-    line-height: 50px;
-  }
-  .ranktxt {
-    min-width: -webkit-fill-available;
-    text-align: center;
-    height: 80%;
-  }
-  .ranktxt li {
-    display: none;
-  }
-  .ranktxt h1 {
-    font-size: 50px;}
-
-  .rankname {
-    text-align: center;
-  }
-  .imgbox .starimg {
-    top: 50%;
-  }
-  .imgbox .starimg span {
-    display: none;
-  }
-  /* 랭킹순서버튼 */
-  #fandombtn {
-    top: 50%;
-    left: 44%;
-    transform: translateX(-20%);
-  }
-  .ranktxt > h1 > span {
-    font-size: 25px;
-  }
   /* 보러가기버튼 */
-  .rankbtn1,
-  .rankbtn2 {
+  .rankbtn1 {
     width: 120px;
     height: 40px;
     border-radius: 10px;
   }
-  .rankbtn1 p,
-  .rankbtn2 p {
+  .rankbtn1 p {
     font-size: 14px;
   }
+  .ranktxt h1 {
+    font-size: 40px;
+  }
+
+  /* 슬라이드 1 */
+  #fandomslide1 .ranktxt {
+    bottom: 67px;
+    right: 21px;
+  }
+  #fandomslide1 .ranktxt .ranktitle h2 {
+    line-height: 20px;
+    font-size: 28px;
+  }
+  #fandomslide1 .rankbtn {
+    right: 5px;
+    bottom: -43px;
+  }
+
+  /* 슬라이드 3 */
+  #fandomslide2 .ranktxt {
+    bottom: 67px;
+    left: 21px;
+  }
+  #fandomslide2 .ranktitle h2 {
+    font-size: 15px;
+
+    line-height: 9px;
+  }
+
+  #fandomslide2 .ranktxt > span {
+    font-size: 25px;
+  }
+  #fandomslide2 .rankbtn {
+    bottom: -43px;
+  }
+  /* 슬라이드 3 */
+  #fandomslide3 .ranktxt {
+    bottom: 67px;
+    right: 21px;
+  }
+  #fandomslide3 .ranktxt .ranktitle h2 {
+    line-height: 20px;
+    font-size: 28px;
+  }
+  #fandomslide3 .rankbtn {
+    bottom: -48px;
+  }
 }
+
 @media all and (max-width: 480px) {
   /* 랭킹순서버튼 */
   #fandombtn {
@@ -622,13 +493,77 @@
   .ranktxt h2 {
     margin-top: 6px;
   }
+  /* 슬라이드 1 */
+  #fandomslide1 .ranktxt {
+    right: 15px;
+  }
+  #fandomslide1 .ranktxt .ranktitle h2 {
+    font-size: 20px;
+  }
+  /* 슬라이드 2 */
 
-  .cheering {
+  #fandomslide2 .ranktxt h1 {
+    width: 100%;
+  }
+  #fandomslide2 .ranktxt {
+    bottom: 67px;
+    right: 21px;
+  }
+  #fandomslide2 .ranktxt .ranktitle h2 {
     display: none;
   }
+  #fandomslide2 .ranktxt h1 {
+    font-size: 35px;
+  }
+  /* 슬라이드 3 */
+  #fandomslide3 .ranktxt .ranktitle h2 {
+    font-size: 20px;
+  }
 }
+
 @media all and (max-width: 320px) {
-.rankname{
-  line-height: 45px;
-}
+  #fandomslide1 .rankbtn {
+    bottom: -30px;
+  }
+  .rankbtn1 {
+    width: 100px;
+    height: 32px;
+    border-radius: 10px;
+  }
+  #fandomslide1 .ranktxt {
+    bottom: 51px;
+  }
+
+  #fandomslide1 .ranktxt .ranktitle h2 {
+    font-size: 17px;
+    line-height: 5px;
+  }
+  #fandomslide1 .ranktxt h1 {
+    font-size: 35px;
+  }
+  /* 슬라이드 2 */
+  #fandomslide2 .ranktxt {
+    bottom: 51px;
+  }
+
+  #fandomslide2 .ranktxt .ranktitle h2 {
+    font-size: 17px;
+  }
+  #fandomslide2 .ranktxt h1 {
+    font-size: 26px;
+  }
+  #fandomslide2 .rankbtn {
+    bottom: -30px;
+  }
+  /* 슬라이드 3 */
+  #fandomslide3 .rankbtn {
+    bottom: -30px;
+  }
+  #fandomslide3 .ranktxt {
+    bottom: 51px;
+  }
+  #fandomslide3 .ranktxt .ranktitle h2 {
+    font-size: 17px;
+    line-height: 5px;
+  }
 }

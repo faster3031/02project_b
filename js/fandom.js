@@ -3,7 +3,7 @@ $(document).ready(function () {
   // 페이지별 데이터와 요소 정보를 배열에 저장
   var pages = [
     {
-      counts: [111, 1111, 11111],
+      counts: [273401, 120, 25],
       elements: [
         $(".memberCountConTxt_1"),
         $(".memberCountConTxt_2"),
@@ -11,7 +11,7 @@ $(document).ready(function () {
       ],
     },
     {
-      counts: [222, 2222, 22222],
+      counts: [567401, 432, 45],
       elements: [
         $(".memberCountConTxt_4"),
         $(".memberCountConTxt_5"),
@@ -19,7 +19,7 @@ $(document).ready(function () {
       ],
     },
     {
-      counts: [333, 3333, 33333],
+      counts: [101201, 125, 22],
       elements: [
         $(".memberCountConTxt_7"),
         $(".memberCountConTxt_8"),
@@ -93,12 +93,12 @@ $(document).ready(function () {
 
   // Swiper 슬라이더 초기화
   var swiper = new Swiper("#fandombox", {
-    // spaceBetween: 30,
-    // effect: "fade",
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    spaceBetween: 30,
+    effect: "fade",
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     loop: true,
     pagination: {
       el: ".swiper-pagination",

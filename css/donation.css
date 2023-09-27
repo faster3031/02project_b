@@ -42,10 +42,10 @@
   width: 100%;
 }
 #fandomslide2 .donation_box p {
-  color: #4b2e61;
+  color: #9e466e;
 }
 #fandomslide3 .donation_box p {
-  color: #711f63;
+  color: #00008b;
 }
 .amount {
   display: flex;
@@ -61,11 +61,14 @@
   font-weight: bold;
   padding-right: 20px;
 }
+.amount p:first-child {
+  padding-right: 120px;
+}
 #fandomslide2 .amount p {
-  color: #583672;
+  color: #c07194;
 }
 #fandomslide3 .amount p {
-  color: #ad3098;
+  color: #232368;
 }
 .amount span {
   color: #7a8a20;
@@ -73,11 +76,14 @@
   font-weight: bold;
   font-size: 30px;
 }
+.amount p > span {
+  height: 100%;
+}
 #fandomslide2 .amount span {
-  color: #734695;
+  color: #cf94af;
 }
 #fandomslide3 .amount span {
-  color: #d66cc5;
+  color: #4949a8;
 }
 /* 반응형 */
 @media all and (max-width: 1680px) {
@@ -114,7 +120,7 @@
   }
 
   .amount > p > span {
-    padding-left: 20px !important;
+    padding-left: 20px;
   }
 }
 @media all and (max-width: 1024px) {
@@ -132,6 +138,15 @@
   }
   .amount p {
     font-size: 20px;
+    flex-direction: column;
+  }
+  .amount p:first-child {
+    padding-right: 0px;
+  }
+  .amount p > span {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
   }
 }
 @media all and (max-width: 760px) {
@@ -140,6 +155,9 @@
   }
   .donation .inner {
     padding: 0 15px;
+  }
+  #fandombg {
+    margin-bottom: 10px;
   }
   .cheering {
     width: 0;
