@@ -10,6 +10,23 @@ $(document).ready(function () {
 
 // 멀티미디어 리소스 로딩 완료 후 실행
 window.addEventListener("load", function () {
+      // top 버튼 스크롤 기능
+      const topBtn = document.getElementById("top-btn");
+      topBtn.addEventListener("click", function (event) {
+        event.preventDefault();
+        console.log(window.scrollY);
+        if (window.scrollY == 0) {
+          window.scrollTo({
+            top: 99999,
+            behavior: "smooth",
+          });
+        } else {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+      });
   //헤더 스크롤 기능
   //스크롤바의 상단위치
   let scy = 0;
@@ -89,23 +106,7 @@ window.addEventListener("load", function () {
       document.getElementById("logout-button").style.display = "none";
     }
   }
-  // top 버튼 스크롤 기능
-  const topBtn = document.getElementById("top-btn");
-  topBtn.addEventListener("click", function (event) {
-    event.preventDefault();
-    console.log(window.scrollY);
-    if (window.scrollY == 0) {
-      window.scrollTo({
-        top: 99999,
-        behavior: "smooth",
-      });
-    } else {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }
-  });
+
   // 화살표 이미지 회전
   const topBtnImg = document.getElementById("top-btn-img");
   window.addEventListener("scroll", function (scTop) {
@@ -205,16 +206,35 @@ window.addEventListener("load", function () {
       $chat.input();
     }, 1000);
   });
-    // 모바일 메뉴 토글
-    const toggleButton = document.getElementById('toggleButton');
-    const navMb = document.querySelector('.nav-mb');
-    toggleButton.addEventListener('click', () => {
-        if (navMb.style.opacity === '1') {
-            navMb.style.opacity = '0';
-        } else {
-            navMb.style.opacity = '1';
-        }
-    });
+
+  const toggleButton = document.getElementById('toggleButton');
+  const navMb = document.querySelector('.nav-mb');
+  const icon = document.querySelector('#toggleButton');
+  
+  toggleButton.addEventListener('click', () => {
+    if (navMb.style.opacity === '1') {
+      navMb.style.opacity = '0';
+      icon.className = 'fa-solid fa-bars'; // 클래스 이름을 'fa-bars'로 설정
+    } else {
+      navMb.style.opacity = '1';
+      icon.className = 'fa-solid fa-times'; // 클래스 이름을 'fa-times'로 설정
+    }
+  });
+
+const NavMb = document.getElementById('navMb');
+let isNavVisible = false; // 네비게이션 가시성 상태
+
+toggleButton.addEventListener('click', () => {
+  if (!isNavVisible) {
+    // 네비게이션을 오른쪽에서 나타나게 함
+    NavMb.style.right = '0';
+    isNavVisible = true;
+    NavMb.style.display = 'block'; // 메뉴를 나타나게 함
+  } else {
+    // 네비게이션을 오른쪽으로 숨김
+    NavMb.style.right = '-300px'; // 메뉴의 너비만큼 숨기도록 설정
+    isNavVisible = false;
+    NavMb.style.display = 'none'; // 메뉴를 숨김
+  }
 });
-
-
+});

@@ -20,26 +20,19 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
-    </script>
-    <!-- End Google Tag Manager -->
-        <!-- 네이버 서치 어드바이저 -->
-        <meta name="naver-site-verification" content="07782bcfa006cff898addd308409fe3efe0e2fe2" />
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W75PTH4N');</script>
+  <!-- End Google Tag Manager -->
+    <!-- 네이버 서치 어드바이저 -->
+    <meta name="naver-site-verification" content="8b8fec7e909534fd3937b9a38d6097bc5caa2aa9"/>
                 <!-- 구글 -->
                 <meta name="google-site-verification" content="8EY1-xng-olDAtUrVMi8koj8eQTRo6k0doX-1hXjgkg" />
-                    <!-- 선호 URL 및 로봇 메타 태그 -->
-    <link rel="canonical" href="https://sod-eight.vercel.app/">
+    <!-- 선호 URL 및 로봇 메타 태그 -->
+    <link rel="canonical" href="https://sod-b.vercel.app/">
     <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
     <title>별의 온도</title>
     <link rel="stylesheet" href="css/reset.css" />
@@ -80,7 +73,7 @@
   <body>
     <div class="wrap">
             <!-- 스크롤 버튼 -->
-            <div class="top-button">
+            <div class="top-button" style="display: none;">
               <a class="qna-btn" id="qna-btn">
                 <img src="images/logo_05.png" alt="qna-btn" id="qna-btn-img" />
               </a>
@@ -104,6 +97,7 @@
                 </div>
               </div>
       <!-- 헤더 -->
+      <!-- 헤더 -->
       <header class="header">
         <div class="inner">
           <a href="index.html" alt="메인 로고" class="logo">
@@ -121,10 +115,10 @@
           </nav>
                     <!-- 모바일 메뉴 -->
                     <i class="fa-solid fa-bars" id="toggleButton"></i>
-                    <nav class="nav-mb">
+                    <nav class="nav-mb" id="navMb">
                       <ul>
                         <li><a href="infopage.html" alt="기부">기부</a></li>
-                        <li><a href="#" alt="캠페인">캠페인</a></li>
+                        <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
                         <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
                         <li><a href="#" alt="후기">후기</a></li>
                         <li><a href="review.html" alt="게시판">게시판</a></li>
@@ -132,7 +126,7 @@
                       </ul>
                     </nav>
           <!-- 로그인  -->
-          <div class="login">
+          <div class="login" id="login">
             <div id="login-section">
               <button id="login-button">로그인</button>
             </div>
@@ -141,7 +135,6 @@
               <button id="logout-button">로그아웃</button>
             </div>
             <!-- 로그인 끝 -->
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
         </div>
       </header>
@@ -307,4 +300,8 @@
       </footer>
     </div>
   </body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W75PTH4N"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 </html>

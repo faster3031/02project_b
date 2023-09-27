@@ -20,26 +20,19 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
-    </script>
-    <!-- End Google Tag Manager -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W75PTH4N');</script>
+  <!-- End Google Tag Manager -->
     <!-- 네이버 서치 어드바이저 -->
-    <meta name="naver-site-verification" content="07782bcfa006cff898addd308409fe3efe0e2fe2" />
+    <meta name="naver-site-verification" content="8b8fec7e909534fd3937b9a38d6097bc5caa2aa9"/>
     <!-- 구글 콘솔 -->
     <meta name="google-site-verification" content="8EY1-xng-olDAtUrVMi8koj8eQTRo6k0doX-1hXjgkg" />
     <!-- 선호 URL 및 로봇 메타 태그 -->
-    <link rel="canonical" href="https://sod-eight.vercel.app/">
+    <link rel="canonical" href="https://sod-b.vercel.app/">
     <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
     <title>별의 온도</title>
     <link rel="stylesheet" href="css/reset.css" />
@@ -118,10 +111,10 @@
           </nav>
                     <!-- 모바일 메뉴 -->
                     <i class="fa-solid fa-bars" id="toggleButton"></i>
-                    <nav class="nav-mb">
+                    <nav class="nav-mb" id="navMb">
                       <ul>
                         <li><a href="infopage.html" alt="기부">기부</a></li>
-                        <li><a href="#" alt="캠페인">캠페인</a></li>
+                        <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
                         <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
                         <li><a href="#" alt="후기">후기</a></li>
                         <li><a href="review.html" alt="게시판">게시판</a></li>
@@ -138,7 +131,6 @@
               <button id="logout-button">로그아웃</button>
             </div>
             <!-- 로그인 끝 -->
-            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
         </div>
       </header>
@@ -471,9 +463,9 @@
                           <h1>리비아 홍수 긴급 지원</h1>
                           <p>갑자기  불어난  홍수로 많은 사람들이 집과 가족을 잃어버렸습니다.이분들에게 여러분의 관심과 도움의 손길 부탁드립니다.</p>
                         </div>
-                        <div class="slide_right_img">
+                        <div class="slide_right_img ">
                           <img src="images/slide1_img.png" alt="슬라이드1 이미지"></div>
-                        <div class="slide_left_button">
+                        <div class="slide_left_button slide_bottom_b_button">
                           <button>기부하기</button>
                         </div>
                       </div>                      
@@ -487,7 +479,7 @@
                         </div>
                         <div class="slide_right_img">
                           <img src="images/slide2_img.png" alt="슬라이드2 이미지"></div>
-                        <div class="slide_left_button">
+                        <div class="slide_left_button slide_bottom_a_button">
                           <button>기부하기</button>
                         </div>
                       </div>   
@@ -503,7 +495,7 @@
                         </div>
                         <div class="slide_left_img2">
                           <img src="images/slide3_img.png" alt="슬라이드3 이미지" class="slide3_siz"></div>
-                        <div class="slide_right_button">
+                        <div class="slide_right_button slide_bottom_b_button">
                           <button>참가 신청</button>
                         </div>
                       </div>  
@@ -518,7 +510,7 @@
                         </div>
                         <div class="slide_right_img4">
                           <img src="images/slide6_img.png" alt="슬라이드4 이미지" class="slide6_siz"></div>
-                        <div class="slide_left_button">
+                        <div class="slide_left_button slide_bottom_b_button">
                           <button>지원하기</button>
                         </div>
                       </div>  
@@ -817,13 +809,16 @@
                 <div id="artist-card"></div>
                 <div id="artist-card"></div>
               </div>
+              <button class="artist-more"><a href="campaign page.html">진행중인 캠페인<i class="fa-solid fa-chevron-right"></i></a></button>
+            </div>
+              </div>
             </section>
       <!-- 후원 굿즈 -->
       <section class="goods">
         <div class="inner">
           <div class="goods-title">
             <a href="#"><img src="images/logo_02.png" alt="별온로고">와 함께하는</a>
-            <h1><b>별의온도</b> 후원 굿즈</h1>
+            <h1><b>아티스트</b> 후원 굿즈</h1>
             <p>별의온도에서 후원하고 </br>아티스트들의 후원 굿즈를 만나보세요</p>
           </div>
           <div class="goods-picture">
@@ -875,14 +870,8 @@
       </footer>
     </div>
   </body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript
-    ><iframe
-      src="https://www.googletagmanager.com/ns.html?id=GTM-KV63VKR9"
-      height="0"
-      width="0"
-      style="display: none; visibility: hidden"
-    ></iframe
-  ></noscript>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W75PTH4N"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 </html>
