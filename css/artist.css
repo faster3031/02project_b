@@ -1,7 +1,7 @@
 /* 아티스트 목록 */
 .artist {
   width: 100%;
-  height: 500px;
+  height: 600px;
 }
 .artist h1 {
   font-family: 'GmarketSansMedium';
@@ -10,7 +10,7 @@
   font-size: 20px;
   font-weight: bold;
   text-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 1);
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .artist i{
   font-size: 18px;
@@ -31,7 +31,7 @@
   height: 250px;
   border-radius: 10px;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 .card-list > div {
   width: 4vw;
@@ -56,8 +56,28 @@
   box-shadow: 0 1px 1px black;
   z-index: 100;
 }
-
-
+.artist-more{
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+  border: none;
+  background: none;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.artist-more a{
+  font-family: 'GmarketSansMedium';
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+.artist-more i{
+  font-size: 14px;
+}
+.artist-more:hover{
+  background-color: #e6e6e6;
+}
 #artist-card:nth-child(1) {
   background-color: dodgerblue;
   background-image: url(../images/artist_aespa.webp);
@@ -316,7 +336,7 @@
 }
 @media all and (max-width: 480px) {
   .artist{
-    height: 700px;
+    height: 800px;
   }
   .artist h1{
     font-size: 15px;
@@ -324,6 +344,11 @@
   }
   .artist i{
     font-size: 15px;
+  }
+  .artist-more{
+    margin-bottom: 100px;
+    width: 180px;
+    height: 40px;
   }
   .card-list{
     padding: 0;
@@ -375,7 +400,12 @@
 }
 @media all and (max-width: 320px) {
   .artist{
-    height: 700px;
+    height: 800px;
+  }
+  .artist-more{
+    margin-bottom: 100px;
+    width: 180px;
+    height: 40px;
   }
   .artist h1{
     font-size: 15px;

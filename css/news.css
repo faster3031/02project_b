@@ -381,6 +381,7 @@
     height: 1450px;
   }
   .news .mb_title1{
+    font-family: 'GmarketSansMedium';
     display: block;
     text-align: center;
     font-size: 15px;
@@ -390,6 +391,7 @@
     font-size: 15px;
   }
   .news .mb_title2{
+    font-family: 'GmarketSansMedium';
     display: block;
     text-align: center;
     font-size: 15px;
@@ -534,6 +536,7 @@
     height: 1500px;
   }
   .news .mb_title1{
+    font-family: 'GmarketSansMedium';;
     display: block;
     text-align: center;
     font-size: 15px;
@@ -543,6 +546,7 @@
     font-size: 15px;
   }
   .news .mb_title2{
+    font-family: 'GmarketSansMedium';;
     display: block;
     text-align: center;
     font-size: 15px;
