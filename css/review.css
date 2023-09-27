@@ -107,6 +107,7 @@ td:nth-child(3) > span {
 }
 td:nth-child(2) {
   font-weight: 600;
+  word-break: break-all;
 }
 /* 좋아요 */
 .hearttitle {
@@ -136,7 +137,26 @@ td:nth-child(2) {
   /* transition-duration: 1s; */
   background-position: -1137px 0px;
 }
+#postTableBody > tr > td.hearttitle > .heart1{
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background: url("https://cssanimation.rocks/images/posts/steps/heart.png")
+    no-repeat center;
+  background-size: cover;
+  background-position: 13px 0px;
+  cursor: pointer;
+  transition: background-position 1s steps(28);
+  transition-duration: 0s;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(30%);
+}
+#postTableBody > tr > td.hearttitle > .heart1.is-active1 {
 
+  background-position: -1137px 0px;
+}
 #searchContainer .subject {
   display: flex;
   align-items: center;
@@ -556,10 +576,10 @@ textarea {
   th:nth-child(4) {
     display: none;
   }
-  th:nth-child(5),
-  td:nth-child(5) {
+  th:nth-child(5), td:nth-child(5) {
     padding-right: 0;
-  }
+    padding-left: 0;}
+
   th:nth-child(6),
   td:nth-child(6) {
     padding-left: 0;
@@ -585,6 +605,9 @@ textarea {
 }
 
 @media all and (max-width: 480px) {
+  th:nth-child(5) {
+    width: 10%;
+}
   #review .inner {
     padding: 0;
   }
@@ -621,8 +644,6 @@ textarea {
   .middle li:nth-last-child(2) {
     display: none;
   }
-}
-@media all and (max-width: 480px) {
   .pageContainer {
     width: 70%;
   }
@@ -630,4 +651,11 @@ textarea {
     width: 15% !important;
     font-size: 1.2em;
   }
+
+}
+@media all and (max-width: 320px) {
+  td {
+    text-align: center;
+    padding: 13px 3px;
+}
 }

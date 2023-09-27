@@ -9,12 +9,11 @@ $(document).ready(function () {
   });
 });
 // 좋아요
-$(function() {
-  $(".heart").on("click", function() {
+$(function () {
+  $(".heart").on("click", function () {
     $(this).toggleClass("is-active");
   });
 });
-
 // 멀티미디어 리소스 로딩 완료 후 실행
 window.addEventListener("load", function () {
   const postTitleInput = document.getElementById("postTitle");
@@ -44,12 +43,20 @@ window.addEventListener("load", function () {
     const newRow = document.createElement("tr");
     newRow.innerHTML = `
        <td class="num">${formattedRegistrationNumber}</td>
-       <td class="subject"><a href="#">${post.title}</a></td>
-       <td class="writer">${post.writer}</td>
+       <td class="subject">${post.title}</td>
+       <td class="writer">${post.writer}<br><span>${post.date || ""}</span></td>
        <td class="date">${post.date || ""}</td>
-       <td class="hearttitle"><div class="heart"></div></td>
+       <td class="hearttitle"><div class="heart1"></div></td>
        <td class="del"><button class=delete-post-btn>x</button></td>
        `;
+    
+// 이벤트 위임을 사용하여 클릭 이벤트를 처리합니다.
+newRow.addEventListener("click", function (event) {
+  const target = event.target;
+  if (target.classList.contains("heart1")) {
+    target.classList.toggle("is-active1");
+  }
+});
     // 삭제 버튼에 클릭 이벤트 추가
     const deleteButton = newRow.querySelector(".delete-post-btn");
     deleteButton.addEventListener("click", function () {
@@ -76,12 +83,20 @@ window.addEventListener("load", function () {
 
     if (title && writer) {
       const currentDate = new Date(); // 현재 날짜와 시간을 가져옵니다.
-    const formattedDate = `${currentDate.getFullYear()}-${(currentDate.getMonth() + 1)
-      .toString()
-      .padStart(2, "0")}-${currentDate.getDate().toString().padStart(2, "0")} ${currentDate
-      .getHours()
-      .toString()
-      .padStart(2, "0")}:${currentDate.getMinutes().toString().padStart(2, "0")}`;
+      const formattedDate = `${currentDate.getFullYear()}-${(
+        currentDate.getMonth() + 1
+      )
+        .toString()
+        .padStart(2, "0")}-${currentDate
+        .getDate()
+        .toString()
+        .padStart(2, "0")} ${currentDate
+        .getHours()
+        .toString()
+        .padStart(2, "0")}:${currentDate
+        .getMinutes()
+        .toString()
+        .padStart(2, "0")}`;
 
       const newPost = {
         title,
