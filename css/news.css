@@ -51,7 +51,7 @@
   height: 40px;
   line-height: 40px;
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   padding: 0 30px;
   text-align: left;
 }
@@ -283,6 +283,9 @@
 #card-box{
   padding: 10px 10px;
 }
+#card-box h3{
+  font-size: 13px;
+}
   .slider-item {
     width: 370px;
     height: 140px;
@@ -424,7 +427,7 @@
     border-radius: 10px;
   }
   #card-box {
-    width: 50%;
+    width: 60%;
     margin: 0px 10px;
     border-radius: 10px;
     padding: 10px;
@@ -586,6 +589,7 @@
   }
   #card-box h3{
     font-size: 12px;
+    letter-spacing: -1px;
   }
   .slider-wrap{
     width: 100%;
