@@ -124,7 +124,6 @@
 
 #fandomslide1 {
   background-color: #fff;
-  background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100%;
@@ -171,13 +170,13 @@
 
 #fandomslide2 {
   background-color: #fff;
-  background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   background: url("../images/fandomb06.jpg") no-repeat center;
+  background-size:cover;
 }
 #fandomslide2 .ranktitle h2 {
   color: #ffffff;
@@ -216,13 +215,13 @@
 /* 슬라이드 3  */
 #fandomslide3 {
   background-color: #fff;
-  background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   background: url("../images/fandomb04.jpg") no-repeat center;
+  background-size: cover;
 }
 
 #fandomslide3 .ranktxt {
