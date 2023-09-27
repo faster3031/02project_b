@@ -10,7 +10,7 @@
 }
 .star .inner {
   padding: 0px 20px;
-  /* max-width: 1440px; */
+  max-width: 1440px;
   width: 100%;
   display: flex;
 }
@@ -69,7 +69,7 @@
 
 .ranktxt .ranktitle h2 {
   text-align: left;
-  font-size: 20px;
+  font-size: 35px;
   line-height: 30px;
   color: #fff;
   font-weight: 500;
@@ -130,13 +130,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  background: url("../images/fandomb03.jpg") no-repeat center;
+  background-size: cover;
 }
 #fandomslide1 .ranktxt .ranktitle h2 {
   text-align: right;
-}
-#fandomslide1 #fandombg {
-  background: url("../images/fandomb03.jpg") no-repeat center;
-  background-size: cover;
 }
 #fandomslide1 .ranktxt {
   position: absolute;
@@ -156,6 +154,12 @@
 #fandomslide1 .rankbtn1 p {
   color: #314633;
 }
+#fandomslide1 .rankbtn1:hover {
+  background-color: #314633;
+}
+#fandomslide1 .rankbtn1 p:hover {
+  color: #fff;
+}
 #fandomslide1 .rankname {
   text-align: right;
 }
@@ -173,17 +177,16 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  background: url("../images/fandomb06.jpg") no-repeat center;
 }
 #fandomslide2 .ranktitle h2 {
   color: #ffffff;
+  font-size: 25px;
 }
 #fandomslide2 .ranktxt h1 {
   color: #b85f87;
 }
-#fandomslide2 #fandombg {
-  background: url("../images/fandomb06.jpg") no-repeat center;
-  background-size: cover;
-}
+
 #fandomslide2 .ranktxt {
   position: absolute;
   bottom: 250px;
@@ -200,6 +203,12 @@
   bottom: -70px;
   left: 0;
 }
+#fandomslide2 .rankbtn1:hover {
+  background-color: #d74989;
+}
+#fandomslide2 .rankbtn1 p:hover {
+  color: #fff;
+}
 #fandomslide2 .rankbtn1 p {
   color: #e588b2;
 }
@@ -213,16 +222,13 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  background: url("../images/fandomb04.jpg") no-repeat center;
 }
 
-#fandomslide3 #fandombg {
-  background: url("../images/fandomb04.jpg") no-repeat center;
-  background-size: cover;
-}
 #fandomslide3 .ranktxt {
   position: absolute;
   bottom: 50%;
-  right: 10%;
+  right: 0;
 }
 #fandomslide3 .ranktxt h1 {
   text-align: right;
@@ -236,6 +242,12 @@
 #fandomslide3 .rankbtn {
   position: absolute;
   bottom: -70px;
+}
+#fandomslide3 .rankbtn1:hover {
+  background-color: #000058;
+}
+#fandomslide3 .rankbtn1 p:hover {
+  color: #fff;
 }
 #fandomslide3 .rankbtn1 p {
   color: #00008b;
@@ -277,7 +289,7 @@
   .ranktxt h1 {
     font-size: 58px;
   }
-  .ranktxt .ranktitle h2 {
+  #fandomslide2.ranktxt .ranktitle h2 {
     font-size: 20px;
   }
   .ranktxt > h1 > span {
