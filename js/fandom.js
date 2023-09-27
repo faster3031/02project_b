@@ -93,12 +93,12 @@ $(document).ready(function () {
 
   // Swiper 슬라이더 초기화
   var swiper = new Swiper("#fandombox", {
-    spaceBetween: 30,
-    effect: "fade",
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // spaceBetween: 30,
+    // effect: "fade",
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     loop: true,
     pagination: {
       el: ".swiper-pagination",
