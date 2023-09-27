@@ -289,7 +289,7 @@
     width: calc(97% / 2);
   }
   .signup_box_top {
-    width: 80%;
+    width: 70%;
   }
   .test_text {
     font-size: 10px;
@@ -316,9 +316,6 @@
   }
 }
 @media all and (max-width: 760px) {
-  .signup_box_top {
-    width: 100%;
-  }
   .content_box {
     width: 80%;
   }
@@ -326,7 +323,7 @@
     width: calc(92% / 3);
   }
   .sex input[type="radio"] + label {
-    width: calc(96% / 2);
+    width: calc(95% / 2);
   }
   .test_text {
     font-size: 8px;
@@ -338,10 +335,16 @@
   .signup_but{
     padding: 10px 30%;
   }
+  .all_terms{
+    margin: 20px 0;
+  }
+  .terms_box_hiding{
+    margin: 20px 0;
+  }
 }
 @media all and (max-width: 480px) {
   .content_box {
-    width: 90%;
+    width: 100%;
   }
   .news_agency input[type="radio"] + label {
     width: calc(91% / 3);
@@ -359,4 +362,51 @@
   .signup_box_top input{
     font-size: 12px;
   }
+  .logo_box img{
+    width: 60%;
+  }
+}
+@media all and (max-width: 320px) {
+  .content_box {
+    width: 100%;
+  }
+  .news_agency input[type="radio"] + label {
+    width: calc(91% / 3);
+  }
+  .sex input[type="radio"] + label {
+    width: calc(94% / 2);
+  }
+  .test_text {
+    font-size: 10px;
+  }
+  .terms_text {
+    overflow: scroll;
+    width: 100%;
+  }
+  .signup_box_top input{
+    font-size: 12px;
+    padding: 10px;
+  }
+  .signup_box_top input{
+    height: 40px;
+  }
+  .signup_box_top{
+    padding: 10px;
+  }
+  .signup_box_bottom{
+    margin: 0;
+  }
+  .all_terms {
+    margin: 15px 0;
+  }
+  .terms_box_hiding{
+    margin: 15px 0;
+  }
+  .logo_box img{
+    width: 80%;
+  }
+  .signup_box_top {
+    width: 100%;
+  }
+
 }

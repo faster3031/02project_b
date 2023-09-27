@@ -217,7 +217,7 @@
 }
 @media all and (max-width: 1024px) {
   .login_box {
-    width: 34%;
+    width: 35%;
   }
   .logo_box img {
     width: 100%;
@@ -225,13 +225,13 @@
 }
 @media all and (max-width: 760px) {
   .login_box {
-    width: 43%;
+    width: 50%;
   }
 
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 600px) {
   .login_box {
-    width: 64%;
+    width: 60%;
   }
   #login-form input {
     font-size: 15px;
@@ -239,4 +239,26 @@
   #singup-botton a {
     font-size: 15px;
   }
+}
+@media all and (max-width: 480px) {
+  .login_box {
+    width: 80%;
+  }
+  #login-form input {
+    font-size: 15px;
+  }
+  #singup-botton a {
+    font-size: 15px;
+  }
+}
+  @media all and (max-width: 320px) {
+    .login_box {
+      width: 100%;
+    }
+    #login-form input {
+      font-size: 15px;
+    }
+    #singup-botton a {
+      font-size: 15px;
+    }
 }
