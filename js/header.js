@@ -96,11 +96,14 @@ window.addEventListener("load", function () {
     var username = params.get("username");
     if (username) {
       document.getElementById("login-section").style.display = "none";
+      document.getElementById("login_li").style.display = "none";
       document.getElementById("dashboard-section").style.display = "flex";
       document.getElementById("username-display").textContent = `${username}님`;
       // 로그아웃 버튼
       document.getElementById("logout-button").style.display = "flex";
+      document.getElementById("logout_li").style.display = "flex";
     } else {
+      document.getElementById("logout_li").style.display = "none";
       document.getElementById("login-section").style.display = "flex";
       document.getElementById("dashboard-section").style.display = "none";
       document.getElementById("logout-button").style.display = "none";
@@ -169,9 +172,9 @@ window.addEventListener("load", function () {
           case '5':
             response = '불편을 드려 죄송합니다.<br><br>별의온도 이메일 starsondo@stars.com 혹은 별의온도 고객만족실 1234-4321으로 접수 부탁드립니다.';
             break;
-            case '6':
-              response = '그 외 기타사항은 별의온도 이메일 starsondo@stars.com 혹은 별의온도 고객만족실 1234-4321으로 접수 부탁드립니다.<br>감사합니다. ';
-              break;
+          case '6':
+            response = '그 외 기타사항은 별의온도 이메일 starsondo@stars.com 혹은 별의온도 고객만족실 1234-4321으로 접수 부탁드립니다.<br>감사합니다. ';
+            break;
           default:
             response = "죄송합니다. 문의사항에 해당되는 번호를 입력해주세요.";
             break;

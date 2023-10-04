@@ -150,10 +150,10 @@
 }
 /* -------------------------------------------------------------------- */
 /* 헤더 색 */
-.header .nav ul li:nth-child(2) a {
+.header .nav ul li:nth-child(1) a {
   color: #ad5cff;
 }
-.header .nav ul li:nth-child(2):after {
+.header .nav ul li:nth-child(1):after {
   content: "";
   position: absolute;
   left: 0;
@@ -210,10 +210,10 @@
 }
 @media all and (max-width: 760px) {
   .sub_campaign_text {
-    font-size: 13px;
+    font-size: 11px;
   }
   .sub_campaign_gather{
-    font-size: 13px;
+    font-size: 11px;
   }
   .sub_campaign_item {
     width: calc(97% / 2);
@@ -224,7 +224,7 @@
     width: calc(97% / 1);
   }
   .sub_campaign_text {
-    font-size: 17px;
+    font-size: 13px;
   }
   .sub_campaign_gather{
     font-size: 15px;
@@ -252,5 +252,8 @@
   }
   .sub_campaign_wrap{
     gap: 15px 0;
+  }
+  .sub_campaign_item{
+    padding: 10px 10px;
   }
 }

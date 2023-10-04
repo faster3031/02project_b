@@ -94,7 +94,7 @@
 }
 #comment-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   margin: 20px 0;
   margin-top: 40px;
   width: 100%;
@@ -647,8 +647,148 @@ input {
     font-size: 13px;
   }
 }
+@media all and (max-width: 800px) {
+  .side_box{
+    padding: 20px;
+  }
+  .side_title h1{
+    font-size: 20px;
+  }
+  .side_box .side_box_text0 h1{
+    font-size: 14px;
+    margin-left: 40px;
+    margin-right: 0;
+  }
+  .side_box_notice{
+    padding: 5px;
+  }
+  .side_box_notice p{
+    font-size: 12px;
+  }
+  #campaign_box img{
+    width: 100px;
+    margin-right: 10px;
+  }
+  #campaign_box h1{
+    font-size: 13px;
+  }
+}
 @media all and (max-width: 760px) {
-
+  .info-main{
+    margin-top: 0;
+  }
+  .info-right{
+    display: none;
+  }
+  .info-left{
+    width: 100%;
+  }
+  .info-left img{
+    height: 250px;
+  }
+  .donate_box{
+    padding:5px 10px;
+  }
+  .donate_box h2{
+    font-size: 12px;
+  }
+  .donate_box h3{
+    font-size: 12px;
+    margin: 20px 10px;
+  }
+  .donate_box p{
+    font-size: 12px;
+  }
+  #mb_side_title{
+    display: block;
+    margin-top: 20px;
+  }
+  #mb_side_title .bar_news span{
+    display: block;
+    width: 58%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #7724c9;
+    z-index: 999;
+  }
+  #mb_side_title .bar_news{
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #ccc;
+  }
+  #comment-form input{
+    width: 78%;
+  }
+  #comment-form button{
+    width: 20%;
+    font-size: 15px;
+  }
+  #mb-buttonContainer{
+    position: fixed;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    z-index: 200;
+  }
+  #mb-buttonContainer button{
+    width: 50%;
+    height: 100%;
+    font-size: 15px;
+  }
+  #mb-buttonContainer a{
+    font-size: 15px;
+  }
+  #mb-buttonContainer i{
+    margin-right: 5px;
+  }
+  .modal-content {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 0% auto;
+    padding: 0px 10px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width:100%;
+    max-width: 450px;
+    z-index: 99;
+  }
+  .payment-info{
+    padding: 10px;
+  }
+  .payment-info h1{
+    font-size: 14px;
+  }
+  .payment-form{
+    padding: 5px;
+  }
+  .amount-buttons{
+    padding: 10px;
+  }
+  .amount-buttons button{
+    margin: 5px 3px;
+  }
+  #selected-amount-display{
+    font-size: 18px;
+    padding-left: 90px;
+    margin: 0;
+  }
+  #modal-content {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 60% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    z-index: 99;
+  }
 }
 @media all and (max-width: 480px) {
   .info-main{

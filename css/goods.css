@@ -73,7 +73,7 @@ text-align: center;
   font-size: 14px;
   font-weight: bold;
   color: #000;
-  text-shadow: 2px 2px #a5a4a4;
+  padding-bottom: 15px;
 }
 #goods-box:nth-child(1):after {
   content: "미공개 앨범(별의 온도 ver)";

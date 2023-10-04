@@ -405,7 +405,7 @@
   height: 50px;
   text-align: center;
   font-weight: bold;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .nav-mb ul li:hover{
   background-color: #eee4f8;
@@ -448,6 +448,16 @@
   }
   .nav-mb ul li{
     display: block;
+  }
+  .nav-mb ul li:nth-child(6){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-mb ul li:nth-child(7){
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #toggleButton{
     display: block;
