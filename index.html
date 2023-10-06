@@ -20,33 +20,48 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-W75PTH4N');</script>
-  <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
+    </script>
+    <!-- End Google Tag Manager -->
     <!-- 네이버 서치 어드바이저 -->
-    <meta name="naver-site-verification" content="8b8fec7e909534fd3937b9a38d6097bc5caa2aa9"/>
+    <meta name="naver-site-verification" content="07782bcfa006cff898addd308409fe3efe0e2fe2" />
     <!-- 구글 콘솔 -->
     <meta name="google-site-verification" content="8EY1-xng-olDAtUrVMi8koj8eQTRo6k0doX-1hXjgkg" />
     <!-- 선호 URL 및 로봇 메타 태그 -->
-    <link rel="canonical" href="https://sod-b.vercel.app/">
+    <link rel="canonical" href="https://sod-eight.vercel.app/">
     <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
     <title>별의 온도</title>
     <link rel="stylesheet" href="css/reset.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
     <script src="js/respond.min.js"></script>
     <script src="js/html5shiv.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/header.js"></script>
     <script src="js/slide.js"></script>
@@ -57,7 +72,7 @@
     <script src="js/artist.js"></script>
     <script src="js/news.js"></script>
     <script src="js/footer.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css"> -->
     <!-- fontawsome -->
     <link
       rel="stylesheet"
@@ -103,23 +118,24 @@
           <nav class="nav">
             <ul>
               <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
-              <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
-              <li><a href="#" alt="후기">후기</a></li>
+              <li><a href="#" alt="후기">모금 후기</a></li>
+              <li><a href="#" alt="아티스트 목록">아티스트 목록</a></li>
               <li><a href="review.html" alt="게시판">게시판</a></li>
             </ul>
           </nav>
-                    <!-- 모바일 메뉴 -->
-                    <i class="fa-solid fa-bars" id="toggleButton"></i>
-                    <nav class="nav-mb" id="navMb">
-                      <ul>
-                        <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
-                        <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
-                        <li><a href="#" alt="후기">후기</a></li>
-                        <li><a href="review.html" alt="게시판">게시판</a></li>
-                        <li id="login_li"><a href="login.html">로그인 페이지로 이동</a></li>
-                        <li id="logout_li" style="display: none;"><a href="login.html"  ">로그아웃</a></li>
-                      </ul>
-                    </nav>
+          <!-- 모바일 메뉴 -->
+          <i class="fa-solid fa-bars" id="toggleButton"></i>
+          <nav class="nav-mb" id="navMb">
+            <ul>
+              <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
+              <li><a href="#" alt="후기">모금 후기</a></li>
+              <li><a href="#" alt="아티스트 목록">아티스트 목록</a></li>
+              <li><a href="review.html" alt="게시판">게시판</a></li>
+              <li id="login_li"><a href="login.html">로그인 페이지로 이동</a></li>
+              <li id="logout_li" style="display: none;"><a href="login.html"  ">로그아웃</a></li>
+              <li id="my_li">마이페이지</li>
+            </ul>
+          </nav>
           <!-- 로그인  -->
           <div class="login" id="login">
             <div id="login-section">
@@ -130,7 +146,115 @@
               <button id="logout-button">로그아웃</button>
             </div>
             <!-- 로그인 끝 -->
+            <i class="fa-solid fa-user" id="icon_my"></i>
+            <div class="icon_box" id="icon_modal">
+              <div class="icon_box_top">
+                <img src="images/artist_iu.webp" alt="프로필 자리" class="icon_box_top_img">
+                <div class="icon_text">
+                <p>따뜻한 마음씨의 소유자</p>
+                <p>OO님</p>
+                <div class="profile">
+                  <p>프로필 수정</p>
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+                </div>
+              </div>
+              <div class="icon_box_bottom">
+                <div class="icon_activity">
+                  <div class="graph_box1"></div>
+                  <p>8월</p>
+                  <div class="graph_box2"></div>
+                  <p>9월</p>
+                </div>
+                <div class="icon_activity_text">
+                  <p>이번달 기부 횟수 0회</p>
+                  <p>총 참여 횟수 0회</p>
+                  <p>총 기부 금액 00,000,000원</p>
+                </div>
+                <div class="icon_each">
+                  <span>OO님의 등록 팬덤</span>
+                    <img src="images/ARMY_logo.png" alt="bts">
+                    <p>BTS 아미</p>
+                </div>
+                <div class="icon_each">
+                  <span>OO님의 결제수단 관리</span>
+                    <p>카카오 뱅크 체크카드</p>
+                    <p>0000 00** ****</p>
+                    <p>자세히 보기</p>
+                </div>
+                <div class="icon_each">
+                  <span>정기 후원 내역</span>
+                  <p>소화암 치료비 지원</p>
+                  <p>한부모 자녀 지원</p>
+                  <p>자세히 보기</p>
+                </div>
+                <div class="icon_each">
+                  <span>내가쓴 후기 보러가기</span>
+                  <p>바로 가기</p>
+                </div>
+              </div>
+            </div>
           </div>
+
+            
+
+        </div>
+        <div id="my_modal">
+          <div class="modal_wrap">
+            <div class="my_modal-content">
+              <div class="icon_box_top_modal">
+                <img src="images/artist_iu.webp" alt="프로필 자리" class="icon_img">
+                <div class="icon_text_modal">
+                  <p>따뜻한 마음씨의 소유자</p>
+                  <p>OO님</p>
+                  <div class="profile">
+                    <p>프로필 수정</p>
+                    <i class="fa-solid fa-pen"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="icon_box_bottom_modal">
+                <div class="icon_activity_modal">
+                  <div class="graph_box1"></div>
+                  <p>8월</p>
+                  <div class="graph_box2"></div>
+                  <p>9월</p>
+                </div>
+                <div class="icon_activity_text_modal">
+                  <p>이번달 기부 횟수 0회</p>
+                  <p>총 참여 횟수 0회</p>
+                  <p>총 기부 금액 00,000,000원</p>
+                </div>
+                <div class="icon_each_modal">
+                  <span>OO님의 등록 팬덤</span>
+                    <img src="images/ARMY_logo.png" alt="bts" class="icon_each_modal_img">
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>OO님의 결제수단 관리</span>
+                    <p>카카오 뱅크 체크카드</p>
+                    <p>0000 00** ****</p>
+                    <p>자세히 보기</p>
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>정기 후원 내역</span>
+                    <p>소화암 치료비 지원</p>
+                    <p>한부모 자녀 지원</p>
+                    <p>자세히 보기</p>
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>내가쓴 후기 보러가기</span>
+                    <p>바로 가기</p>
+                  
+                </div>
+              </div>
+            
+            <button id="close-my_modal">닫기</button>
+            </div>
+          </div>
+          
         </div>
       </header>
             <!-- 팬덤 -->
@@ -240,7 +364,7 @@
       <section class="campaign">
         <div class="inner campaign-wrap">
           <div class="campaign_gap">
-          <a href="campaign page.html"><h1>진행중인 캠페인<i class="fa-solid fa-chevron-right"></i></a></h1></div>
+          <a href="campaign page.html"><h1>진행중인 캠페인</i></a></h1></div>
           <!-- 세븐틴 -->
           <div class="campaign_item">
             <a href="infopage.html"class="campaign_box">
@@ -462,10 +586,10 @@
                           <h1>리비아 홍수 긴급 지원</h1>
                           <p>갑자기  불어난  홍수로 많은 사람들이 집과 가족을 잃어버렸습니다.이분들에게 여러분의 관심과 도움의 손길 부탁드립니다.</p>
                         </div>
-                        <div class="slide_right_img ">
+                        <div class="slide_right_img">
                           <img src="images/slide1_img.png" alt="슬라이드1 이미지"></div>
                         <div class="slide_left_button slide_bottom_b_button">
-                          <button>기부하기</button>
+                          <a href="infopage.html"><button>기부하기</button></a>
                         </div>
                       </div>                      
                     </div>
@@ -479,7 +603,7 @@
                         <div class="slide_right_img">
                           <img src="images/slide2_img.png" alt="슬라이드2 이미지"></div>
                         <div class="slide_left_button slide_bottom_a_button">
-                          <button>기부하기</button>
+                          <a href="infopage.html"><button>기부하기</button></a>
                         </div>
                       </div>   
                       </div>
@@ -495,7 +619,7 @@
                         <div class="slide_left_img2">
                           <img src="images/slide3_img.png" alt="슬라이드3 이미지" class="slide3_siz"></div>
                         <div class="slide_right_button slide_bottom_b_button">
-                          <button>참가 신청</button>
+                          <a href="infopage.html"><button>참가 신청</button></a>
                         </div>
                       </div>  
                     </div>
@@ -510,7 +634,7 @@
                         <div class="slide_right_img4">
                           <img src="images/slide6_img.png" alt="슬라이드4 이미지" class="slide6_siz"></div>
                         <div class="slide_left_button slide_bottom_b_button">
-                          <button>지원하기</button>
+                          <a href="infopage.html"><button>지원하기</button></a>
                         </div>
                       </div>  
                     </div>
@@ -518,18 +642,18 @@
                     </div>
                   </div>
                 </div>
-              
+
             </section>
 
       <!-- 소식 -->
       <section class="news">
         <div class="inner">
           <div class="title">
-            <h1>마음이 따뜻해지는 모금 후기 <i class="fa-solid fa-chevron-right"></i></h1>
-            <h1>너도 나도 팬덤 한마디 <i class="fa-solid fa-chevron-right"></i></h1>
+            <h1>마음이 따뜻해지는 모금 후기</i></h1>
+            <h1>너도 나도 팬덤 한마디</i></h1>
           </div>
           <div class="news-main">
-            <h1 class="mb_title1">마음이 따뜻해지는 모금 후기 <i class="fa-solid fa-chevron-right"></i></h1>
+            <h1 class="mb_title1">마음이 따뜻해지는 모금 후기</i></h1>
           <div class="news-card">
             <div class="card-box1" id="card-box">
               <a href="#"
@@ -775,42 +899,140 @@
       </div>
         </div>
       </section>
-            <!-- 아티스트 목록 -->
-            <section class="artist">
-              <div class="inner">
-                <h1>아티스트들이 진행중인 캠페인을 찾아보세요<i class="fa-solid fa-chevron-right"></i></h1>
-                <div class="card-list">
-                <div id="artist-card" data-description="첫 번째 카드에 대한 설명 내용"></div>
-                <div class='highlight' id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-                <div id="artist-card"></div>
-              </div>
-              <button class="artist-more"><a href="campaign page.html">진행중인 캠페인<i class="fa-solid fa-chevron-right"></i></a></button>
-            </div>
-            </section>
+      <!-- 아티스트 목록 -->
+      <section class="artist">
+        <section class="game-section" id="artist-hidden">
+         <h2 class="line-title">아티스트&팬덤 소개</h2>
+         <div class="owl-carousel custom-carousel owl-theme">
+           <div class="item active" style="background-image: url(images/artist_idle.webp);">
+             <div class="item-desc">
+               <h4>(여자)아이들</h4>
+               <h3>(G)I-DLE(NEVERLAND)</h3>
+               <p>
+                 피터팬 속 상상의 공간 네버랜드에 사는 사람들은 변하지 않고 영원히 아이로 살 수 있는데, 아티스트는 팬들 속에서 함께 살아가듯이 (여자)아이들도 네버랜드 속에서 영원히 (여자)아이들로 살며 팬들과 함께 변하지 않고 오래오래 함께하자는 의미를 지니고 있다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_aespa.webp);">
+             <div class="item-desc">
+               <h4>에스파</h4>
+               <h3>AESPA(MY)</h3>
+               <p>MY(마이)란 aespa의 아바타 æ(아이)가 살고 있는 광야(KWANGYA)에서 '가장 소중한 친구'라는 의미로, aespa에게 팬들은 가장 소중한 존재이기에 『MY』로 결정되었다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_blackpink.webp);">
+             <div class="item-desc">
+               <h4>블랙핑크</h4>
+               <h3>BLACKPINK(BLINK)</h3>
+               <p>
+                 BLINK는 BLACKPINK의 팀명에서 BLACK의 앞글자 'BL'과 PINK의 뒷글자 'INK'를 이어붙여 만들어졌다. 단순하게 앞글자와 뒷글자를 이어붙여 '시작과 끝을 함께하자'는 의미가 있다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_bts.webp);">
+             <div class="item-desc">
+               <h4>BTS</h4>
+               <h3>BTS(ARMY)</h3>
+               <p>“A.R.M.Y”는 육군, 즉 군대라는 뜻으로, 방탄복과 군대는 거의 대부분 함께 하므로 방탄소년단과 팬클럽도 항상 함께라는 의미이며, Adorable Representative M.C for Youth의 약자이기도 하다. 공식 팬카페에서 투표를 통해 2013년 7월 9일, 공식 팬클럽명을 “A.R.M.Y”(아미)로 결정했다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_nct127.webp);">
+             <div class="item-desc">
+               <h4>NCT127</h4>
+               <h3>NCT127(NCTzen)</h3>
+               <p>팬덤명 NCTzen(엔시티즌)은 NCT와 영어로 시민을 뜻하는 citizen의 합성어이다. 2017년 6월 12일 V LIVE 'NCT 127 COMEBACK SHOWCASE "CHERRY BOMB"'에서 NCTzen의 애칭이 '시즈니'로 확정되었다. 영문으로는 Czennie라고 표기한다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_lesserafim.webp);">
+             <div class="item-desc">
+               <H4>르세라핌</H4>
+               <h3>LESSERAFIM(FEARNOT)</h3>
+               <p>FEARNOT은 걸그룹 LE SSERAFIM의 공식 팬덤명이다.
+       
+                 피어나(FEARNOT)는 두려움 없이(FEARLESS) 앞으로 나아가는 르세라핌과, 르세라핌을 향한 응원과 사랑에 두려움이 없는(FEAR NOT) 팬들이 함께 모여 모든 순간이 새롭게 ‘피어난다'는 의미를 담고 있다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_itzy.webp);">
+             <div class="item-desc">
+               <H4>있지</H4>
+               <h3>ITZY(MIDZY)</h3>
+               <p>
+                 2019년 데뷔한 걸그룹 ITZY의 팬덤이며, 2019년 7월 8일 팬덤명을 공식적으로 확정하였다. '믿어[mideo]'와 '있지(ITZY)', 이 두 단어를 합쳐 ITZY는 팬들을 믿고, 팬들도 ITZY를 믿는다는 의미를 함축해서 지은 것으로 추정된다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_seveteen.webp);">
+             <div class="item-desc">
+               <h4>세븐틴</h4>
+               <h3>SEVENTEEN(CARAT)</h3>
+               <p>
+                 대한민국의 13인조 보이그룹 세븐틴의 공식 팬클럽. 프리 데뷔(Pre-Debut) 시스템을 통해 세븐틴TV 등의 인터넷 방송을 진행하며 데뷔 전부터 팬들에게 얼굴을 비춰왔으나, 본격적으로 팬덤이라고 불릴 만한 단위의 팬들이 생기게 된 것은 2015년 5월 26일 타이틀곡 '아낀다'로 정식 데뷔를 치른 직후부터이다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_nmixx.webp);">
+             <div class="item-desc">
+               <h4>엔믹스</h4>
+               <h3>NMIXX(NSWER)</h3>
+               <p>
+                 NSWER는 걸그룹 NMIXX의 팬덤이다.
+       위의 사진 역시 고래 꼬리이며, 싱글 자켓 사진에도 고래가 등장하고, 비하인드 영상 속에서 지니가 착용한 고래 모양 목걸이 장신구를 보고 엔써라고 말하는 등, 상징은 고래인듯 하다. O.O의 MV에 고래가 등장하며, DICE의 MV 역시 고래가 등장한다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_twice.webp);">
+             <div class="item-desc">
+               <h4>트와이스</h4>
+               <h3>TWICE(ONCE)</h3>
+               <p>
+                 2015년 11월 3일, 팬덤명이 「ONCE」로 정해졌다. 데뷔 전부터 팬들이 TWICE와 잘 어울리는 이름이라며 추천해준 이름이다. 한 번 주신 사랑을 두 배로 드리겠다며 팬들의 의견을 적극적으로 받아들였다. JYP와 TWICE도 팬들의 의견을 수용하여 팬덤명을 결정한 듯하다. 국내 공식 원스를 ONCE CANDY, 외국 공식 원스를 ONCE JELLY라고 부른다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_newjeans.webp);">
+             <div class="item-desc">
+               <h4>뉴진스</h4>
+               <h3>NEWJEANS(BUNNIES)</h3>
+               <p>
+                 Bunnies(버니즈)는 ADOR 소속 걸그룹 NewJeans의 공식 팬덤이다. 2022년 10월 29일 데뷔 100일 기념 Special Quiz Show 영상을 통해 현재의 팬덤명이 공개되었다. 영상에서 함께 공개된 애칭으로 토끼(Tokki)가 있고, 각국의 언어로 토끼를 의미하는 단어들을 사용해도 된다고 한다. 또, 팬덤명 Bunnies를 한자로 음차하여 반희수로 부르기도 한다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_straykids.webp);">
+             <div class="item-desc">
+               <h4>스트레이키즈</h4>
+               <h3>STRAY KIDS(STAY)</h3>
+               <p>
+                 의미는 'Where Stray Kids STAY'이다. 방황하는(Stray) 사람들이 머물 수 있는(STAY) 곳이라는 뜻과 그룹명 'Stray Kids’ 중 ‘Stray’에서 알파벳 ‘r’을 reason이라고 해석하여 ‘Stray Kids’의 존재 이유라는 두가지 의미를 담고 있다</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_monstax.webp);">
+             <div class="item-desc">
+               <h4>몬스타엑스</h4>
+               <h3>MONSTA X(MONBEBE)</h3>
+               <p>
+                 팬덤명은 MONSTA X의 BEBE라는 뜻과, 프랑스어로 mon(나의) bebe(연인)이라는 뜻을 모두 가진 이름이다. 데뷔 초 다음 공식 팬카페에서 팬덤 이름 공모를 받았고, 몇 달 후 갑작스럽게 몬베베라는 이름을 통보받았다.</p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_redvelvet.webp);">
+             <div class="item-desc">
+               <h4>레드벨벳</h4>
+               <h3>REDVELVET(ReVeluv)</h3>
+               <p>
+                 걸그룹 Red Velvet의 팬덤이다. 이름의 의미는 서로 아껴주고 사랑하는 사이가 되자는 뜻이다. 애칭은 러비. 또한 Reve는 프랑스어로 꿈이라는 뜻으로, 일각에서는 꿈에서 만난 사랑이라는 뜻으로 해석하기도 하고, 아니면 발음 그대로 레벨업의 의미로 해석하기도 한다.
+               </p>
+             </div>
+           </div>
+           <div class="item" style="background-image: url(images/artist_ive.webp);">
+             <div class="item-desc">
+               <h4>아이브</h4>
+               <h3>IVE(DIVE)</h3>
+               <p>
+                 콘셉트 자체가 데뷔 앨범부터 꾸준히 주체적이고 당당한 소녀상을 기반으로 한 걸 크러시+나르시시즘 콘셉트를 밀고 있었기에 전반적으로 여성 팬들이 많은 편이다. 특히 멤버들의 연령대와도 비슷한 10~20대의 여성들에게 큰 호평을 받고 있으며, 장원영의 경우 속칭 '할미팬'이라고 자칭하고 다니는 20대 이상 여성 팬이 굉장히 많은 편.
+               </p>
+             </div>
+           </div>
+         </div>
+         <h3 class="search-title">찾고 싶은 아티스트를 검색해보세요</h3>
+         <div class="artist-search">
+         <input type="text" id="searchInput" placeholder="아티스트/팬덤 찾기">
+       <button id="searchBtn">검색</button>
+     </div>
+       </section>
+         </section>
       <!-- 후원 굿즈 -->
       <section class="goods">
         <div class="inner">

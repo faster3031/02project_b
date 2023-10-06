@@ -55,16 +55,50 @@ window.addEventListener("load", function () {
     }
   });
 
-  window.addEventListener("scroll", function () {
-    scy = window.document.documentElement.scrollTop;
-    // console.log(scy);
-    if (scy > scActive) {
-      header.classList.add("header-active");
-    } else {
-      header.classList.remove("header-active");
-    }
+  // 각 섹션의 위치값(세로스크롤 위치)
+  const sectionYpos = [0, 2200, 3500,0];
+  // 클래스 nav 의 li 를 찾아라
+  // 저장한다. 재활용하기 위해서
+  const navLis = $(".nav ul li");
+  // li 에 a 태그를 클릭을 해서 스크롤을 이동
+  const navLisA = $(".nav ul li a");
+  // 클릭 기능 구현
+  $.each(navLisA, function (index, item) {
+    // item 은 a 태그를 말합니다.
+    // item 을 클릭을 할 겁니다.
+    // item 은 html 태그 (jQuery 용도)
+    $(this).click(function (event) {
+      // li 의 모든 클래스 제거
+      navLis.removeClass("focus-active");
+      // 클릭된 li 에 focus-active 추가하기
+      navLis.eq(index).addClass("focus-active");
+      // 2. 클릭하면 스크롤바가 움직인다.
+      $("html, body").animate({ scrollTop: sectionYpos[index] }, "slow");
+    });
   });
 
+  //  반응형
+    // 각 섹션의 위치값(세로스크롤 위치)
+    const mbsectionYpos = [0, 2700, 3500,0];
+    // 클래스 nav 의 li 를 찾아라
+    // 저장한다. 재활용하기 위해서
+    const mbnavLis = $(".nav-mb ul li");
+    // li 에 a 태그를 클릭을 해서 스크롤을 이동
+    const mbnavLisA = $(".nav-mb ul li a");
+    // 클릭 기능 구현
+    $.each(mbnavLisA, function (index, item) {
+      // item 은 a 태그를 말합니다.
+      // item 을 클릭을 할 겁니다.
+      // item 은 html 태그 (jQuery 용도)
+      $(this).click(function (event) {
+        // li 의 모든 클래스 제거
+        mbnavLis.removeClass("focus-active");
+        // 클릭된 li 에 focus-active 추가하기
+        mbnavLis.eq(index).addClass("focus-active");
+        // 2. 클릭하면 스크롤바가 움직인다.
+        $("html, body").animate({ scrollTop: mbsectionYpos[index] }, "slow");
+      });
+    });
   // -------------------------------------------------------로그인
   // 페이지가 로드될 때 초기 대시보드 화면을 표시
 
@@ -87,6 +121,9 @@ window.addEventListener("load", function () {
       // 로그아웃 로직을 처리하고 다시 초기 화면을 표시합니다
       document.getElementById("login-section").style.display = "flex";
       document.getElementById("dashboard-section").style.display = "none";
+      document.getElementById("login_li").style.display = "none";
+      document.getElementById("my_li").style.display = "none";
+      document.getElementById("icon_my").style.display = "none";
     });
   showInitialDashboard();
   // 대시보드 화면 표시 함수
@@ -98,18 +135,29 @@ window.addEventListener("load", function () {
       document.getElementById("login-section").style.display = "none";
       document.getElementById("login_li").style.display = "none";
       document.getElementById("dashboard-section").style.display = "flex";
+      document.getElementById("icon_my").style.display = "flex";
+
+      if (window.innerWidth <= 760){
+        document.getElementById("my_li").style.display = "flex";
+        document.getElementById("logout_li").style.display = "flex";
+      }else{
+        document.getElementById("my_li").style.display = "none";
+        document.getElementById("logout_li").style.display = "none";
+      }
       document.getElementById("username-display").textContent = `${username}님`;
       // 로그아웃 버튼
       document.getElementById("logout-button").style.display = "flex";
-      document.getElementById("logout_li").style.display = "flex";
     } else {
+      
       document.getElementById("logout_li").style.display = "none";
+      document.getElementById("my_li").style.display = "none";
       document.getElementById("login-section").style.display = "flex";
       document.getElementById("dashboard-section").style.display = "none";
+      document.getElementById("icon_my").style.display = "none";
       document.getElementById("logout-button").style.display = "none";
     }
   }
-
+  window.addEventListener("resize", showInitialDashboard);
   // 화살표 이미지 회전
   const topBtnImg = document.getElementById("top-btn-img");
   window.addEventListener("scroll", function (scTop) {
@@ -209,7 +257,28 @@ window.addEventListener("load", function () {
       $chat.input();
     }, 1000);
   });
+// 모달창
 
+const modal = document.getElementById("my_modal");
+const modal_wrap = document.querySelector(".modal_wrap");
+const openModalBtn = document.getElementById("my_li");
+const closeModalBtn = document.getElementById("close-my_modal");
+
+// 모달창 열기
+openModalBtn.addEventListener("click", () => {
+  modal.style.opacity = "1";
+  modal_wrap.style.right = "0"
+  modal.style.visibility = "visible"
+  document.body.style.overflow = "hidden"; // 스크롤바 제거
+});
+// 모달창 닫기
+closeModalBtn.addEventListener("click", () => {
+  // modal.style.display = "none";
+  modal.style.opacity = "0";
+  modal_wrap.style.right = "-100%"
+  modal.style.visibility = "hidden"
+  document.body.style.overflow = "auto"; // 스크롤바 보이기
+});
   const toggleButton = document.getElementById('toggleButton');
   const navMb = document.querySelector('.nav-mb');
   const icon = document.querySelector('#toggleButton');
@@ -217,6 +286,7 @@ window.addEventListener("load", function () {
   toggleButton.addEventListener('click', () => {
     if (navMb.style.opacity === '1') {
       navMb.style.opacity = '0';
+      NavMb.style.display = 'block';
       icon.className = 'fa-solid fa-bars'; // 클래스 이름을 'fa-bars'로 설정
     } else {
       navMb.style.opacity = '1';
@@ -230,14 +300,40 @@ let isNavVisible = false; // 네비게이션 가시성 상태
 toggleButton.addEventListener('click', () => {
   if (!isNavVisible) {
     // 네비게이션을 오른쪽에서 나타나게 함
-    NavMb.style.right = '0';
+    NavMb.style.display = 'block';
     isNavVisible = true;
     NavMb.style.display = 'block'; // 메뉴를 나타나게 함
   } else {
     // 네비게이션을 오른쪽으로 숨김
-    NavMb.style.right = '-300px'; // 메뉴의 너비만큼 숨기도록 설정
+    NavMb.style.display = 'none'; // 메뉴의 너비만큼 숨기도록 설정
     isNavVisible = false;
     NavMb.style.display = 'none'; // 메뉴를 숨김
   }
 });
+
+// 마이페이지
+// $("#icon_my").click(function () {
+//   $(".icon_box").show();
+// })
+
+const IconBox = document.querySelector('.icon_box');
+const myToggleButton = document.getElementById('icon_my');
+
+myToggleButton.addEventListener('click', () => {
+  if (IconBox.style.display === 'block') {
+    IconBox.style.display = 'none';
+  } else {
+    IconBox.style.display = 'block';
+    IconBox.style.visibility = 'visible';
+  }
+});
+
+
+
+
+// icon.className = 'fa-solid fa-bars'; // 클래스 이름을 'fa-bars'로 설정
+// icon.className = 'fa-solid fa-times'; // 클래스 이름을 'fa-times'로 설정
+
+
+
 });

@@ -109,6 +109,10 @@ td:nth-child(2) {
   font-weight: 600;
   word-break: break-all;
 }
+td:nth-child(3) {
+  word-break: break-all;
+}
+
 /* 좋아요 */
 .hearttitle {
   width: 100%;
@@ -137,7 +141,7 @@ td:nth-child(2) {
   /* transition-duration: 1s; */
   background-position: -1137px 0px;
 }
-#postTableBody > tr > td.hearttitle > .heart1{
+#postTableBody > tr > td.hearttitle > .heart1 {
   width: 50px;
   height: 50px;
   overflow: hidden;
@@ -154,7 +158,6 @@ td:nth-child(2) {
   transform: translateX(30%);
 }
 #postTableBody > tr > td.hearttitle > .heart1.is-active1 {
-
   background-position: -1137px 0px;
 }
 #searchContainer .subject {
@@ -303,6 +306,9 @@ li {
 }
 .middle li:nth-child(2) a {
   display: inline-block;
+  color: #fdfdfd;
+  background-color: #8d5cb2;
+  border: solid 1px #8d5cb2;
 }
 .middle li:nth-child(3) a {
   display: inline-block;
@@ -576,9 +582,11 @@ textarea {
   th:nth-child(4) {
     display: none;
   }
-  th:nth-child(5), td:nth-child(5) {
+  th:nth-child(5),
+  td:nth-child(5) {
     padding-right: 0;
-    padding-left: 0;}
+    padding-left: 0;
+  }
 
   th:nth-child(6),
   td:nth-child(6) {
@@ -607,7 +615,7 @@ textarea {
 @media all and (max-width: 480px) {
   th:nth-child(5) {
     width: 10%;
-}
+  }
   #review .inner {
     padding: 0;
   }
@@ -651,11 +659,13 @@ textarea {
     width: 15% !important;
     font-size: 1.2em;
   }
-
 }
 @media all and (max-width: 320px) {
+  .reviewTitle {
+    height: 230px;
+  }
   td {
     text-align: center;
     padding: 13px 3px;
-}
+  }
 }

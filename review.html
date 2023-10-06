@@ -20,19 +20,26 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-W75PTH4N');</script>
-  <!-- End Google Tag Manager -->
-    <!-- 네이버 서치 어드바이저 -->
-    <meta name="naver-site-verification" content="8b8fec7e909534fd3937b9a38d6097bc5caa2aa9"/>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
+    </script>
+    <!-- End Google Tag Manager -->
+        <!-- 네이버 서치 어드바이저 -->
+        <meta name="naver-site-verification" content="07782bcfa006cff898addd308409fe3efe0e2fe2" />
                 <!-- 구글 -->
                 <meta name="google-site-verification" content="8EY1-xng-olDAtUrVMi8koj8eQTRo6k0doX-1hXjgkg" />
-    <!-- 선호 URL 및 로봇 메타 태그 -->
-    <link rel="canonical" href="https://sod-b.vercel.app/">
+                    <!-- 선호 URL 및 로봇 메타 태그 -->
+    <link rel="canonical" href="https://sod-eight.vercel.app/">
     <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
     <title>별의 온도</title>
     <link rel="stylesheet" href="css/reset.css" />
@@ -97,7 +104,6 @@
                 </div>
               </div>
       <!-- 헤더 -->
-      <!-- 헤더 -->
       <header class="header">
         <div class="inner">
           <a href="index.html" alt="메인 로고" class="logo">
@@ -107,23 +113,24 @@
           <nav class="nav">
             <ul>
               <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
-              <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
-              <li><a href="#" alt="후기">후기</a></li>
+              <li><a href="#" alt="후기">모금 후기</a></li>
+              <li><a href="#" alt="아티스트 목록">아티스트 목록</a></li>
               <li><a href="review.html" alt="게시판">게시판</a></li>
             </ul>
           </nav>
-                     <!-- 모바일 메뉴 -->
-                     <i class="fa-solid fa-bars" id="toggleButton"></i>
-                     <nav class="nav-mb" id="navMb">
-                       <ul>
-                         <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
-                         <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
-                         <li><a href="#" alt="후기">후기</a></li>
-                         <li><a href="review.html" alt="게시판">게시판</a></li>
-                         <li id="login_li"><a href="login.html">로그인 페이지로 이동</a></li>
-                         <li id="logout_li" style="display: none;"><a href="login.html"  ">로그아웃</a></li>
-                       </ul>
-                     </nav>
+          <!-- 모바일 메뉴 -->
+          <i class="fa-solid fa-bars" id="toggleButton"></i>
+          <nav class="nav-mb" id="navMb">
+            <ul>
+              <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
+              <li><a href="#" alt="후기">모금 후기</a></li>
+              <li><a href="#" alt="아티스트 목록">아티스트 목록</a></li>
+              <li><a href="review.html" alt="게시판">게시판</a></li>
+              <li id="login_li"><a href="login.html">로그인 페이지로 이동</a></li>
+              <li id="logout_li" style="display: none;"><a href="login.html"  ">로그아웃</a></li>
+              <li id="my_li">마이페이지</li>
+            </ul>
+          </nav>
           <!-- 로그인  -->
           <div class="login" id="login">
             <div id="login-section">
@@ -134,7 +141,111 @@
               <button id="logout-button">로그아웃</button>
             </div>
             <!-- 로그인 끝 -->
+            <i class="fa-solid fa-user" id="icon_my"></i>
+            <div class="icon_box" id="icon_modal">
+              <div class="icon_box_top">
+                <img src="images/artist_iu.webp" alt="프로필 자리" class="icon_box_top_img">
+                <div class="icon_text">
+                <p>따뜻한 마음씨의 소유자</p>
+                <p>OO님</p>
+                <div class="profile">
+                  <p>프로필 수정</p>
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+                </div>
+              </div>
+              <div class="icon_box_bottom">
+                <div class="icon_activity">
+                  <div class="graph_box1"></div>
+                  <p>8월</p>
+                  <div class="graph_box2"></div>
+                  <p>9월</p>
+                </div>
+                <div class="icon_activity_text">
+                  <p>이번달 기부 횟수 3회</p>
+                  <p>총 참여 횟수 21회</p>
+                  <p>총 기부 금액 525,223원</p>
+                </div>
+                <div class="icon_each">
+                  <span>OO님의 등록 팬덤</span>
+                    <img src="images/ARMY_logo.png" alt="bts">
+                    <p>BTS 아미</p>
+                </div>
+                <div class="icon_each">
+                  <span>OO님의 결제수단 관리</span>
+                    <p>카카오 뱅크 체크카드</p>
+                    <p>0000 00** ****</p>
+                    <p>자세히 보기</p>
+                </div>
+                <div class="icon_each">
+                  <span>정기 후원 내역</span>
+                  <p>소화암 치료비 지원</p>
+                  <p>한부모 자녀 지원</p>
+                  <p>자세히 보기</p>
+                </div>
+                <div class="icon_each">
+                  <span>내가쓴 후기 보러가기</span>
+                  <p>바로 가기</p>
+                </div>
+              </div>
+            </div>
           </div>
+
+            
+
+        </div>
+        <div id="my_modal">
+          <div class="modal_wrap">
+            <div class="my_modal-content">
+              <div class="icon_box_top_modal">
+                <img src="images/artist_iu.webp" alt="프로필 자리" class="icon_img">
+                <div class="icon_text_modal">
+                  <p>따뜻한 마음씨의 소유자</p>
+                  <p>OO님</p>
+                </div>
+              </div>
+              <div class="icon_box_bottom_modal">
+                <div class="icon_activity_modal">
+                  <div class="graph_box1"></div>
+                  <p>8월</p>
+                  <div class="graph_box2"></div>
+                  <p>9월</p>
+                </div>
+                <div class="icon_activity_text_modal">
+                  <p>이번달 기부 횟수 0회</p>
+                  <p>총 참여 횟수 0회</p>
+                  <p>총 기부 금액 00,000,000원</p>
+                </div>
+                <div class="icon_each_modal">
+                  <span>OO님의 등록 팬덤</span>
+                    <img src="images/ARMY_logo.png" alt="bts" class="icon_each_modal_img">
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>OO님의 결제수단 관리</span>
+                    <p>카카오 뱅크 체크카드</p>
+                    <p>0000 00** ****</p>
+                    <p>자세히 보기</p>
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>정기 후원 내역</span>
+                    <p>소화암 치료비 지원</p>
+                    <p>한부모 자녀 지원</p>
+                    <p>자세히 보기</p>
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>내가쓴 후기 보러가기</span>
+                    <p>바로 가기</p>
+                  
+                </div>
+              </div>
+            
+            <button id="close-my_modal">닫기</button>
+            </div>
+          </div>
+          
         </div>
       </header>
       <section id="review">
@@ -265,7 +376,7 @@
         <div class="inner">
           <div class="footer-left">
             <div class="footer-logo">
-            <a href="#"><img src="images/logo.png" alt="푸터로고" /></a>
+            <a href="index.html"><img src="images/logo.png" alt="푸터로고" /></a>
             </div>
             <p>Copyright © 사단법인 별의온도 All Rights Reserved.</p>
           </div>
@@ -299,8 +410,14 @@
       </footer>
     </div>
   </body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W75PTH4N"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KV63VKR9"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
   <!-- End Google Tag Manager (noscript) -->
 </html>
