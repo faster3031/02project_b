@@ -453,10 +453,10 @@ textarea {
   font-weight: bold;
 }
 /* 헤더 포커스 */
-.header .nav ul li:nth-child(5) a {
+.header .nav ul li:nth-child(4) a {
   color: #ad5cff;
 }
-.header .nav ul li:nth-child(5):after {
+.header .nav ul li:nth-child(4):after {
   content: "";
   position: absolute;
   left: 0;
