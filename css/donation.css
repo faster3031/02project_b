@@ -16,6 +16,9 @@
   font-size: 35px !important;
   font-weight: 900;
 }
+#fandomslide3 .cheering p{
+  font-size: 30px !important;
+}
 .cheering::after {
   background-color: #3b4212;
   width: 120px;
@@ -115,6 +118,10 @@
     font-size: 25px !important;
     font-weight: 900;
   }
+  #fandomslide3 .cheering p {
+    font-size: 25px !important;
+    font-weight: 900;
+  }
   .amount p {
     padding-right: 0;
     font-size: 20px;
@@ -134,6 +141,11 @@
     font-weight: 900;
     padding-left: 0;
   }
+  #fandomslide3 .cheering p {
+    font-size: 21px !important;
+    font-weight: 900;
+    width: 258px;
+  }
   .amount {
     width: 100%;
   }
@@ -152,7 +164,8 @@
 }
 @media all and (max-width: 760px) {
   .donation {
-    height: 50px;
+    height: 65px;
+    padding-top: 15px;
   }
   .donation .inner {
     padding: 0 15px;
