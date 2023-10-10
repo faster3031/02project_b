@@ -34,9 +34,5 @@ window.addEventListener("load", function () {
     pagination: {
       el: ".swiper-pagination",
     },
-    autoplay: {
-      delay: 3000, // 각 슬라이드 간의 재생 지연 시간 (밀리초 단위)
-      disableOnInteraction: false // 사용자 상호 작용 후에도 자동 재생을 멈추지 않음
-    }
   });
 });

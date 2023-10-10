@@ -31,11 +31,13 @@
 .nav_tab ul li {
   height: 30px;
   line-height: 30px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
+  font-family: 'GmarketSansMedium';
 }
 
 .info-main h1 {
+  font-family: 'GmarketSansMedium';
   font-size: 20px;
   font-weight: bold;
   color: #000;
@@ -53,6 +55,7 @@
   margin: 100px 0px;
 }
 .main_donate h1 {
+  font-family: 'GmarketSansMedium';
   text-align: left;
   font-size: 18px;
 }
@@ -88,6 +91,7 @@
   height: 1000px;
 }
 .main_memo h2 {
+  font-family: 'GmarketSansMedium';
   font-size: 20px;
   margin-bottom: 10px;
   text-align: left;
@@ -105,6 +109,7 @@
   padding: 10px 20px;
 }
 #comment-list li {
+  font-family: 'GmarketSansMedium';
   line-height: 50px;
   font-size: 16px;
   color: #000000b2;
@@ -157,7 +162,7 @@
   background-color: #ad5cff;
   position: absolute;
   right: 0px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #fff;
 }
@@ -165,6 +170,7 @@
   background-color: #7724c9;
 }
 #comment-form h3 {
+  font-family: 'GmarketSansMedium';
   font-weight: bold;
   font-size: 20px;
   padding: 40px 0;
@@ -193,6 +199,7 @@
 .side_title h1 {
   font-size: 25px;
   letter-spacing: 1px;
+  font-family: 'GmarketSansMedium';
 }
 .side_title button {
   border-radius: 3px;
@@ -345,7 +352,14 @@
   gap: 20px;
 }
 .fandom_nick a {
+  font-family: 'GmarketSansMedium';
+  line-height: 30px;
   /* color: #7724c9; */
+}
+.fandom_nick p{
+  font-size: 12px;
+  float:right;
+  color: #7724c9;
 }
 .fandom_nick img {
   margin-right: 20px;
@@ -374,6 +388,7 @@
   margin-right: 20px;
 }
 #campaign_box {
+  cursor: pointer;
   padding: 5px 0;
 }
 #campaign_box h3 {
@@ -596,6 +611,10 @@ input {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
+/* 모바일 */
+#mb_side_title{
+  display: none;
+}
 /* 헤더 포커스 */
 .header .nav ul li:nth-child(1) a {
   color: #ad5cff;
@@ -610,10 +629,6 @@ input {
   height: 3px;
   background: #ad5cff;
   opacity: 1;
-}
-/* 모바일 */
-#mb_side_title{
-  display: none;
 }
 @media all and (max-width: 1680px) {
 }
@@ -637,6 +652,19 @@ input {
     padding: 5px;
   }
   .side_box_notice p{
+    font-size: 12px;
+  }
+  .side_fandom{
+    padding: 15px;
+  }
+  .fandom_nick img{
+    width: 40px;
+    height: 45px;
+  }
+  .fandom_nick a{
+    font-size: 12px
+  }
+  .fandom_nick p{
     font-size: 12px;
   }
   #campaign_box img{
@@ -722,7 +750,7 @@ input {
   }
   #comment-form button{
     width: 20%;
-    font-size: 15px;
+    background-color: #a449ff;
   }
   #mb-buttonContainer{
     position: fixed;

@@ -51,7 +51,7 @@
   display: inline-block;
   top: 15%;
   left: 10%;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   font-weight: bold;
   font-size: 43px;
   color: #fff;
@@ -63,7 +63,7 @@
   left: 10%;
   width: 430px;
   text-align: left;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   /* font-weight: bold; */
   font-size: 15px;
   color: #aeaeae;
@@ -82,7 +82,7 @@
   display: inline-block;
   top: 15%;
   left: 10%;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   font-weight: bold;
   font-size: 45px;
   color: #131313;
@@ -94,7 +94,7 @@
   left: 10%;
   width: 500px;
   text-align: left;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   /* font-weight: bold; */
   font-size: 15px;
   color: #2e2e2e;
@@ -112,7 +112,7 @@
   display: inline-block;
   top: 15%;
   right: 10%;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   font-weight: bold;
   font-size: 45px;
   color: #131313;
@@ -124,7 +124,7 @@
   right: 10%;
   width: 700px;
   text-align: right;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   /* font-weight: bold; */
   font-size: 15px;
   color: #2e2e2e;
@@ -142,7 +142,7 @@
   display: inline-block;
   top: 15%;
   left: 10%;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   font-weight: bold;
   font-size: 45px;
   color: #131313;
@@ -154,7 +154,7 @@
   left: 10%;
   width: 500px;
   text-align: right;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   /* font-weight: bold; */
   font-size: 15px;
   color: #2e2e2e;
@@ -172,7 +172,7 @@
   display: inline-block;
   top: 15%;
   right: 10%;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   text-align: right;
   font-weight: bold;
   font-size: 45px;
@@ -185,7 +185,7 @@
   right: 10%;
   width: 500px;
   text-align: right;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   /* font-weight: bold; */
   font-size: 20px;
   color: #2e2e2e;
@@ -203,7 +203,7 @@
   display: inline-block;
   top: 10%;
   left: 10%;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   text-align: right;
   font-weight: bold;
   font-size: 45px;
@@ -217,7 +217,7 @@
   left: 10%;
   width: 500px;
   text-align: right;
-  font-family: "Noto Sans KR";
+  font-family: 'GmarketSansMedium';
   /* font-weight: bold; */
   font-size: 25px;
   color: #7d51c3;

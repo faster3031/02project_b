@@ -20,13 +20,20 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
     />
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-W75PTH4N');</script>
-  <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
+    </script>
+    <!-- End Google Tag Manager -->
     <title>별의 온도</title>
     <link rel="stylesheet" href="css/reset.css" />
     <script src="js/respond.min.js"></script>
@@ -64,12 +71,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- 네이버 서치 어드바이저 -->
-    <meta name="naver-site-verification" content="8b8fec7e909534fd3937b9a38d6097bc5caa2aa9"/>
+        <!-- 네이버 서치 어드바이저 -->
+        <meta name="naver-site-verification" content="07782bcfa006cff898addd308409fe3efe0e2fe2" />
         <!-- 구글 -->
         <meta name="google-site-verification" content="8EY1-xng-olDAtUrVMi8koj8eQTRo6k0doX-1hXjgkg" />
-    <!-- 선호 URL 및 로봇 메타 태그 -->
-    <link rel="canonical" href="https://sod-b.vercel.app/">
+            <!-- 선호 URL 및 로봇 메타 태그 -->
+    <link rel="canonical" href="https://sod-eight.vercel.app/">
     <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
   </head>
   <body>
@@ -83,21 +90,21 @@
                 <img src="images/top-btn.png" alt="top-btn" id="top-btn-img" />
               </a>
               </div>
-                    <!-- qna 버튼 내용 -->
-      <div class="qna">
-        <div class="qnaheader"><p>별들의 따뜻한 후원, 별의온도</p><br>
-          <span>문의사항이 있으신가요?</span> <i class="fa-solid fa-xmark" id="qnaClose"></i></div>
-        <div class="messages">
-          <span class="msg"><img src="images/logo_05.png" alt="별의온도 로고">별의온도</span>
-          <span><img src="images/logo_04.png" alt="별의온도 로고"></span>
-          <div class="message ai">안녕하세요. <br> 별의온도 입니다.<br> 무엇을 도와드릴까요?</div>
-          <div class="message ai">다음 중 문의사항에 해당되는 번호를 입력해주세요.<br>1. 로그인/회원가입<br>2. 박재완<br>3. 집에보내줘<br>4. 칭찬<br>5. 불만상담<br></div>
-        </div>
-        <div class="qnainput">
-          <input type="text"  placeholder="..."/>
-          <button onclick="$chat.input();">전송</button>
-        </div>
-      </div>
+              <!-- qna 버튼 내용 -->
+              <div class="qna">
+                <div class="qnaheader"><p>별들의 따뜻한 후원, 별의온도</p><br>
+                  <span>문의사항이 있으신가요?</span> <i class="fa-solid fa-xmark" id="qnaClose"></i></div>
+                <div class="messages">
+                  <span class="msg"><img src="images/logo_05.png" alt="별의온도 로고">별의온도</span>
+                  <span><img src="images/logo_04.png" alt="별의온도 로고"></span>
+                  <div class="message ai">안녕하세요. <br> 별의온도 입니다.<br> 무엇을 도와드릴까요?</div>
+                  <div class="message ai">다음 중 문의사항에 해당되는 번호를 입력해주세요.<br>1. 로그인/회원가입<br>2. 박재완<br>3. 집에보내줘<br>4. 칭찬<br>5. 불만상담<br></div>
+                </div>
+                <div class="qnainput">
+                  <input type="text"  placeholder="..."/>
+                  <button onclick="$chat.input();">전송</button>
+                </div>
+              </div>
      <!-- 결제창 모달 -->
      <div id="paymentModal" class="modal">
       <div class="modal-content">
@@ -200,7 +207,115 @@
               <button id="logout-button">로그아웃</button>
             </div>
             <!-- 로그인 끝 -->
+            <i class="fa-solid fa-user" id="icon_my"></i>
+            <div class="icon_box" id="icon_modal">
+              <div class="icon_box_top">
+                <img src="images/artist_iu.webp" alt="프로필 자리" class="icon_box_top_img">
+                <div class="icon_text">
+                <p>따뜻한 마음씨의 소유자</p>
+                <p>OO님</p>
+                <div class="profile">
+                  <p>프로필 수정</p>
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+                </div>
+              </div>
+              <div class="icon_box_bottom">
+                <div class="icon_activity">
+                  <div class="graph_box1"></div>
+                  <p>8월</p>
+                  <div class="graph_box2"></div>
+                  <p>9월</p>
+                </div>
+                <div class="icon_activity_text">
+                  <p>이번달 기부 횟수 0회</p>
+                  <p>총 참여 횟수 0회</p>
+                  <p>총 기부 금액 00,000,000원</p>
+                </div>
+                <div class="icon_each">
+                  <span>OO님의 등록 팬덤</span>
+                    <img src="images/ARMY_logo.png" alt="bts">
+                    <p>BTS 아미</p>
+                </div>
+                <div class="icon_each">
+                  <span>OO님의 결제수단 관리</span>
+                    <p>카카오 뱅크 체크카드</p>
+                    <p>0000 00** ****</p>
+                    <p>자세히 보기</p>
+                </div>
+                <div class="icon_each">
+                  <span>정기 후원 내역</span>
+                  <p>소화암 치료비 지원</p>
+                  <p>한부모 자녀 지원</p>
+                  <p>자세히 보기</p>
+                </div>
+                <div class="icon_each">
+                  <span>내가쓴 후기 보러가기</span>
+                  <p>바로 가기</p>
+                </div>
+              </div>
+            </div>
           </div>
+
+            
+
+        </div>
+        <div id="my_modal">
+          <div class="modal_wrap">
+            <div class="my_modal-content">
+              <div class="icon_box_top_modal">
+                <img src="images/artist_iu.webp" alt="프로필 자리" class="icon_img">
+                <div class="icon_text_modal">
+                  <p>따뜻한 마음씨의 소유자</p>
+                  <p>OO님</p>
+                  <div class="profile">
+                    <p>프로필 수정</p>
+                    <i class="fa-solid fa-pen"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="icon_box_bottom_modal">
+                <div class="icon_activity_modal">
+                  <div class="graph_box1"></div>
+                  <p>8월</p>
+                  <div class="graph_box2"></div>
+                  <p>9월</p>
+                </div>
+                <div class="icon_activity_text_modal">
+                  <p>이번달 기부 횟수 0회</p>
+                  <p>총 참여 횟수 0회</p>
+                  <p>총 기부 금액 00,000,000원</p>
+                </div>
+                <div class="icon_each_modal">
+                  <span>OO님의 등록 팬덤</span>
+                    <img src="images/ARMY_logo.png" alt="bts" class="icon_each_modal_img">
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>OO님의 결제수단 관리</span>
+                    <p>카카오 뱅크 체크카드</p>
+                    <p>0000 00** ****</p>
+                    <p>자세히 보기</p>
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>정기 후원 내역</span>
+                    <p>소화암 치료비 지원</p>
+                    <p>한부모 자녀 지원</p>
+                    <p>자세히 보기</p>
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>내가쓴 후기 보러가기</span>
+                    <p>바로 가기</p>
+                  
+                </div>
+              </div>
+            
+            <button id="close-my_modal">닫기</button>
+            </div>
+          </div>
+          
         </div>
       </header>
       <!-- 인포 메인 -->
@@ -421,18 +536,18 @@
               </div>
               <div class="fandom_nick">
                 <a href="#"
-                  ><img src="images/artist_bts.webp" alt="bts_fan" />방탄없이 못살겠음</a
+                  ><img src="images/artist_bts.webp" alt="bts_fan" />방탄없이 못살겠음<p>기부횟수 20회</p></a
                 >
                 <a href="#"
-                  ><img src="images/fandom_v.jpg" alt="bts_fan2" />내사랑뷔</a
+                  ><img src="images/fandom_v.jpg" alt="bts_fan2" />내사랑뷔<p>기부횟수 19회</p></a
                 >
                 <a href="#"
-                  ><img src="images/infopage_jin.webp" alt="bts_fan3" />핑크공주 진</a
+                  ><img src="images/infopage_jin.webp" alt="bts_fan3" />핑크공주 진<p>기부횟수 15회</p></a
                 >
                 <a href="#"
-                  ><img src="images/infopage_jimin.webp" alt="bts_fan4"/>아미밤들고 응원하쟈</a>
+                  ><img src="images/infopage_jimin.webp" alt="bts_fan4"/>아미밤들고 응원하쟈<p>기부횟수 13회</p></a>
                 <a href="#"
-                  ><img src="images/infopage_sugar.webp" alt="bts_fan5" />월드 와이드 핸섬 </a>
+                  ><img src="images/infopage_sugar.webp" alt="bts_fan5" />월드 와이드 핸섬<p>기부횟수 10회</p> </a>
               </div>
             </div>
             <div class="side_campaign">
@@ -514,8 +629,14 @@
       </footer>
     </div>
   </body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W75PTH4N"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KV63VKR9"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
   <!-- End Google Tag Manager (noscript) -->
 </html>

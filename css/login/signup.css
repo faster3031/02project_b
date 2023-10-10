@@ -52,6 +52,7 @@
 }
 /* 탑 안에 있는 input */
 .signup_box_top input {
+  font-family: "GmarketSansMedium";
   width: 100%;
   height: 50px;
   border: none;

@@ -96,6 +96,7 @@
   padding-top: 5px;
   font-size: 15px;
   width: 90%;
+  font-family: "GmarketSansMedium";
 }
 #login-form button {
   position: absolute;
@@ -107,8 +108,7 @@
   background-color: #c29cff;
   color: aliceblue;
   font-size: 15px;
-  font-weight: bold;
-  font-family: "AppleSDGothicNeo";
+  font-family: "GmarketSansMedium";
   border: none;
   border-radius: 5px;
   width: 100%;
@@ -118,10 +118,10 @@
   background-color: #8d5cb2;
   color: aliceblue;
   font-weight: bold;
-  font-family: "AppleSDGothicNeo";
   border: none;
 }
 .text {
+  font-family: "GmarketSansMedium";
   font-size: 15px;
   color: #4c4c4c;
 }
@@ -183,6 +183,7 @@
   padding: 0;
 }
 .easy_login_text {
+  font-family: "GmarketSansMedium";
   position: relative;
   display: block;
   width: 100%;
