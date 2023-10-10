@@ -10,7 +10,7 @@
 .sub_campaign_title_box p {
   color: #121212;
   font-size: 26px;
-  font-family: "Noto Sans KR";
+  font-family: "GmarketSansMedium";
   font-weight: bold;
 }
 .sub_chk_box {
@@ -23,6 +23,7 @@
   margin-bottom: 20px;
 }
 .sub_chk_box span {
+  font-family: "GmarketSansMedium";
   font-size: 20px;
 }
 
@@ -125,6 +126,7 @@
   position: relative;
   margin-right: 10px;
   cursor: pointer; /* 마우스 올렸을때 손모양 처리 */
+  margin-bottom: 5px;
 }
 .terms_shape:after {
   content: "\2714"; /* 체크박스 특수문자 */
@@ -221,7 +223,7 @@
     width: calc(97% / 1);
   }
   .sub_campaign_text {
-    font-size: 13px;
+    font-size: 11px;
   }
   .sub_campaign_gather{
     font-size: 15px;
@@ -240,6 +242,9 @@
     font-size: 15px;
     padding: 5px 5px;
     font-size: 10px;
+  }
+  .sub_chk_box span{
+    font-size: 15px;
   }
   .sub_campaign_title_box p{
     font-size: 20px;

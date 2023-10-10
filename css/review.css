@@ -251,7 +251,7 @@ li {
   counter-increment: pagination;
 }
 .page li:hover a {
-  color: #fdfdfd;
+  color: #fdfdfd !important;
   background-color: #8d5cb2;
   border: solid 1px #8d5cb2;
 }

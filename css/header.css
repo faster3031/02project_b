@@ -441,16 +441,31 @@
 
 /* ------------------------------------- */
 /* 아이콘 */
+#icon_modal{
+  display: block;
+}
 .profile {
   position: absolute;
   display: flex;
-  top: -170px;
+  top: 40px;
   right: 20px;
   align-items: center;
   cursor: pointer;  
+  font-size: 14px;
+}
+#close-my{
+  position: absolute;
+  display: block;
+  border: none;
+  background: none;
+  top: -200px;
+  right: 0;
+  color: #fff;
+  font-size: 25px;
+
 }
 .profile p {
-  font-size: 15px;
+  font-size: 14px;
   margin-right: 10px;
   text-decoration: underline;
 }
@@ -475,7 +490,7 @@
 .icon_box_top {
   position: relative;
   display: block;
-  background-color: #dbb6ff;
+  background-color: #A674D8;
   border-radius: 10px 10px 0 0;
   padding: 20px 0;
   text-align: center;
@@ -489,9 +504,12 @@
   margin-bottom: 10px;
 }
 .icon_text {
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
   position: relative;
   display: block;
   font-size: 18px;
+  color: #fff;
 }
 .icon_box_bottom {
   background-color: #ffffff;
@@ -520,7 +538,7 @@
   width: 25px;
   height: 80px;
   margin: 10px;
-  background-color: #dbb6ff;
+  background-color: #C8B5DB;
 }
 .graph_box2 {
   position: relative;
@@ -528,7 +546,7 @@
   width: 25px;
   height: 150px;
   margin: 10px;
-  background-color: #ff9bdc;
+  background-color: #A583C8;
 }
 .icon_activity_text {
   position: absolute;
@@ -542,8 +560,9 @@
   border-left: 0.5px solid #2d2d2d3a;
 }
 .icon_activity_text p {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 15px;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
 }
 .icon_each {
   position: relative;
@@ -553,13 +572,13 @@
   border-radius: 10px;
   width: calc((100% - 20px) / 2);
   text-align: center;
-  line-height: 30px;
+  line-height: 25px;
   cursor: pointer;
 }
 .icon_each span {
   position: relative;
-  display: block;
-  font-size: 17px;
+  display: 700;
+  font-size: 14px;
   font-weight: bold;
   border-bottom: 0.5px solid #e1e1e1;
 }
@@ -577,7 +596,20 @@
   position: relative;
   display: block;
   padding-top: 5px;
-  font-size: 15px;
+  font-size: 12px;
+  text-align: left;
+  margin-left: 5px;
+}
+.icon_each1{
+  text-align: center !important;
+}
+.icon_each_p{
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  margin-left: 5px;
+  text-align: left;
+  font-size: 12px;
 }
 
 /* 모달 수정 */
@@ -594,7 +626,7 @@
 .icon_box_top_modal {
   position: relative;
   display: block;
-  background-color: #dbb6ff;
+  background-color: #A674D8;
   border-radius: 10px 10px 0 0;
   padding: 20px 0;
   text-align: center;
@@ -608,9 +640,12 @@
   margin-bottom: 10px;
 }
 .icon_text_modal {
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
   position: relative;
   display: block;
   font-size: 18px;
+  color: #fff;
 }
 .icon_box_bottom_modal {
   background-color: #ffffff;
@@ -639,7 +674,7 @@
   width: 25px;
   height: 80px;
   margin: 10px;
-  background-color: #dbb6ff;
+  background-color: #C8B5DB;
 }
 .graph_box2 {
   position: relative;
@@ -647,7 +682,7 @@
   width: 25px;
   height: 150px;
   margin: 10px;
-  background-color: #ff9bdc;
+  background-color: #A583C8;
 }
 .icon_activity_text_modal {
   position: absolute;
@@ -682,6 +717,14 @@
   font-weight: bold;
   border-bottom: 0.5px solid #e1e1e1;
 }
+.icon_each_span_w{
+  font-size: 12px !important;
+  border: none !important;
+  text-align: right;
+  font-weight: 500 !important;
+  padding-left: 10px;
+  
+}
 .icon_each_modal img {
   position: relative;
   display: block;
@@ -694,9 +737,10 @@
 }
 .icon_each_modal p {
   position: relative;
-  display: block;
+  display: flex;
   padding-top: 5px;
-  font-size: 15px;
+  font-size: 12px;
+  justify-content: space-between;
 }
 
 /* 모바일 메뉴 */
@@ -785,8 +829,12 @@
   #my_modal {
     display: block;
   }
+  
 }
 @media all and (max-width: 480px) {
+  .my_modal-content{
+    margin-top:80px;
+  }
   .qna {
     width: 90%;
     min-width: 220px;
@@ -802,6 +850,15 @@
     font-size: 10px;
     font-weight: 500;
     line-height: 20px;
+    display: block;
+  }
+  .icon_each_span_w{
+    font-size: 10px;
+    text-align: center;
+  }
+  .icon_each_p{
+    display: block;
+    text-align: center;
   }
   .icon_each_modal span {
     color: #2d2d2d;
@@ -818,10 +875,27 @@
   .graph_box2 {
     display: none;
   }
+  .icon_activity_text_modal {
+    border: none;
+    right: 20%;
+    font-size: 10px;
+    border: none;
+    top: none;
+  }
+  .icon_activity_text_modal p{
+    font-size: 13px;
+    text-align: center;
+  }
   .icon_activity_modal {
     height: 150px;
   }
   .icon_activity_modal p {
+    display: none;
+  }
+  .icon_each_modal{
+    width: calc(90% / 2);
+  }
+  .profile p{
     display: none;
   }
 }
@@ -829,5 +903,9 @@
   .qna {
     width: 80%;
     min-width: 220px;
+  }
+  
+  .icon_each_modal{
+    width: calc(100%);
   }
 }
