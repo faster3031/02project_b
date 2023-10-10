@@ -38,7 +38,7 @@
   align-items: center;
 }
 .donation_box p {
-  font-family: "AppleSDGothicNeo";
+  font-family: 'GmarketSansMedium';
   font-size: 18px;
   display: flex;
   justify-content: flex-end;
@@ -55,7 +55,7 @@
   display: flex;
 }
 .amount p {
-  font-family: "AppleSDGothicNeo";
+  font-family: 'GmarketSansMedium';
   color: #555e23;
   position: relative;
   display: flex;

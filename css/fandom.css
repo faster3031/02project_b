@@ -50,7 +50,7 @@
   margin-bottom: 10px;
 }
 .ranktitle > span {
-  font-family: "Cafe24Ssurround";
+  font-family: 'GmarketSansMedium';
   font-weight: 900;
   font-size: 35px;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
@@ -68,6 +68,7 @@
 }
 
 .ranktxt .ranktitle h2 {
+  font-family: 'GmarketSansMedium';
   text-align: left;
   font-size: 35px;
   line-height: 30px;
@@ -78,6 +79,7 @@
 }
 
 .ranktxt h1 {
+  font-family: 'GmarketSansMedium';
   font-size: 70px;
   color: #fff;
   font-weight: bold;

@@ -16,7 +16,7 @@
   width: 100%;
   text-align: center;
   margin: 20px auto;
-  font-family: 'GmarketSansMedium';
+  font-family: "GmarketSansMedium";
   color: #000;
   font-size: 20px;
   font-weight: bold;
@@ -32,15 +32,15 @@
   flex-wrap: wrap;
   position: relative;
   display: flex;
+  gap: 20px;
   justify-content: space-between;
 }
 .campaign_item {
-  width: calc(95% / 4);
+  width: calc((100% - 60px) / 4);
   cursor: pointer;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   padding: 20px 10px;
-  margin-top: 20px;
 }
 .campaign_box {
   display: block;
@@ -96,14 +96,12 @@
 .campaign_box .hoverBox p.p1 {
   font-size: 18px;
   font-weight: bold;
-  font-family: "AppleSDGothicNeo";
   color: #fff;
   padding-bottom: 20px;
 }
 .campaign_box .hoverBox p.p2 {
   font-size: 12px;
   font-weight: bold;
-  font-family: "AppleSDGothicNeo";
   color: #afafaf;
 }
 
@@ -246,7 +244,7 @@
 
 @media all and (max-width: 1280px) {
   .campaign_item {
-    width: calc(98% / 4);
+    width: calc((100% - 60px) / 4);
   }
   .campaign_title {
     font-size: 12px;
@@ -257,7 +255,7 @@
 }
 @media all and (max-width: 1024px) {
   .campaign_item {
-    width: calc(65% / 2);
+    width: calc((100% - 60px) / 3);
   }
   .campaign_ber_title {
     font-size: 15px;
@@ -280,7 +278,7 @@
 }
 @media all and (max-width: 760px) {
   .campaign_item {
-    width: calc(98% / 2);
+    width: calc(94% / 2);
   }
   .campaign_box .hoverBox p.p1 {
     display: block;
@@ -299,12 +297,7 @@
   .campaign_box:hover .hoverBox {
     bottom: -20%;
   }
-  .balackpink {
-    display: none;
-  }
-  .twice {
-    display: none;
-  }
+
 }
 @media all and (max-width: 480px) {
   .campaign_item {
