@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- SEO적용 -->
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="description" content="별의온도, 스타들을 위한, 스타의 팬덤에 의한 기부">
+    <meta name="keywords" content="별의온도, 기부, 후원, 캠페인, 팬덤기부, 팬덤후원, 봉사, 아이돌, 스타, 연예인, 랭킹후원"/>
+    <meta property="og:title" content="별의온도">
+    <meta property="keyword" content="별의온도, 기부, 후원, 캠페인, 팬덤기부, 팬덤후원, 봉사, 아이돌, 스타, 연예인, 랭킹후원"/>
+    <meta property="og:url" content="https://starsondo.com/">
+    <meta property="og:image" content="https://starsondo.com/img/url_image.jpg">
+    <meta property="og:description" content="별의온도, 스타들을 위한, 스타의 팬덤에 의한 기부">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="별의온도">
+    <meta name="twitter:url" content="https://starsondo.com/">
+    <meta name="twitter:image" content="https://starsondo.com/img/logo.png">
+    <meta name="twitter:description" content="별의온도, 스타들을 위한, 스타의 팬덤에 의한 기부">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" sizes="32x32" href="" />
+    <link rel="icon" type="image/png" sizes="192x192" href="" />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="images/mobile_web_icon.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KV63VKR9");
+    </script>
+    <!-- End Google Tag Manager -->
+        <!-- 네이버 서치 어드바이저 -->
+        <meta name="naver-site-verification" content="07782bcfa006cff898addd308409fe3efe0e2fe2" />
+                <!-- 구글 -->
+                <meta name="google-site-verification" content="8EY1-xng-olDAtUrVMi8koj8eQTRo6k0doX-1hXjgkg" />
+                    <!-- 선호 URL 및 로봇 메타 태그 -->
+    <link rel="canonical" href="https://sod-eight.vercel.app/">
+    <meta name="naver-site-verification" content="49dbb149e09865e68eaacd9c26ceda046bd631c5" />
+    <title>별의 온도</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/respond.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- <script src="js/prefixfree.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="js/patrickkunka-mixitup-61dac05/demos/mixitup.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/goodsshop.css" />
+    <script src="js/header.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/donaiton.js"></script>
+    <script src="js/campaign.js"></script>
+    <script src="js/fandom.js"></script>
+    <script src="js/goods.js"></script>
+    <script src="js/artist.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/review.js"></script>
+    <script src="js/goodsshop.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-applesdgothicneo@1.0/all.min.css"/> -->
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+            <!-- 스크롤 버튼 -->
+            <div class="top-button" style="display: none;">
+              <a class="qna-btn" id="qna-btn">
+                <img src="images/logo_05.png" alt="qna-btn" id="qna-btn-img" />
+              </a>
+              <a href="#" class="top-btn" id="top-btn">
+                <img src="images/top-btn.png" alt="top-btn" id="top-btn-img" />
+              </a>
+              </div>
+              <!-- qna 버튼 내용 -->
+              <div class="qna">
+                <div class="qnaheader"><p>별들의 따뜻한 후원, 별의온도</p><br>
+                  <span>문의사항이 있으신가요?</span> <i class="fa-solid fa-xmark" id="qnaClose"></i></div>
+                <div class="messages">
+                  <span class="msg"><img src="images/logo_05.png" alt="별의온도 로고">별의온도</span>
+                  <span><img src="images/logo_04.png" alt="별의온도 로고"></span>
+                  <div class="message ai">안녕하세요. <br> 별의온도 입니다.<br> 무엇을 도와드릴까요?</div>
+                  <div class="message ai">다음 중 문의사항에 해당되는 번호를 입력해주세요.<br>1. 로그인/회원가입<br>2. 박재완<br>3. 집에보내줘<br>4. 칭찬<br>5. 불만상담<br></div>
+                </div>
+                <div class="qnainput">
+                  <input type="text"  placeholder="..."/>
+                  <button onclick="$chat.input();">전송</button>
+                </div>
+              </div>
+      <!-- 헤더 -->
+      <header class="header">
+        <div class="inner">
+          <a href="index.html" alt="메인 로고" class="logo">
+            <img src="images/logo_02.png" alt="logo" />
+          </a>
+          <!-- 메뉴 -->
+          <nav class="nav">
+            <ul>
+              <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
+              <li><a href="index.html" alt="아티스트목록">아티스트 목록</a></li>
+              <li><a href="#" alt="후기">후기</a></li>
+              <li><a href="review.html" alt="게시판">게시판</a></li>
+            </ul>
+          </nav>
+                    <!-- 모바일 메뉴 -->
+                    <i class="fa-solid fa-bars" id="toggleButton"></i>
+                    <nav class="nav-mb" id="navMb">
+                      <ul>
+                        <li><a href="campaign page.html" alt="캠페인">캠페인</a></li>
+                        <li><a href="#" alt="아티스트목록">아티스트 목록</a></li>
+                        <li><a href="#" alt="후기">후기</a></li>
+                        <li><a href="review.html" alt="게시판">게시판</a></li>
+                        <li id="login_li"><a href="login.html">로그인 페이지로 이동</a></li>
+                        <li id="logout_li" style="display: none;"><a href="login.html"  ">로그아웃</a></li>
+                        <li id="my_li">마이페이지</li>
+                      </ul>
+                    </nav>
+          <!-- 로그인  -->
+          <div class="login" id="login">
+            <div id="login-section">
+              <button id="login-button">로그인</button>
+            </div>
+            <div id="dashboard-section" style="display: none">
+              <div id="username-display"></div>
+              <button id="logout-button">로그아웃</button>
+            </div>
+            <!-- 로그인 끝 -->
+            <i class="fa-solid fa-user" id="icon_my"></i>
+            <div class="icon_box" id="icon_modal">
+              <div class="icon_box_top">
+                <img src="images/artist_iu.webp" alt="프로필 자리" class="icon_box_top_img">
+                <div class="icon_text">
+                <p>따뜻한 마음씨의 소유자</p>
+                <p>OO님</p>
+                <div class="profile">
+                  <p>프로필 수정</p>
+                  <i class="fa-solid fa-pen"></i>
+                </div>
+                </div>
+              </div>
+              <div class="icon_box_bottom">
+                <div class="icon_activity">
+                  <div class="graph_box1"></div>
+                  <p>8월</p>
+                  <div class="graph_box2"></div>
+                  <p>9월</p>
+                </div>
+                <div class="icon_activity_text">
+                  <p>이번달 기부 횟수 3회</p>
+                  <p>총 참여 횟수 21회</p>
+                  <p>총 기부 금액 525,223원</p>
+                </div>
+                <div class="icon_each">
+                  <span>OO님의 등록 팬덤</span>
+                    <img src="images/ARMY_logo.png" alt="bts">
+                    <p>BTS 아미</p>
+                </div>
+                <div class="icon_each">
+                  <span>OO님의 결제수단 관리</span>
+                    <p>카카오 뱅크 체크카드</p>
+                    <p>0000 00** ****</p>
+                    <p>자세히 보기</p>
+                </div>
+                <div class="icon_each">
+                  <span>정기 후원 내역</span>
+                  <p>소화암 치료비 지원</p>
+                  <p>한부모 자녀 지원</p>
+                  <p>자세히 보기</p>
+                </div>
+                <div class="icon_each">
+                  <span>내가쓴 후기 보러가기</span>
+                  <p>바로 가기</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            
+
+        </div>
+        <div id="my_modal">
+          <div class="modal_wrap">
+            <div class="my_modal-content">
+              <div class="icon_box_top_modal">
+                <img src="images/artist_iu.webp" alt="프로필 자리" class="icon_img">
+                <div class="icon_text_modal">
+                  <p>따뜻한 마음씨의 소유자</p>
+                  <p>OO님</p>
+                </div>
+              </div>
+              <div class="icon_box_bottom_modal">
+                <div class="icon_activity_modal">
+                  <div class="graph_box1"></div>
+                  <p>8월</p>
+                  <div class="graph_box2"></div>
+                  <p>9월</p>
+                </div>
+                <div class="icon_activity_text_modal">
+                  <p>이번달 기부 횟수 0회</p>
+                  <p>총 참여 횟수 0회</p>
+                  <p>총 기부 금액 00,000,000원</p>
+                </div>
+                <div class="icon_each_modal">
+                  <span>OO님의 등록 팬덤</span>
+                    <img src="images/ARMY_logo.png" alt="bts" class="icon_each_modal_img">
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>OO님의 결제수단 관리</span>
+                    <p>카카오 뱅크 체크카드</p>
+                    <p>0000 00** ****</p>
+                    <p>자세히 보기</p>
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>정기 후원 내역</span>
+                    <p>소화암 치료비 지원</p>
+                    <p>한부모 자녀 지원</p>
+                    <p>자세히 보기</p>
+                  
+                </div>
+                <div class="icon_each_modal">
+                  <span>내가쓴 후기 보러가기</span>
+                    <p>바로 가기</p>
+                  
+                </div>
+              </div>
+            
+            <button id="close-my_modal">닫기</button>
+            </div>
+          </div>
+          
+        </div>
+      </header>
+      <section class="goodsshop">
+      <div class="container">
+        <ul id="shopcate">
+          <li><button type="button" data-filter="all">All</button></li>
+          <li><button type="button" data-filter=".album">ALBUM</button></li>
+          <li><button type="button" data-filter=".randomcard">RANDOM CARD</button></li>
+          <li><button type="button" data-filter=".cherished">CHERISHED ITEM</button></li>
+          <li><button type="button" data-filter=".shopetc">ETC</button></li>
+        </ul>
+        <hr />
+        <ul id="shopcate2">
+          <li><button type="button" data-sort="order:asc">Ascending</button></li>
+          <li><button type="button" data-sort="order:descending">Descending</button></li>
+        </ul>
+        
+
+        <!-- <button type="button" data-sort="random">Random</button> -->
+        <hr />
+        <!-- <label for="filter-select">Filter</label>
+        <select name="" id="filter-select">
+          <option value="all">All</option>
+          <option value=".album">ALBUM</option>
+          <option value=".randomcard">RANDOM CARD</option>
+          <option value=".ticket">TICKET</option>
+          <option value=".cherished">
+            CHERISHED ITEM</option>
+        </select>
+        <label for="sort-select">Sort</label>
+        <select name="" id="sort-select">
+          <option value="order:asc">Ascending</option>
+          <option value="order:descending">Descending</option>
+          <option value="random">Random</option>
+        </select> -->
+              <ul class="mix-wrapper">
+        <li class="mix album" data-order="3">
+          <a href="#">
+             <div class="photoimg">
+            <img src="images/shopalbum1.webp" alt="앨범1">
+             </div>
+             <div class="phototxt">
+               <p class="shopart">뉴진스</p>
+              <h5>뉴진스 - 2nd EP 'Get Up' (Bunny Beach Bag ver.)</h5>
+              <h6>24,700원</h6>
+             </div>
+             <div class="phototag">
+              <img src="images/shop_icon.svg" alt="tag1">
+              <img src="images/shop_icon2.svg" alt="tag2">
+            </div>
+          </a>
+        </li>
+        <li class="mix randomcard" data-order="7">
+          <a href="#">
+            <div class="photoimg">
+           <img src="images/shop_card1.jpg" alt="카드1">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">블랙핑크</p>
+             <h5>블랙핑크 (BLACKPINK) - 더 게임 포토카드 컬렉션 (랜덤)</h5>
+             <h6>15,000원</h6>
+            </div>
+            <div class="phototag">
+              <img src="images/shop_icon.svg" alt="tag1">
+              <img src="images/shop_icon2.svg" alt="tag2">
+            </div>
+         </a>
+        </li>
+
+        <li class="mix shopetc" data-order="15">
+          <a href="#">
+            <div class="photoimg">
+           <img src="images/shop_etc.jpg" alt="ETC">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">츄</p>
+             <h5>츄 - 03 비즈 스트랩 / OFFICIAL LIGHT STICK MD</h5>
+             <h6>15,000원</h6>
+            </div>
+            <div class="phototag">
+
+            </div>
+         </a>
+        </li>
+        <li class="mix randomcard" data-order="2">
+          <a href="#">
+            <div class="photoimg">
+           <img src="images/shop_card2.jpg" alt="카드2">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">NCT DREAM</p>
+             <h5>NCT DREAM - 01 랜덤 트레이딩 카드 세트 / 2023 NCT DREAM The 3rd Album [ISTJ] 1st MD</h5>
+             <h6>10,000원</h6>
+            </div>
+            <div class="phototag">
+              <img src="images/shop_icon2.svg" alt="tag2">
+            </div>
+         </a>
+        </li>
+        <li class="mix cherished" data-order="4">
+          <a href="#">
+            <div class="photoimg">
+           <img src="images/shop_cherished.jpg" alt="애장품">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">더보이즈</p>
+             <h5>더보이즈 - 08 버킷햇 / 2022 THE BOYZ FAN CON : THE B-ROAD</h5>
+             <h6>35,000원</h6>
+            </div>
+            <div class="phototag">
+              <img src="images/shop_icon3.png" alt="tag1">
+            </div>
+         </a>
+        </li>
+        <li class="mix ticket" data-order="12">
+          <a href="#">
+            <div class="photoimg">
+           <img src="images/shop_album4.jpg" alt="앨범2">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">스트레이 키즈</p>
+             <h5>스트레이 키즈 - 樂-STAR / 미니 앨범 (POSTCARD VER.)</h5>
+             <h6>23,000원</h6>
+            </div>
+            <div class="phototag">
+
+            </div>
+         </a>
+        </li>
+        <li class="mix randomcard" data-order="16">
+          <a href="#">
+            <div class="photoimg">
+           <img src="images/shop_card3.jpg" alt="카드3">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">하이키</p>
+             <h5>하이키 - 02 포토카드 세트 Ver.2 / Seoul Dreaming MD</h5>
+             <h6>15,000원</h6>
+            </div>
+            <div class="phototag">
+              <img src="images/shop_icon2.svg" alt="tag2">
+            </div>
+         </a>
+        </li>
+        <li class="mix randomcard" data-order="10">
+          <a href="#">
+            <div class="photoimg">
+           <img src="images/shop_card4.jpg" alt="카드4">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">샤이니</p>
+             <h5> 샤이니 - 05 랜덤 트레이딩 카드 세트 (컨셉 포토 ver.) / 2023 SHINee POP-UP 1st MD</h5>
+             <h6>6,000원</h6>
+
+            </div>
+            <div class="phototag">
+              <img src="images/shop_icon.svg" alt="tag1">
+            </div>
+         </a>
+        </li>
+        <li class="mix album" data-order="1">
+          <a href="#">
+            <div class="photoimg">
+           <img src="images/shop_album2.webp" alt="앨범3">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">NCT</p>
+             <h5>NCT - 정규앨범 4집 [Golden Age] (Collecting Ver.) (랜덤버전)</h5>
+             <h6>20,100원</h6>
+            </div>
+            <div class="phototag">
+              <img src="images/shop_icon3.png" alt="tag1">
+            </div>
+         </a>
+        </li>
+        <li class="mix shopetc" data-order="6">
+          <a href="#">
+            <div class="photoimg">
+           <img src="images/shop_etc2.jpg" alt="ETC2">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">백현</p>
+             <h5>백현 - 13 찹쌀 키링 [뭐해!? 나도 좀 보자!] / 2023 TEO-LAE-GI ZIPDURI 1st MD</h5>
+             <h6>11,000원</h6>
+            </div>
+            <div class="phototag">
+              <img src="images/shop_icon2.svg" alt="tag2">
+            </div>
+         </a>
+        </li>
+        <li class="mix cherished" data-order="5">
+          <a href="#">
+            <div class="photoimg">
+              <img src="images/shop_cherished2.jpg" alt="애장품2">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">데이식스</p>
+             <h5>데이식스 (Even of Day) - 09 티셔츠 / 2021 Right Through Me MD</h5>
+             <h6>41,300원</h6>
+            </div>
+            <div class="phototag">
+              <img src="images/shop_icon3.png" alt="tag1">
+            </div>
+         </a>
+        </li>
+        <li class="mix cherished" data-order="8">
+          <a href="#">
+            <div class="photoimg">
+              <img src="images/shop_cherished4.jpg" alt="애장품3">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">샤이니</p>
+             <h5>샤이니 - 02 롱슬리브 + 포토카드 세트 / 2023 SHINee Fanmeeting MD</h5>
+             <h6>47,000원</h6>
+            </div>
+            <div class="phototag">
+              <img src="images/shop_icon3.png" alt="tag1">
+            </div>
+         </a>
+        </li>
+        <li class="mix album" data-order="14">
+          <a href="#">
+            <div class="photoimg">
+              <img src="images/shop_album3.jpg" alt="앨범3">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">최예나</p>
+             <h5>최예나 - HATE XX / 2집 싱글앨범</h5>
+             <h6>16,500원</h6>
+            </div>
+            <div class="phototag">
+              <img src="images/shop_icon.svg" alt="tag1">
+              <img src="images/shop_icon2.svg" alt="tag2">
+            </div>
+         </a>
+        </li>
+        <li class="mix cherished" data-order="9">
+          <a href="#">
+            <div class="photoimg">
+              <img src="images/shop_cherished5.jpg" alt="애장품4">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">샤이니</p>
+             <h5>샤이니 - 03 볼캡 / 2023 SHINee Fanmeeting MD [Everyday is SHINee DAY - 'Piece of SHINE']​</h5>
+             <h6>37,000원</h6>
+            </div>
+            <div class="phototag">
+
+            </div>
+         </a>
+        </li>
+        <li class="mix shopetc" data-order="13">
+          <a href="#">
+            <div class="photoimg">
+           <img src="images/shop_etc3.jpg" alt="ETC3">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">에이핑크</p>
+             <h5>에이핑크 - 02 필름 슬라이드 키링 / 2023 Apink FAN CONCERT [Pink Drive]</h5>
+             <h6>15,000원</h6>
+            </div>
+              <div class="phototag">
+
+              </div>
+         </a>
+        </li>
+        <li class="mix shopetc" data-order="11">
+          <a href="#">
+            <div class="photoimg">
+           <img src="images/shop_etc4.jpg" alt="ETC3">
+            </div>
+            <div class="phototxt">
+              <p class="shopart">스테이씨</p>
+             <h5>스테이씨 - 03 앨범 뱃지 / WE NEED LOVE</h5>
+             <h6>8,000원</h6>
+            </div>
+              <div class="phototag">
+                <img src="images/shop_icon3.png" alt="tag1">
+              </div>
+         </a>
+        </li>
+      </ul>
+      </div>
+  
+
+
+      </section>
+
+
+
+      <!-- 푸터 -->
+      <footer class="footer">
+        <div class="inner">
+          <div class="footer-left">
+            <div class="footer-logo">
+            <a href="index.html"><img src="images/logo.png" alt="푸터로고" /></a>
+            </div>
+            <p>Copyright © 사단법인 별의온도 All Rights Reserved.</p>
+          </div>
+          <div class="footer-middle">
+            <ul>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">문의하기</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <h3>
+              사단법인 별의 온도<br />사업자등록번호 : 504-85-25999 
+              대표자 : 김상곤 
+              대표번호 : 053.572.1005 
+              E-mail : green@gmail.com<br />
+              주소 : 대구광역시 중구 중앙대로 394, 제일빌딩 5F
+            </h3>
+          </div>
+          <div class="footer-right">
+            <a href="#"
+              ><img src="images/footer_facebook.png" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_instagram.png" alt="instagram"
+            /></a>
+            <a href="#"
+              ><img src="images/footer_twitter.png" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+    ><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KV63VKR9"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+    ></iframe
+  ></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+</html>
