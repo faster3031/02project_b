@@ -56,7 +56,7 @@ window.addEventListener("load", function () {
   });
 
   // 각 섹션의 위치값(세로스크롤 위치)
-  const sectionYpos = [0, 2700, 3500, 0];
+  const sectionYpos = [0, 2200, 3500, 0];
   // 클래스 nav 의 li 를 찾아라
   // 저장한다. 재활용하기 위해서
   const navLis = $(".nav ul li");
