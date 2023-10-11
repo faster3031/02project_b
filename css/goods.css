@@ -2,7 +2,7 @@
 .goods {
   margin-top: 50px;
   width: 100%;
-  height: 700px;
+  height: 580px;
   position: relative;
   margin-bottom: 100px;
 }
@@ -14,9 +14,7 @@
   align-items: center;
 }
 .goods-title {
-  margin-bottom: 50px;
   width: 100%;
-  height: 200px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -40,7 +38,7 @@
 }
 .goods-title p {
   font-family: "GmarketSansMedium";
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   margin-bottom: 20px;
 }
@@ -49,6 +47,7 @@
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  margin: 40px 0;
 }
 .goods-picture img {
   width: 250px;
@@ -74,9 +73,10 @@
   text-align: center;
   font-size: 14px;
   font-weight: bold;
-  color: #000;
+  color: #333;
   padding-bottom: 15px;
   font-family: "GmarketSansMedium";
+  text-shadow: 0px 0px 3px #fff;
 }
 #goods-box:nth-child(1):after {
   content: "미공개 앨범(별의 온도 ver)";
@@ -99,18 +99,19 @@
 .goods-more {
   color: #fff;
   font-weight: bold;
-  background-color: #8d5cb2;
+  background-color: #8d4ccd;
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  margin-top: 90px;
-  width: 200px;
-  height: 50px;
+  margin-bottom: 20px;
+  width: 150px;
+  height: 40px;
   cursor: pointer;
   font-family: "GmarketSansMedium";
 }
 .goods-more a {
   color: #fff !important;
+  line-height: 45px;
 }
 .goods-more:hover {
   background-color: #8038c7;
